@@ -1,8 +1,8 @@
 version: 2
 
-formats:
-  - pdf
-  - htmlzip
+#formats:
+#  - pdf
+#  - htmlzip
 
 build:
   os: ubuntu-24.04
@@ -32,11 +32,11 @@ build:
     build:
       html:
         - uv run -m sphinx -T -b html -d docs/_build/doctrees -D language=en docs $READTHEDOCS_OUTPUT/html
-      htmlzip:
+        #      htmlzip:
         - uv run -m sphinx -T -b dirhtml -d docs/_build/doctrees -D language=en docs docs/_build/dirhtml
         - mkdir -p $READTHEDOCS_OUTPUT/htmlzip
         - zip -r $READTHEDOCS_OUTPUT/htmlzip/html.zip docs/_build/dirhtml/*
-      pdf:
+        #      pdf:
         - uv run -m sphinx -T -b latex -d docs/_build/doctrees -D language=en docs docs/_build/latex
         - cd docs/_build/latex && latexmk -pdf -f -dvi- -ps- -interaction=nonstopmode -jobname=$READTHEDOCS_PROJECT
         - mkdir -p $READTHEDOCS_OUTPUT/pdf
