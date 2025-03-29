@@ -1,8 +1,8 @@
 <p align="center">
   <a href="https://mqt.readthedocs.io">
    <picture>
-     <source media="(prefers-color-scheme: dark)" srcset="../docs/_static/mqt-banner-dark.svg" width="90%">
-     <img src="../docs/_static/mqt-banner-light.svg" width="90%" alt="MQT Banner">
+     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-banner-dark.svg" width="90%">
+     <img src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-banner-light.svg" width="90%" alt="MQT Banner">
    </picture>
   </a>
 </p>
@@ -249,7 +249,7 @@ Munich Quantum Valley, which is supported by the Bavarian state government with 
 
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="../docs/_static/mqt-funding-footer-dark.svg" width="90%">
-    <img src="../docs/_static/mqt-funding-footer-light.svg" width="90%" alt="MQT Funding Footer">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-funding-footer-dark.svg" width="90%">
+    <img src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-funding-footer-light.svg" width="90%" alt="MQT Funding Footer">
   </picture>
 </p>
