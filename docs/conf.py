@@ -135,7 +135,7 @@ latex_documents = [
         master_doc,
         "mqt_handbook.tex",
         r"The MQT Handbook\\{\Large A Summary of Design Automation Tools and\\ Software for Quantum Computing}",
-        r"""Chair for Design Automation\\ Technical University of Munich, Germany\\\href{mailto:quantum.cda@xcit.tum.de}{quantum.cda@xcit.tum.de}\\Munich Quantum Software Company GmbH\\Garching near Munich, Germany""",
+        r"""Chair for Design Automation\\ Technical University of Munich, Germany\\\href{mailto:quantum.cda@xcit.tum.de}{quantum.cda@xcit.tum.de}""",
         "howto",
         False),
 ]
