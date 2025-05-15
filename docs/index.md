@@ -1,10 +1,10 @@
 ```{only} html
 <div style="margin-top: 0.5em">
 <div class="only-light" align="center">
-  <img src="_static/mqt-banner-light.svg" width="90%" alt="MQT Banner">
+  <img src="_static/logo-mqt-light.svg" width="60%" alt="MQT Logo">
 </div>
 <div class="only-dark" align="center">
-  <img src="_static/mqt-banner-dark.svg" width="90%" alt="MQT Banner">
+  <img src="_static/logo-mqt-dark.svg" width="60%" alt="MQT Logo">
 </div>
 </div>
 ```
@@ -20,10 +20,6 @@ However, designing and realizing potential applications for these devices in a s
 Many of the problems to be tackled in that regard are similar to design problems from the classical realm for which sophisticated design automation tools have been developed in the previous decades.
 
 The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is a collection of software tools for quantum computing that explicitly utilizes this design automation expertise.
-It is developed by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the [Technical University of Munich](https://www.tum.de/)
-as well as the [Munich Quantum Software Company (MQSC)](https://munichquantum.software).
-Among others, it is part of the [Munich Quantum Software Stack (MQSS)](https://www.munich-quantum-valley.de/research/research-areas/mqss) ecosystem,
-which is being developed as part of the [Munich Quantum Valley (MQV)](https://www.munich-quantum-valley.de) initiative.
 Our overarching objective is to provide solutions for design tasks across the entire quantum software stack.
 This entails high-level support for end users in realizing their _applications_, efficient methods for the _classical simulation_, _compilation_, and _verification_ of quantum circuits, tools for _quantum error correction_, support for _physical design_, and more.
 These methods are supported by corresponding _data structures_ (such as decision diagrams or the ZX-calculus) and _core methods_ (such as SAT encodings/solvers).
@@ -41,7 +37,51 @@ A live version of this document is available at [mqt.readthedocs.io](https://mqt
 \sphinxtableofcontents
 ```
 
+```{only} html
+For a comprehensive visual depiction of the MQT tools, we invite you to download our <a href="_static/flyers/mqt_flyer.pdf" title="Link to MQT flyer">MQT Flyer</a>.
+
+<div style="float: right; margin-top:0em; margin-bottom:3em;">
+    <a href="_static/flyers/mqt_flyer.pdf" title="Link to MQT flyer">
+        <figure style="display: inline-block;">
+            <img style="float: right;display: inline-block; max-height:12em; max-width:100%" src="_static/flyers/mqt_flyer.png" alt="MQT Overview Flyer"/>
+            <figcaption style="text-align: center;">MQT Overview Flyer</figcaption>
+        </figure>
+    </a>
+</div>
+```
+
+```{toctree}
+:caption: The MQT Handbook
+
+handbook/01_intro
+handbook/02_simulation
+handbook/03_compilation
+handbook/04_verification
+handbook/05_benchmarking
+handbook/06_implementations
+handbook/07_conclusions
+handbook/references
+```
+
 ````{only} html
+## Contributors and Supporters
+
+The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is developed by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the [Technical University of Munich](https://www.tum.de/)
+and supported by the [Munich Quantum Software Company (MQSC)](https://munichquantum.software).
+Among others, it is part of the [Munich Quantum Software Stack (MQSS)](https://www.munich-quantum-valley.de/research/research-areas/mqss) ecosystem,
+which is being developed as part of the [Munich Quantum Valley (MQV)](https://www.munich-quantum-valley.de) initiative.
+
+<div style="margin-top: 0.5em">
+<div class="only-light" align="center">
+  <img src="_static/mqt-logo-banner-light.svg" width="90%" alt="MQT Banner">
+</div>
+<div class="only-dark" align="center">
+  <img src="_static/mqt-logo-banner-dark.svg" width="90%" alt="MQT Banner">
+</div>
+</div>
+
+## Cite This
+
 If you want to cite the Munich Quantum Toolkit, please use the following BibTeX entry:
 
 ```bibtex
@@ -57,31 +97,7 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
     addendum = {A live version of this document is available at \url{https://mqt.readthedocs.io}},
 }
 ```
-
-For a comprehensive visual depiction of the MQT tools, we invite you to download our <a href="_static/flyers/mqt_flyer.pdf" title="Link to MQT flyer">MQT Flyer</a>.
-
-<div style="float: right; margin-top:0em; margin-bottom:3em;">
-    <a href="_static/flyers/mqt_flyer.pdf" title="Link to MQT flyer">
-        <figure style="display: inline-block;">
-            <img style="float: right;display: inline-block; max-height:12em; max-width:100%" src="_static/flyers/mqt_flyer.png" alt="MQT Overview Flyer"/>
-            <figcaption style="text-align: center;">MQT Overview Flyer</figcaption>
-        </figure>
-    </a>
-</div>
 ````
-
-```{toctree}
-:caption: The MQT Handbook
-
-handbook/01_intro
-handbook/02_simulation
-handbook/03_compilation
-handbook/04_verification
-handbook/05_benchmarking
-handbook/06_implementations
-handbook/07_conclusions
-handbook/references
-```
 
 ````{only} html
 ```{toctree}
