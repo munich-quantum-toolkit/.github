@@ -32,3 +32,8 @@ jobs:
         run: uv pip install jinja2
       - name: Render template
         run: uv run jinja2 ${{ inputs.output-path }}
+      - name: Upload rendered template
+        uses: actions/upload-artifact@v4
+        with:
+          name: rendered-template
+          path: .github/pull_request_template.md
