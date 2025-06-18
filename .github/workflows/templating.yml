@@ -33,7 +33,7 @@ jobs:
       - name: Render template
         run: |
           source .venv/bin/activate
-          python jinja2 ${{ inputs.output-path }}
+          python templating/src/run.py ${{ inputs.output-path }}
       - name: Upload rendered template
         uses: actions/upload-artifact@v4
         with:
