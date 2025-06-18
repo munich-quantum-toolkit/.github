@@ -1,3 +1,11 @@
+# Copyright (c) 2023 - 2025 Chair for Design Automation, TUM
+# Copyright (c) 2025 Munich Quantum Software Company GmbH
+# All rights reserved.
+#
+# SPDX-License-Identifier: MIT
+#
+# Licensed under the MIT License
+
 import jinja2
 from pathlib import Path
 import argparse
@@ -8,12 +16,12 @@ def main(output_path: Path | str) -> None:
 
     templates_path = Path(__file__).absolute().parent.parent / "templates"
 
-    enviornment = jinja2.Environment(
+    environment = jinja2.Environment(
         loader=jinja2.FileSystemLoader(templates_path),
         autoescape=jinja2.select_autoescape(["html", "xml", "htm"]),
     )
 
-    template = enviornment.get_template("pull_request_template.md")
+    template = environment.get_template("pull_request_template.md")
 
     output = template.render(package_name="core")
 
