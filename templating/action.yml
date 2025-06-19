@@ -26,4 +26,4 @@ runs:
   args:
     - ${{ inputs.synchronize-pull-request-template }}
     - ${{ inputs.synchronize-security-policy }}
-    - ${{ inputs.package-name }}
+    - ${{ inputs.package-url }}
