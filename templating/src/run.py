@@ -26,7 +26,7 @@ def main(package_name: str) -> None:
     output = template.render(package_name=package_name)
 
     with open("/github/workspace/.github/pull_request_template.md", "w") as file:
-        file.write(output)
+        file.write(output + "\n")
 
 
 if __name__ == "__main__":
