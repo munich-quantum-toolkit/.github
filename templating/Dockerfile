@@ -1,8 +1,8 @@
 FROM ghcr.io/astral-sh/uv:debian
 
-ADD . /app/
+ADD ./templates/ /templates/
+ADD ./src/run.py run.py
 
-RUN uv venv
-RUN uv pip install jinja2
+RUN uv venv && uv pip install jinja2
 
-ENTRYPOINT ["uv", "run", "/app/src/run.py"]
+ENTRYPOINT ["uv", "run", "run.py"]

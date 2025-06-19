@@ -34,7 +34,6 @@ if __name__ == "__main__":
     parser.add_argument(
         "package_name",
         type=str,
-        required=True,
         help="Name of the MQT package",
     )
     args = parser.parse_args()
