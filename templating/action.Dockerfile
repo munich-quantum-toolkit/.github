@@ -13,4 +13,4 @@ ADD ./src/run.py run.py
 
 RUN pip install jinja2
 
-ENTRYPOINT ["python", "run.py"]
+ENTRYPOINT ["python", "/run.py"]
