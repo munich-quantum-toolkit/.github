@@ -11,8 +11,8 @@ from pathlib import Path
 import argparse
 
 
-def main(output_path: Path | str) -> None:
-    output_path = Path(output_path).absolute()
+def main(package_name: str) -> None:
+
 
     templates_path = Path(__file__).absolute().parent.parent / "templates"
 
@@ -23,19 +23,20 @@ def main(output_path: Path | str) -> None:
 
     template = environment.get_template("pull_request_template.md")
 
-    output = template.render(package_name="core")
+    output = template.render(package_name=package_name)
 
-    with open(output_path, "w") as file:
+    with open("/github/workspace", "w") as file:
         file.write(output)
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "output_path",
+        "package_name",
         type=str,
-        help="Output path for the rendered template",
+        required=True,
+        help="Name of the MQT package",
     )
     args = parser.parse_args()
 
-    main(args.output_path)
+    main(args.package_name)
