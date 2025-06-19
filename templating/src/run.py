@@ -11,9 +11,12 @@ from pathlib import Path
 import argparse
 
 
-def main(package_name: str) -> None:
-
-
+def main(
+    *,
+    synchronize_pull_request_template: bool,
+    synchronize_security_policy: bool,
+    package_url: str,
+) -> None:
     templates_path = Path(__file__).absolute().parent.parent / "templates"
 
     environment = jinja2.Environment(
@@ -21,21 +24,40 @@ def main(package_name: str) -> None:
         autoescape=jinja2.select_autoescape(["html", "xml", "htm"]),
     )
 
-    template = environment.get_template("pull_request_template.md")
+    if synchronize_security_policy:
+        template = environment.get_template("SECURITY.md")
+        output = template.render(package_url=package_url)
+        with open("/github/workspace/.github/SECURITY.md", "w") as file:
+            file.write(output + "\n")
 
-    output = template.render(package_name=package_name)
-
-    with open("/github/workspace/.github/pull_request_template.md", "w") as file:
-        file.write(output + "\n")
+    if synchronize_pull_request_template:
+        environment.get_template("pull_request_template.md")
+        output = template.render()
+        with open("/github/workspace/.github/pull_request_template.md", "w") as file:
+            file.write(output + "\n")
 
 
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument(
-        "package_name",
+        "synchronize_pull_request_template",
+        type=bool,
+        help="Whether to synchronize the pull-request template",
+    )
+    parser.add_argument(
+        "synchronize_security_policy",
+        type=bool,
+        help="Whether to synchronize the security policy",
+    )
+    parser.add_argument(
+        "package_url",
         type=str,
-        help="Name of the MQT package",
+        help="GitHub URL of the MQT package",
     )
     args = parser.parse_args()
 
-    main(args.package_name)
+    main(
+        synchronize_pull_request_template=args.synchronize_pull_request_template,
+        synchronize_security_policy=args.synchronize_security_policy,
+        package_url=args.package_url,
+    )

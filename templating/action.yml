@@ -8,12 +8,22 @@
 
 name: Templating
 inputs:
-  package-name:
-    description: The name of the MQT package
+  synchronize-pull-request-template:
+    description: Whether to synchronize the pull-request template
+    type: boolean
+    default: true
+  synchronize-security-policy:
+    description: Whether to synchronize the security policy
+    type: boolean
+    default: true
+  package-url:
+    description: GitHub URL of the MQT package
     type: string
-    required: true
+    default: ""
 runs:
   using: docker
   image: action.Dockerfile
   args:
+    - ${{ inputs.synchronize-pull-request-template }}
+    - ${{ inputs.synchronize-security-policy }}
     - ${{ inputs.package-name }}
