@@ -9,7 +9,7 @@
   "include": ["**/*"],
   "style_override_for_suffix": {
     ".pyi": "DOCSTRING_STYLE",
-    "Dockerfile": "POUND_STYLE"
+    ".Dockerfile": "POUND_STYLE"
   },
   "exclude": [
     "^\\.[^/]+",
