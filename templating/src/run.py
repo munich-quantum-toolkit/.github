@@ -31,7 +31,7 @@ def main(
             file.write(output + "\n")
 
     if synchronize_pull_request_template:
-        environment.get_template("pull_request_template.md")
+        template = environment.get_template("pull_request_template.md")
         output = template.render()
         with open("/github/workspace/.github/pull_request_template.md", "w") as file:
             file.write(output + "\n")
