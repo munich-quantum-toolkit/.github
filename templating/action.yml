@@ -29,16 +29,19 @@ runs:
     - name: Install latest version of uv
       uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb # v6
     - name: Run the templating script
+      shell: bash
       run: |
         uv run --no-project --with jinja2 src/run.py \
           ${{ inputs.synchronize-pull-request-template }} \
           ${{ inputs.synchronize-security-policy }} \
           ${{ inputs.package-url }}
     - name: Configure bot
+      shell: bash
       run: |
         git config user.name "github-actions[bot]"
         git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
     - name: Commit and push changes
+      shell: bash
       run: |
         git add .
         if ! git diff --cached --quiet; then
