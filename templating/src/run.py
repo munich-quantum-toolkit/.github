@@ -18,8 +18,6 @@ def main(
     synchronize_security_policy: bool,
     package_url: str,
 ) -> None:
-
-
     templates_path = Path(__file__).absolute().parent.parent / "templates"
 
     environment = jinja2.Environment(
@@ -30,13 +28,13 @@ def main(
     if synchronize_security_policy:
         template = environment.get_template("SECURITY.md")
         output = template.render(package_url=package_url)
-        with open("/github/workspace/.github/SECURITY.md", "w") as file:
+        with open(".github/SECURITY.md", "w") as file:
             file.write(output + "\n")
 
     if synchronize_pull_request_template:
         template = environment.get_template("pull_request_template.md")
         output = template.render()
-        with open("/github/workspace/.github/pull_request_template.md", "w") as file:
+        with open(".github/pull_request_template.md", "w") as file:
             file.write(output + "\n")
 
 

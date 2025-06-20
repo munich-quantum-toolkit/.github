@@ -26,8 +26,6 @@ runs:
     - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       with:
         ref: ${{ github.head_ref }}
-      env:
-        GITHUB_WORKSPACE: /github/workspace
     - name: Install latest version of uv
       uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb # v6
     - name: Run the templating script
