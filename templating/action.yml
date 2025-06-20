@@ -21,9 +21,29 @@ inputs:
     type: string
     default: ""
 runs:
-  using: docker
-  image: action.Dockerfile
-  args:
-    - ${{ inputs.synchronize-pull-request-template }}
-    - ${{ inputs.synchronize-security-policy }}
-    - ${{ inputs.package-url }}
+  using: composite
+  steps:
+    - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
+      with:
+        ref: ${{ github.head_ref }}
+    - name: Install latest version of uv
+      uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb # v6
+    - name: Run the templating script
+      run: |
+        uv run --no-project --with jinja2 src/run.py \
+          ${{ inputs.synchronize-pull-request-template }} \
+          ${{ inputs.synchronize-security-policy }} \
+          ${{ inputs.package-url }}
+    - name: Configure bot
+      run: |
+        git config user.name "github-actions[bot]"
+        git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+    - name: Commit and push changes
+      run: |
+        git add .
+        if ! git diff --cached --quiet; then
+          git commit -m "Update template"
+          git push
+        else
+          echo "No changes to commit."
+        fi
