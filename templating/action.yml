@@ -32,11 +32,15 @@ runs:
       uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb # v6
     - name: Run the templating script
       shell: bash
+      env:
+        SYNCHRONIZE_PULL_REQUEST_TEMPLATE: ${{ inputs.synchronize-pull-request-template }}
+        SYNCHRONIZE_SECURITY_POLICY: ${{ inputs.synchronize-security-policy }}
+        PACKAGE_URL: ${{ inputs.package-url }}
       run: |
-        uv run --no-project --with jinja2 ${{ github.action_path }}/src/run.py \
-          ${{ inputs.synchronize-pull-request-template }} \
-          ${{ inputs.synchronize-security-policy }} \
-          ${{ inputs.package-url }}
+        uv run --no-project --with jinja2 $GITHUB_ACTION_PATH/src/run.py \
+          $SYNCHRONIZE_PULL_REQUEST_TEMPLATE \
+          $SYNCHRONIZE_SECURITY_POLICY \
+          $PACKAGE_URL
     - name: Configure bot
       shell: bash
       run: |
