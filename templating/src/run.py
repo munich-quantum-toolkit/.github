@@ -18,7 +18,7 @@ def main(
     synchronize_security_policy: bool,
     package_url: str,
 ) -> None:
-    github_workspace = os.getenv("GITHUB_WORKSPACE")
+
 
     templates_path = Path(__file__).absolute().parent.parent / "templates"
 
@@ -30,13 +30,13 @@ def main(
     if synchronize_security_policy:
         template = environment.get_template("SECURITY.md")
         output = template.render(package_url=package_url)
-        with open(f"{github_workspace}/.github/SECURITY.md", "w") as file:
+        with open("/github/workspace/.github/SECURITY.md", "w") as file:
             file.write(output + "\n")
 
     if synchronize_pull_request_template:
         template = environment.get_template("pull_request_template.md")
         output = template.render()
-        with open(f"{github_workspace}/.github/pull_request_template.md", "w") as file:
+        with open("/github/workspace/.github/pull_request_template.md", "w") as file:
             file.write(output + "\n")
 
 
