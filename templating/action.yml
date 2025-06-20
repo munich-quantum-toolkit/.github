@@ -23,15 +23,15 @@ inputs:
 runs:
   using: composite
   steps:
+    - name: Install latest version of uv
+      uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb # v6
     - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4
       with:
         ref: ${{ github.head_ref }}
-    - name: Install latest version of uv
-      uses: astral-sh/setup-uv@f0ec1fc3b38f5e7cd731bb6ce540c5af426746bb # v6
     - name: Run the templating script
       shell: bash
       run: |
-        uv run --no-project --with jinja2 src/run.py \
+        uv run --no-project --with jinja2 ${{ github.action_path }}/src/run.py \
           ${{ inputs.synchronize-pull-request-template }} \
           ${{ inputs.synchronize-security-policy }} \
           ${{ inputs.package-url }}
