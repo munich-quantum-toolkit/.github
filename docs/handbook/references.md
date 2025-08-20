@@ -8,7 +8,7 @@
 # References
 
 The tools of the Munich Quantum Toolkit are academic software.
-Thus, many of their built-in algorithms have been published as scientific papers.
+Thus, many of the built-in algorithms have been published as scientific papers.
 
 The Munich Quantum Toolkit is described in {cite:p}`mqt`.
 If you want to cite the Munich Quantum Toolkit, please use the following BibTeX entry:
