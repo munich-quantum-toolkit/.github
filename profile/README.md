@@ -59,7 +59,7 @@ To support this endeavor, please consider:
 
 ## Cite This
 
-When citing the Munich Quantum Toolkit, please cite the MQT Handbook:
+If you want to cite the Munich Quantum Toolkit, please use the following BibTeX entry:
 
 ```bibtex
 @inproceedings{mqt,
