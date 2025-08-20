@@ -7,8 +7,8 @@
 ````{only} html
 # References
 
-The Munich Quantum Toolkit has a strong foundation in peer‑reviewed research. 
-Many of its built‑in algorithms are based on methods published in scientific journals and conferences. 
+The Munich Quantum Toolkit has a strong foundation in peer‑reviewed research.
+Many of its built‑in algorithms are based on methods published in scientific journals and conferences.
 For an overview, see {cite:p}`mqt`.
 If you want to cite the Munich Quantum Toolkit, please use the following BibTeX entry:
 
