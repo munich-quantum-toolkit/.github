@@ -78,7 +78,7 @@ plot_gate_map(backend)
 Then, mapping the circuit to that device merely requires the following lines of Python and results in the circuit shown in {numref}`fig-ghz-circuit-mapped`.
 
 ```{code-cell} ipython3
-from mqt.qmap import compile
+from mqt.qmap.plugins.qiskit.sc import compile
 from qiskit.providers.fake_provider import GenericBackendV2
 
 backend = GenericBackendV2(
