@@ -29,9 +29,9 @@ A larger version of the quantum circuit from {numref}`fig-ghz-circuit` can easil
 
 ```{code-cell} ipython3
 :tags: [remove-output]
-from mqt.bench import get_benchmark
+from mqt.bench import BenchmarkLevel, get_benchmark
 
-circ = get_benchmark("ghz", circuit_size=8, level="alg")
+circ = get_benchmark("ghz", level=BenchmarkLevel.ALG, circuit_size=8)
 ```
 
 ```{code-cell} ipython3
