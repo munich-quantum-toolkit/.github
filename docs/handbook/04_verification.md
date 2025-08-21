@@ -42,7 +42,7 @@ Verifying that the quantum circuit from {numref}`fig-ghz-circuit-mapped` has bee
 
 from qiskit import QuantumCircuit
 from qiskit.providers.fake_provider import GenericBackendV2
-from mqt.qmap import compile
+from mqt.qmap.plugins.qiskit.sc import compile
 
 circ = QuantumCircuit(4)
 circ.h(3)
