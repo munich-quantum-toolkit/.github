@@ -63,7 +63,7 @@ handbook/07_conclusions
 handbook/references
 ```
 
-````{only} html
+```{only} html
 ## Contributors and Supporters
 
 The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is developed by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the [Technical University of Munich](https://www.tum.de/)
@@ -87,34 +87,16 @@ We are firmly committed to keeping it open and actively maintained for the quant
 
 To support this endeavor, please consider:
 
-- [Sponsoring us on GitHub](https://github.com/sponsors/munich-quantum-toolkit)
-- [Starring and sharing our repositories](https://github.com/munich-quantum-toolkit)
+- Starring and sharing our repositories: [https://github.com/munich-quantum-toolkit](https://github.com/munich-quantum-toolkit)
 - Contributing code, documentation, tests, or examples via issues and pull requests
-- Citing the MQT in your publications (see [Cite This](#cite-this))
+- Citing the MQT in your publications (see {doc}`References <handbook/references>`)
 - Using the MQT in research and teaching, and sharing feedback and use cases
+- Sponsoring us on GitHub: [https://github.com/sponsors/munich-quantum-toolkit](https://github.com/sponsors/munich-quantum-toolkit)
 
 <p align="center">
 <iframe src="https://github.com/sponsors/munich-quantum-toolkit/button" title="Sponsor munich-quantum-toolkit" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>
 </p>
-
-## Cite This
-
-If you want to cite the Munich Quantum Toolkit, please use the following BibTeX entry:
-
-```bibtex
-@inproceedings{mqt,
-    title = {The {{MQT}} Handbook: {{A}} Summary of Design Automation Tools and Software for Quantum Computing},
-    shorttitle = {{The MQT Handbook}},
-    booktitle = {IEEE International Conference on Quantum Software (QSW)},
-    author = {Wille, Robert and Berent, Lucas and Forster, Tobias and Kunasaikaran, Jagatheesan and Mato, Kevin and Peham, Tom and Quetschlich, Nils and Rovara, Damian and Sander, Aaron and Schmid, Ludwig and Schoenberger, Daniel and Stade, Yannick and Burgholzer, Lukas},
-    date = {2024},
-    doi = {10.1109/QSW62656.2024.00013},
-    eprint  = {2405.17543},
-    eprinttype = {arxiv},
-    addendum = {A live version of this document is available at \url{https://mqt.readthedocs.io}},
-}
 ```
-````
 
 ````{only} html
 ```{toctree}

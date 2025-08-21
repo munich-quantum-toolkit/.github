@@ -1,9 +1,9 @@
 <p align="center">
   <a href="https://mqt.readthedocs.io">
-   <picture>
-     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/logo-mqt-dark.svg" width="60%">
-     <img src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/logo-mqt-light.svg" width="60%" alt="MQT Logo">
-   </picture>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/logo-mqt-dark.svg" width="60%">
+      <img src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/logo-mqt-light.svg" width="60%" alt="MQT Logo">
+    </picture>
   </a>
 </p>
 
@@ -32,8 +32,8 @@ Among others, it is part of the [Munich Quantum Software Stack (MQSS)](https://w
 
 <p align="center">
   <picture>
-   <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-logo-banner-dark.svg" width="90%">
-   <img src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-logo-banner-light.svg" width="90%" alt="MQT Partner Logos">
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-logo-banner-dark.svg" width="90%">
+    <img src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-logo-banner-light.svg" width="90%" alt="MQT Partner Logos">
   </picture>
 </p>
 
@@ -44,11 +44,12 @@ We are firmly committed to keeping it open and actively maintained for the quant
 
 To support this endeavor, please consider:
 
-- Sponsoring us on GitHub: https://github.com/sponsors/munich-quantum-toolkit
 - Starring and sharing our repositories: https://github.com/munich-quantum-toolkit
 - Contributing code, documentation, tests, or examples via issues and pull requests
 - Citing the MQT in your publications (see [Cite This](#cite-this))
+- Citing our research in your publications (see [References](https://mqt.readthedocs.io/en/latest/handbook/references.html))
 - Using the MQT in research and teaching, and sharing feedback and use cases
+- Sponsoring us on GitHub: https://github.com/sponsors/munich-quantum-toolkit
 
 <p align="center">
   <a href="https://github.com/sponsors/munich-quantum-toolkit">
@@ -62,15 +63,15 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
 
 ```bibtex
 @inproceedings{mqt,
-    title = {The {{MQT}} Handbook: {{A}} Summary of Design Automation Tools and Software for Quantum Computing},
-    shorttitle = {{The MQT Handbook}},
-    booktitle = {IEEE International Conference on Quantum Software (QSW)},
-    author = {Wille, Robert and Berent, Lucas and Forster, Tobias and Kunasaikaran, Jagatheesan and Mato, Kevin and Peham, Tom and Quetschlich, Nils and Rovara, Damian and Sander, Aaron and Schmid, Ludwig and Schoenberger, Daniel and Stade, Yannick and Burgholzer, Lukas},
-    date = {2024},
-    doi = {10.1109/QSW62656.2024.00013},
-    eprint  = {2405.17543},
-    eprinttype = {arxiv},
-    addendum = {A live version of this document is available at \url{https://mqt.readthedocs.io}},
+    title        = {The {{MQT}} Handbook: {{A}} Summary of Design Automation Tools and Software for Quantum Computing},
+    shorttitle   = {{The MQT Handbook}},
+    author       = {Robert Wille and Lucas Berent and Tobias Forster and Jagatheesan Kunasaikaran and Kevin Mato and Tom Peham and Nils Quetschlich and Damian Rovara and Aaron Sander and Ludwig Schmid and Daniel Schoenberger and Yannick Stade and Lukas Burgholzer},
+    booktitle    = {IEEE International Conference on Quantum Software (QSW)},
+    doi          = {10.1109/QSW62656.2024.00013},
+    year         = 2024,
+    eprint       = {2405.17543},
+    eprinttype   = {arxiv},
+    addendum     = {A live version of this document is available at \url{https://mqt.readthedocs.io}},
 }
 ```
 
@@ -279,10 +280,7 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
 
 ## Acknowledgements
 
-The Munich Quantum Toolkit has been supported by the European
-Research Council (ERC) under the European Union's Horizon 2020 research and innovation program (grant agreement
-No. 101001318), the Bavarian State Ministry for Science and Arts through the Distinguished Professorship Program, as well as the
-Munich Quantum Valley, which is supported by the Bavarian state government with funds from the Hightech Agenda Bayern Plus.
+The Munich Quantum Toolkit has been supported by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation program (grant agreement No. 101001318), the Bavarian State Ministry for Science and Arts through the Distinguished Professorship Program, as well as the Munich Quantum Valley, which is supported by the Bavarian state government with funds from the Hightech Agenda Bayern Plus.
 
 <p align="center">
   <picture>
