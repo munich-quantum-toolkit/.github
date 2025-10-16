@@ -144,7 +144,7 @@ A Framework For Mixed-Dimensional Qudit Quantum Computing
 ```
 
 +++
-[{fab}`github` GitHub](https://github/com/munich-quantum-toolkit/qudits) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qudits/) | {fa}`fa-thin fa-book` {doc}` Documentation <qudits:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qudits) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qudits/) | {fa}`fa-thin fa-book` {doc}` Documentation <qudits:index>`
 :::
 
 ::::
