@@ -126,4 +126,5 @@ MQT Debugger <https://mqt.readthedocs.io/projects/debugger/en/latest>
 MQT NAViz <https://mqt.readthedocs.io/projects/naviz/en/latest>
 MQT ProblemSolver <https://mqt.readthedocs.io/projects/problemsolver/en/latest>
 MQT IonShuttler <https://mqt.readthedocs.io/projects/ionshuttler/en/latest>
+MQT QuSAT <https://mqt.readthedocs.io/projects/qusat/en/latest>
 ```

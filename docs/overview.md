@@ -36,7 +36,7 @@ A Tool for Solving Problems Using Quantum Computing
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/problemsolver) | [{fab}`python` PyPI](https://pypi.org/project/mqt.problemsolver/)
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/problemsolver) | [{fab}`python` PyPI](https://pypi.org/project/mqt.problemsolver/) | {fa}`fa-thin fa-book` {doc}` Documentation <problemsolver:index>`
 :::
 
 ::::
@@ -231,7 +231,7 @@ A Tool for Encoding Quantum Computing using Satisfiability Testing (SAT) Techniq
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qusat) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qusat/)
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qusat) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qusat/) | {fa}`fa-thin fa-book` {doc}` Documentation <qusat:index>`
 :::
 
 ::::
