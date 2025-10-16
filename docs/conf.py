@@ -76,7 +76,6 @@ intersphinx_mapping = {
     "qudits": ("https://mqt.readthedocs.io/projects/qudits/en/latest/", None),
     "qubomaker": ("https://mqt.readthedocs.io/projects/qubomaker/en/latest/", None),
     "syrec": ("https://mqt.readthedocs.io/projects/syrec/en/latest/", None),
-    "qao": ("https://mqt.readthedocs.io/projects/qao/en/latest/", None),
     "yaqs": ("https://mqt.readthedocs.io/projects/yaqs/en/latest/", None),
     "debugger": ("https://mqt.readthedocs.io/projects/debugger/en/latest/", None),
     "qusat": ("https://mqt.readthedocs.io/projects/qusat/en/latest/", None),

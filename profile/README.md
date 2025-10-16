@@ -109,7 +109,6 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
 [`mqt-syrec`]: https://github.com/munich-quantum-toolkit/syrec
 [`mqt-ddvis`]: https://github.com/munich-quantum-toolkit/ddvis
 [`mqt-qusat`]: https://github.com/munich-quantum-toolkit/qusat
-[`mqt-dasqa`]: https://github.com/munich-quantum-toolkit/dasqa
 [`mqt-ionshuttler`]: https://github.com/munich-quantum-toolkit/ionshuttler
 [`mqt-qudits`]: https://github.com/munich-quantum-toolkit/qudits
 [`mqt-yaqs`]: https://github.com/munich-quantum-toolkit/yaqs
