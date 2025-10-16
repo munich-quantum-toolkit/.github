@@ -91,14 +91,12 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
 | [`mqt-problemsolver`] | ![gh.mqt.problemsolver.release][] | ![gh.mqt.problemsolver.forks][] | ![gh.mqt.problemsolver.stars][] |
 | [`mqt-syrec`]         |         ![gh.mqt.syrec.release][] |         ![gh.mqt.syrec.forks][] |         ![gh.mqt.syrec.stars][] |
 | [`mqt-ddvis`]         |         ![gh.mqt.ddvis.release][] |         ![gh.mqt.ddvis.forks][] |         ![gh.mqt.ddvis.stars][] |
-| [`mqt-qao`]           |           ![gh.mqt.qao.release][] |           ![gh.mqt.qao.forks][] |           ![gh.mqt.qao.stars][] |
 | [`mqt-qudits`]        |        ![gh.mqt.qudits.release][] |        ![gh.mqt.qudits.forks][] |        ![gh.mqt.qudits.stars][] |
-| [`mqt-qubomaker`]     |     ![gh.mqt.qubomaker.release][] |     ![gh.mqt.qubomaker.forks][] |     ![gh.mqt.qubomaker.stars][] |
 | [`mqt-qusat`]         |         ![gh.mqt.qusat.release][] |         ![gh.mqt.qusat.forks][] |         ![gh.mqt.qusat.stars][] |
 | [`mqt-debugger`]      |      ![gh.mqt.debugger.release][] |      ![gh.mqt.debugger.forks][] |      ![gh.mqt.debugger.stars][] |
 | [`mqt-yaqs`]          |          ![gh.mqt.yaqs.release][] |          ![gh.mqt.yaqs.forks][] |          ![gh.mqt.yaqs.stars][] |
-| [`mqt-workflows`]     |     ![gh.mqt.workflows.release][] |     ![gh.mqt.workflows.forks][] |     ![gh.mqt.workflows.stars][] |
-| [`mqt-ionshuttler`]   |                                   |   ![gh.mqt.ionshuttler.forks][] |   ![gh.mqt.ionshuttler.stars][] |
+| [`mqt-ionshuttler`]   |   ![gh.mqt.ionshuttler.release][] |   ![gh.mqt.ionshuttler.forks][] |   ![gh.mqt.ionshuttler.stars][] |
+| [`mqt-naviz`]         |         ![gh.mqt.naviz.release][] |         ![gh.mqt.naviz.forks][] |         ![gh.mqt.naviz.stars][] |
 
 [`mqt-ddsim`]: https://github.com/munich-quantum-toolkit/ddsim
 [`mqt-qcec`]: https://github.com/munich-quantum-toolkit/qcec
@@ -113,12 +111,10 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
 [`mqt-qusat`]: https://github.com/munich-quantum-toolkit/qusat
 [`mqt-dasqa`]: https://github.com/munich-quantum-toolkit/dasqa
 [`mqt-ionshuttler`]: https://github.com/munich-quantum-toolkit/ionshuttler
-[`mqt-qubomaker`]: https://github.com/munich-quantum-toolkit/qubomaker
 [`mqt-qudits`]: https://github.com/munich-quantum-toolkit/qudits
 [`mqt-yaqs`]: https://github.com/munich-quantum-toolkit/yaqs
 [`mqt-debugger`]: https://github.com/munich-quantum-toolkit/debugger
-[`mqt-workflows`]: https://github.com/munich-quantum-toolkit/workflows
-[`mqt-qao`]: https://github.com/munich-quantum-toolkit/qao
+[`mqt-naviz`]: https://github.com/munich-quantum-toolkit/naviz
 [gh.mqt.ddsim.release]: https://img.shields.io/github/v/release/munich-quantum-toolkit/ddsim?label=%20&style=flat-square
 [gh.mqt.ddsim.forks]: https://img.shields.io/github/forks/munich-quantum-toolkit/ddsim?label=%20&style=flat-square
 [gh.mqt.ddsim.stars]: https://img.shields.io/github/stars/munich-quantum-toolkit/ddsim?label=%20&style=flat-square
@@ -164,9 +160,9 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
 [gh.mqt.debugger.release]: https://img.shields.io/github/v/release/munich-quantum-toolkit/debugger?label=%20&style=flat-square
 [gh.mqt.debugger.forks]: https://img.shields.io/github/forks/munich-quantum-toolkit/debugger?label=%20&style=flat-square
 [gh.mqt.debugger.stars]: https://img.shields.io/github/stars/munich-quantum-toolkit/debugger?label=%20&style=flat-square
-[gh.mqt.workflows.release]: https://img.shields.io/github/v/release/munich-quantum-toolkit/workflows?label=%20&style=flat-square
-[gh.mqt.workflows.forks]: https://img.shields.io/github/forks/munich-quantum-toolkit/workflows?label=%20&style=flat-square
-[gh.mqt.workflows.stars]: https://img.shields.io/github/stars/munich-quantum-toolkit/workflows?label=%20&style=flat-square
+[gh.mqt.naviz.release]: https://img.shields.io/github/v/release/munich-quantum-toolkit/naviz?label=%20&style=flat-square
+[gh.mqt.naviz.forks]: https://img.shields.io/github/forks/munich-quantum-toolkit/naviz?label=%20&style=flat-square
+[gh.mqt.naviz.stars]: https://img.shields.io/github/stars/munich-quantum-toolkit/naviz?label=%20&style=flat-square
 
 ## PyPI Downloads
 
@@ -185,6 +181,8 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
 | [`mqt.predictor`][pypi.mqt.predictor.stats]         |     ![pypi.mqt.predictor.version][] |     ![pypi.mqt.predictor.weekly][] |     ![pypi.mqt.predictor.monthly][] |         [![pypi.mqt.predictor.total]](https://pepy.tech/project/mqt.predictor) |
 | [`mqt.problemsolver`][pypi.mqt.problemsolver.stats] | ![pypi.mqt.problemsolver.version][] | ![pypi.mqt.problemsolver.weekly][] | ![pypi.mqt.problemsolver.monthly][] | [![pypi.mqt.problemsolver.total]](https://pepy.tech/project/mqt.problemsolver) |
 | [`mqt.yaqs`][pypi.mqt.yaqs.stats]                   |          ![pypi.mqt.yaqs.version][] |          ![pypi.mqt.yaqs.weekly][] |          ![pypi.mqt.yaqs.monthly][] |                   [![pypi.mqt.yaqs.total]](https://pepy.tech/project/mqt.yaqs) |
+| [`mqt.ionshuttler`][pypi.mqt.ionshuttler.stats]     |   ![pypi.mqt.ionshuttler.version][] |   ![pypi.mqt.ionshuttler.weekly][] |   ![pypi.mqt.ionshuttler.monthly][] |     [![pypi.mqt.ionshuttler.total]](https://pepy.tech/project/mqt.ionshuttler) |
+| [`mqt.naviz`][pypi.mqt.naviz.stats]                 |         ![pypi.mqt.naviz.version][] |         ![pypi.mqt.naviz.weekly][] |         ![pypi.mqt.naviz.monthly][] |                 [![pypi.mqt.naviz.total]](https://pepy.tech/project/mqt.naviz) |
 
 [pypi.mqt.ddsim.stats]: https://pypistats.org/packages/mqt-ddsim
 [pypi.mqt.ddsim.version]: https://img.shields.io/pypi/v/mqt.ddsim?label=%20&style=flat-square
@@ -251,6 +249,16 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
 [pypi.mqt.debugger.weekly]: https://img.shields.io/pypi/dw/mqt-debugger?label=%20&style=flat-square
 [pypi.mqt.debugger.monthly]: https://img.shields.io/pypi/dm/mqt-debugger?label=%20&style=flat-square
 [pypi.mqt.debugger.total]: https://static.pepy.tech/personalized-badge/mqt-debugger?period=total&units=international_system&left_color=orange&right_color=orange&left_text=
+[pypi.mqt.ionshuttler.stats]: https://pypistats.org/packages/mqt.ionshuttler
+[pypi.mqt.ionshuttler.version]: https://img.shields.io/pypi/v/mqt.ionshuttler?label=%20&style=flat-square
+[pypi.mqt.ionshuttler.weekly]: https://img.shields.io/pypi/dw/mqt.ionshuttler?label=%20&style=flat-square
+[pypi.mqt.ionshuttler.monthly]: https://img.shields.io/pypi/dm/mqt.ionshuttler?label=%20&style=flat-square
+[pypi.mqt.ionshuttler.total]: https://static.pepy.tech/personalized-badge/mqt.ionshuttler?period=total&units=international_system&left_color=orange&right_color=orange&left_text=
+[pypi.mqt.naviz.stats]: https://pypistats.org/packages/mqt.naviz
+[pypi.mqt.naviz.version]: https://img.shields.io/pypi/v/mqt.naviz?label=%20&style=flat-square
+[pypi.mqt.naviz.weekly]: https://img.shields.io/pypi/dw/mqt.naviz?label=%20&style=flat-square
+[pypi.mqt.naviz.monthly]: https://img.shields.io/pypi/dm/mqt.naviz?label=%20&style=flat-square
+[pypi.mqt.naviz.total]: https://static.pepy.tech/personalized-badge/mqt.naviz?period=total&units=international_system&left_color=orange&right_color=orange&left_text=
 
 <!-- SPHINX-END -->
 
