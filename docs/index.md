@@ -120,9 +120,11 @@ MQT QECC <https://mqt.readthedocs.io/projects/qecc/en/latest>
 MQT Bench <https://mqt.readthedocs.io/projects/bench/en/latest>
 MQT Predictor <https://mqt.readthedocs.io/projects/predictor/en/latest>
 MQT Qudits <https://mqt.readthedocs.io/projects/qudits/en/latest>
-MQT QUBOMaker <https://mqt.readthedocs.io/projects/qubomaker/en/latest>
-MQT SyReC <https://mqt.readthedocs.io/projects/syrec/en/latest>
-MQT QAO <https://mqt.readthedocs.io/projects/qao/en/latest>
+MQT SyReC Synthesizer <https://mqt.readthedocs.io/projects/syrec/en/latest>
 MQT YAQS <https://mqt.readthedocs.io/projects/yaqs/en/latest>
 MQT Debugger <https://mqt.readthedocs.io/projects/debugger/en/latest>
+MQT NAViz <https://mqt.readthedocs.io/projects/naviz/en/latest>
+MQT ProblemSolver <https://mqt.readthedocs.io/projects/problemsolver/en/latest>
+MQT IonShuttler <https://mqt.readthedocs.io/projects/ionshuttler/en/latest>
+MQT QuSAT <https://mqt.readthedocs.io/projects/qusat/en/latest>
 ```
