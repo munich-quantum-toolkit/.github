@@ -120,7 +120,7 @@ An Application to Visualize Compilation Output for Neutral Atom Quantum Computer
 ```
 
 +++
-[{fab}`github` GitHub](https://github/com/munich-quantum-toolkit/naviz) | [{fab}`python` PyPI](https://pypi.org/project/mqt.naviz/) | {fa}`fa-thin fa-book` {doc}` Documentation <naviz:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/naviz) | [{fab}`python` PyPI](https://pypi.org/project/mqt.naviz/) | {fa}`fa-thin fa-book` {doc}` Documentation <naviz:index>`
 :::
 
 :::{grid-item-card} MQT IonShuttler
