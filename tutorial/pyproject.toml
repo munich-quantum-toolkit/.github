@@ -1,0 +1,15 @@
+[project]
+name = "sc24-mqt-tutorial"
+version = "1.0.0"
+description = "Hands-on tutorial at SC24"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = [
+    "mqt-bench>=1.1.7",
+    "mqt-ddsim>=1.24.0",
+    "mqt-qcec>=2.8.1",
+    "mqt-qmap>=2.7.0",
+    "qiskit[visualization]>=1.2.4",
+    "matplotlib>=3.9.2",
+    "pylatexenc>=2.10",
+]
