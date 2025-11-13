@@ -1,13 +1,18 @@
-<p align="center">
+<table>
+<tr>
+<td width="60%">
   <a href="https://mqt.readthedocs.io">
-   <picture>
-     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/cda-tum/mqt/main/docs/_static/mqt_light.png" width="50%">
-     <img src="https://raw.githubusercontent.com/cda-tum/mqt/main/docs/_static/mqt_dark.png" width="50%" alt="MQT Logo">
-   </picture>
+    <picture>
+      <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/logo-mqt-dark.svg" width="100%">
+      <img src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/logo-mqt-light.svg" width="100%" alt="MQT Logo">
+    </picture>
   </a>
-
-  <img src="sc24_logo.png" width="45%" alt="SC24 Logo">
-</p>
+</td>
+<td width="40%" align="right">
+  <img src="sc25_logo.png" width="100%" alt="SC25 Logo">
+</td>
+</tr>
+</table>
 
 # Connecting the HPC and the Quantum Computing Community
 
@@ -26,36 +31,58 @@ The following hands-on demonstrations based on the Munich Quantum Toolkit (MQT) 
 
 ## Setup
 
-The hands on demonstrations will use Jupyter notebooks.
-The easiest way to follow along (without even having to have Python installed) is to use [uv](https://docs.astral.sh/uv/), which is an extremely fast Python package and project manager, written in Rust.
+The hands-on demonstrations will use Jupyter notebooks.
+You can follow along using either `uv` (recommended) or traditional Python virtual environments.
 
-To install `uv`, run the following command:
+### Option 1: Using uv (Recommended)
 
+[uv](https://docs.astral.sh/uv/) is an extremely fast Python package and project manager written in Rust.
+It handles Python installation, virtual environment creation, and package management automatically.
+
+**Install uv:**
+
+On macOS/Linux:
 ```bash
 curl -LsSf https://astral.sh/uv/install.sh | sh
 ```
 
-or
-
+On Windows:
 ```bash
 powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
 ```
 
-if you are on Windows.
+**Start Jupyter Lab:**
 
-After installing `uv`, you can straight-up start jupyter with:
+After installing `uv`, you can create the environment, install all dependencies, and launch Jupyter Lab with a single command:
 
 ```bash
 uv run --with jupyter jupyter lab
 ```
 
-If you prefer the old fashioned way (how boring 🤪), you can set up a Python (3.10-3.12) virtual environment and install the required packages with:
+This automatically creates a virtual environment, installs the project dependencies from `pyproject.toml`, and starts Jupyter Lab.
 
+### Option 2: Using Python Virtual Environments
+
+If you prefer using standard Python tools, you'll need Python 3.10-3.12 installed.
+
+**Create and activate a virtual environment:**
+
+On macOS/Linux:
 ```bash
 python -m venv .venv
 source .venv/bin/activate
+```
+
+On Windows:
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+```
+
+**Install dependencies and start Jupyter Lab:**
+
+```bash
 pip install -e .
 pip install jupyter
-python -m ipykernel install --sys-prefix
 jupyter lab
 ```

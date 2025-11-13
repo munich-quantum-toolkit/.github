@@ -1,7 +1,7 @@
 [project]
-name = "sc24-mqt-tutorial"
+name = "sc25-mqt-tutorial"
 version = "1.0.0"
-description = "Hands-on tutorial at SC24"
+description = "Hands-on tutorial at SC25"
 readme = "README.md"
 requires-python = ">=3.10"
 dependencies = [
