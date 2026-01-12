@@ -46,7 +46,7 @@ repos:
       - id: rst-inline-touching-normal
 
   # Check for spelling
-  - repo: https://github.com/crate-ci/typos
+  - repo: https://github.com/adhtruong/mirrors-typos
     rev: v1.42.0
     hooks:
       - id: typos
@@ -63,6 +63,13 @@ repos:
     hooks:
       - id: prettier
         types_or: [yaml, markdown, html, css, scss, javascript, json]
+
+  # Python linting using ruff
+  - repo: https://github.com/astral-sh/ruff-pre-commit
+    rev: v0.14.6
+    hooks:
+      - id: ruff-check
+      - id: ruff-format
 
   # Tidy up BibTeX files
   - repo: https://github.com/FlamingTempura/bibtex-tidy
