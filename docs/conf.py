@@ -10,7 +10,7 @@
 
 from __future__ import annotations
 
-from typing import TYPE_CHECKING
+from typing import TYPE_CHECKING, Any
 
 import pybtex.plugin
 from pybtex.style.formatting.unsrt import Style as UnsrtStyle
@@ -20,10 +20,10 @@ if TYPE_CHECKING:
     from pybtex.database import Entry
     from pybtex.richtext import HRef
 
-project = 'mqt'
+project = "mqt"
 author = "Chair for Design Automation, TUM & Munich Quantum Software Company"
-version = '1.2'
-release = '1.2.0'
+version = "1.2"
+release = "1.2.0"
 language = "en"
 project_copyright = "2023 - 2026 Chair for Design Automation, TUM & 2025 - 2026 Munich Quantum Software Company"
 
@@ -104,13 +104,17 @@ nb_mime_priority_overrides = [
 
 
 # -- Options for references --------------------------------------------------
+
+
 class CDAStyle(UnsrtStyle):
     """Custom style for including PDF links."""
-    def __init__(self, *args, **kwargs):
+
+    def __init__(self, *args: Any, **kwargs: Any) -> None:  # noqa: ANN401
+        """Initialize CDAStyle."""
         super().__init__(*args, **kwargs)
         self.abbreviate_names = True
 
-    def format_url(self, _e: Entry) -> HRef:  # noqa: PLR6301
+    def format_url(self, _: Entry) -> HRef:  # noqa: PLR6301
         """Format URL field as a link to the PDF.
 
         Returns:
@@ -141,7 +145,8 @@ latex_documents = [
         r"The MQT Handbook\\{\Large A Summary of Design Automation Tools and\\ Software for Quantum Computing}",
         r"""Chair for Design Automation\\ Technical University of Munich, Germany\\\href{mailto:quantum.cda@xcit.tum.de}{quantum.cda@xcit.tum.de}""",
         "howto",
-        False),
+        False,
+    ),
 ]
 latex_logo = "_static/logo-mqt-light.png"
 latex_elements = {

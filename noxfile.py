@@ -30,9 +30,7 @@ def lint(session: nox.Session) -> None:
 
 @nox.session(reuse_venv=True)
 def docs(session: nox.Session) -> None:
-    """
-    Build the docs. Use "--non-interactive" to avoid serving. Pass "-b linkcheck" to check links.
-    """
+    """Build the docs. Use "--non-interactive" to avoid serving. Pass "-b linkcheck" to check links."""
     parser = argparse.ArgumentParser()
     parser.add_argument("-b", dest="builder", default="html", help="Build target (default: html)")
     args, posargs = parser.parse_known_args(session.posargs)
