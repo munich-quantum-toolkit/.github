@@ -1,0 +1,31 @@
+name: Templating
+on:
+  pull_request:
+    paths:
+      - ".github/workflows/templating.yml"
+  workflow_dispatch: # Allow manual triggering
+
+jobs:
+  render-template:
+    name: Render template
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+      pull-requests: write
+    steps:
+      - id: create-token
+        uses: actions/create-github-app-token@29824e69f54612133e76f7eaac726eef6c875baf # v2.2.1
+        with:
+          app-id: ${{ secrets.APP_ID }}
+          private-key: ${{ secrets.APP_PRIVATE_KEY }}
+      - uses: munich-quantum-toolkit/templates@dfe78235728b5fc715f7ac8ec483970666d3f0cf # v1.1.12
+        with:
+          token: ${{ steps.create-token.outputs.token }}
+          name: .github
+          organization: ${{ github.repository_owner }}
+          project-type: other
+          repository: ${{ github.event.repository.name }}
+          has-changelog-and-upgrade-guide: false
+          synchronize-contribution-guide: false
+          synchronize-installation-guide: false
+          synchronize-renovate-config: false
