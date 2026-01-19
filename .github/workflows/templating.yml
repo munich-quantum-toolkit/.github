@@ -29,4 +29,3 @@ jobs:
           synchronize-contribution-guide: false
           synchronize-installation-guide: false
           synchronize-renovate-config: false
-          synchronize-support-resources: false
