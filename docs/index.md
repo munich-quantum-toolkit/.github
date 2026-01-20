@@ -63,13 +63,6 @@ handbook/07_conclusions
 handbook/references
 ```
 
-```{toctree}
-:caption: Developers
-:hidden:
-
-support
-```
-
 ```{only} html
 ## Contributors and Supporters
 
@@ -106,6 +99,13 @@ To support this endeavor, please consider:
 ```
 
 ````{only} html
+```{toctree}
+:caption: Developers
+:hidden:
+
+support
+```
+
 ```{toctree}
 :hidden:
 :caption: Tool Overview and Statistics
