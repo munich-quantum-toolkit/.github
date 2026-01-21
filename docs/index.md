@@ -100,6 +100,13 @@ To support this endeavor, please consider:
 
 ````{only} html
 ```{toctree}
+:caption: Developers
+:hidden:
+
+support
+```
+
+```{toctree}
 :hidden:
 :caption: Tool Overview and Statistics
 

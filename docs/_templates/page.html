@@ -8,11 +8,15 @@
       </div>
       <div class="title">{{ next.title }}</div>
     </div>
-    <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+    <svg class="furo-related-icon">
+      <use href="#svg-arrow-right"></use>
+    </svg>
   </a>
   {%- endif %} {% if prev -%}
   <a class="prev-page" href="{{ prev.link }}">
-    <svg class="furo-related-icon"><use href="#svg-arrow-right"></use></svg>
+    <svg class="furo-related-icon">
+      <use href="#svg-arrow-right"></use>
+    </svg>
     <div class="page-info">
       <div class="context">
         <span>{{ _("Previous") }}</span>
@@ -33,18 +37,17 @@
   Arts through the Distinguished Professorship Program, as well as the Munich
   Quantum Valley, which is supported by the Bavarian state government with funds
   from the Hightech Agenda Bayern Plus.
-
   <div style="margin-top: 0.5em">
     <div class="only-light" align="center">
       <img
-        src="{{ pathto('_static/mqt-funding-footer-light.svg', 1) }}"
+        src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-funding-footer-light.svg"
         width="90%"
         alt="MQT Funding Footer"
       />
     </div>
     <div class="only-dark" align="center">
       <img
-        src="{{ pathto('_static/mqt-funding-footer-dark.svg', 1) }}"
+        src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-funding-footer-dark.svg"
         width="90%"
         alt="MQT Funding Footer"
       />
