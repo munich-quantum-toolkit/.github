@@ -100,15 +100,8 @@ To support this endeavor, please consider:
 
 ````{only} html
 ```{toctree}
-:caption: Developers
-:hidden:
-
-support
-```
-
-```{toctree}
-:hidden:
 :caption: Tool Overview and Statistics
+:hidden:
 
 overview
 stats
@@ -135,3 +128,12 @@ MQT ProblemSolver <https://mqt.readthedocs.io/projects/problemsolver/en/latest>
 MQT IonShuttler <https://mqt.readthedocs.io/projects/ionshuttler/en/latest>
 MQT QuSAT <https://mqt.readthedocs.io/projects/qusat/en/latest>
 ```
+
+````{only} html
+```{toctree}
+:caption: Developers
+:hidden:
+
+support
+```
+````
