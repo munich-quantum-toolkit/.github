@@ -43,7 +43,8 @@ repos:
         name: Disallow improper capitalization
         language: pygrep
         entry: \b(Numpy|Cmake|CCache|Github|PyTest|Mqt|Tum)\b
-        exclude: ^(\.pre-commit-config\.yaml|.*\.png)$
+        exclude: ^(\.pre-commit-config\.yaml)$
+        exclude_types: [binary]
         priority: 0
 
   ## Check for spelling
