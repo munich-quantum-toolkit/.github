@@ -9,7 +9,7 @@
 furo>=2024.8.6
 matplotlib
 mqt-bench~=2.1.0
-mqt-ddsim~=2.1.0
+mqt-ddsim~=2.2.0
 mqt-qcec~=3.3.0
 mqt-qmap~=3.5.0
 myst-nb>=1.1.2
