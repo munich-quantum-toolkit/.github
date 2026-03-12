@@ -31,4 +31,3 @@ jobs:
           has-changelog-and-upgrade-guide: false
           synchronize-contribution-guide: false
           synchronize-installation-guide: false
-          synchronize-renovate-config: false
