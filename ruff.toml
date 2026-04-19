@@ -13,6 +13,7 @@ unsafe-fixes = true
 show-fixes = true
 
 [format]
+preview = true
 docstring-code-format = true
 
 [lint]
