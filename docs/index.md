@@ -134,6 +134,8 @@ MQT QuSAT <https://mqt.readthedocs.io/projects/qusat/en/latest>
 :caption: Developers
 :hidden:
 
+ai_usage
 support
+logos
 ```
 ````
