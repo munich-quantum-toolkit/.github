@@ -19,13 +19,13 @@ nox.needs_version = ">=2024.3.2"
 nox.options.default_venv_backend = "uv|virtualenv"
 
 
-@nox.session(reuse_venv=True)
+@nox.session(reuse_venv=True, default=True)
 def lint(session: nox.Session) -> None:
     """Run the linter."""
-    if shutil.which("pre-commit") is None:
-        session.install("pre-commit")
+    if shutil.which("prek") is None:
+        session.install("prek")
 
-    session.run("pre-commit", "run", "--all-files", *session.posargs, external=True)
+    session.run("prek", "run", "--all-files", *session.posargs, external=True)
 
 
 @nox.session(reuse_venv=True)
