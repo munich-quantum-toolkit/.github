@@ -21,11 +21,11 @@ if TYPE_CHECKING:
     from pybtex.richtext import HRef
 
 project = "mqt"
-author = "Chair for Design Automation, TUM & Munich Quantum Software Company"
+author = "Chair for Design Automation, TUM & Munich Quantum Software Company GmbH"
 version = "1.2"
 release = "1.2.0"
 language = "en"
-project_copyright = "2023 - 2026 Chair for Design Automation, TUM & 2025 - 2026 Munich Quantum Software Company"
+project_copyright = "2023 - 2026 Chair for Design Automation, TUM & 2025 - 2026 Munich Quantum Software Company GmbH"
 
 master_doc = "index"
 
