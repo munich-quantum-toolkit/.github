@@ -94,6 +94,19 @@ The checkered background in each preview area indicates a transparent logo backg
     <i class="fa-solid fa-download"></i>&thinsp;PNG
   </a>
 </div>
+<div class="mqt-preview mqt-preview--light">
+  <img src="_static/logo-mqsc-all-black.svg" alt="MQSC Logo – all-black variant">
+</div>
+<div class="mqt-btn-row">
+  <a href="_static/logo-mqsc-all-black.svg" download="logo-mqsc-all-black.svg"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;SVG
+  </a>
+  <a href="_static/logo-mqsc-all-black.png" download="logo-mqsc-all-black.png"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;PNG
+  </a>
+</div>
 ```
 
 :::::
@@ -111,6 +124,19 @@ The checkered background in each preview area indicates a transparent logo backg
     <i class="fa-solid fa-download"></i>&thinsp;SVG
   </a>
   <a href="_static/logo-mqsc-dark.png" download="logo-mqsc-dark.png"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;PNG
+  </a>
+</div>
+<div class="mqt-preview mqt-preview--dark">
+  <img src="_static/logo-mqsc-all-white.svg" alt="MQSC Logo – all-white variant">
+</div>
+<div class="mqt-btn-row">
+  <a href="_static/logo-mqsc-all-white.svg" download="logo-mqsc-all-white.svg"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;SVG
+  </a>
+  <a href="_static/logo-mqsc-all-white.png" download="logo-mqsc-all-white.png"
      class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
     <i class="fa-solid fa-download"></i>&thinsp;PNG
   </a>
