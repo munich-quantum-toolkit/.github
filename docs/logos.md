@@ -241,6 +241,63 @@ The checkered background in each preview area indicates a transparent logo backg
 
 :::::::
 
+<!-- ── TUM-CDA Logo────────────────────────────────────── -->
+
+:::::::{grid-item-card}
+:class-header: sd-py-2 sd-font-weight-bold
+
+{fa}`fa-solid fa-image` TUM-CDA Logo
+^^^
+
+::::::{tab-set}
+:sync-group: mqt-logo-variant
+
+:::::{tab-item} {fa}`fa-solid fa-sun` Light
+:sync: light
+
+```{raw} html
+<div class="mqt-preview mqt-preview--light">
+  <img src="_static/logo-tum-cda-light.svg" alt="TUM-CDA Logo – light variant">
+</div>
+<div class="mqt-btn-row">
+  <a href="_static/logo-tum-cda-light.svg" download="logo-tum-cda-light.svg"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;SVG
+  </a>
+  <a href="_static/logo-tum-cda-light.png" download="logo-tum-cda-light.png"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;PNG
+  </a>
+</div>
+```
+
+:::::
+
+:::::{tab-item} {fa}`fa-solid fa-moon` Dark
+:sync: dark
+
+```{raw} html
+<div class="mqt-preview mqt-preview--dark">
+  <img src="_static/logo-tum-cda-dark.svg" alt="TUM-CDA Logo – dark variant">
+</div>
+<div class="mqt-btn-row">
+  <a href="_static/logo-tum-cda-dark.svg" download="logo-tum-cda-dark.svg"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;SVG
+  </a>
+  <a href="_static/logo-tum-cda-dark.png" download="logo-tum-cda-dark.png"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;PNG
+  </a>
+</div>
+```
+
+:::::
+
+::::::
+
+:::::::
+
 <!-- ── MQT Banner ─────────────────────────────────────── -->
 
 :::::::{grid-item-card}

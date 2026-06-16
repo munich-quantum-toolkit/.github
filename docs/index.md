@@ -108,6 +108,17 @@ stats
 ```
 ````
 
+````{only} html
+```{toctree}
+:caption: Developers
+:hidden:
+
+ai_usage
+support
+logos
+```
+````
+
 ```{toctree}
 :hidden:
 :caption: Tool Documentation
@@ -128,14 +139,3 @@ MQT ProblemSolver <https://mqt.readthedocs.io/projects/problemsolver/en/latest>
 MQT IonShuttler <https://mqt.readthedocs.io/projects/ionshuttler/en/latest>
 MQT QuSAT <https://mqt.readthedocs.io/projects/qusat/en/latest>
 ```
-
-````{only} html
-```{toctree}
-:caption: Developers
-:hidden:
-
-ai_usage
-support
-logos
-```
-````
