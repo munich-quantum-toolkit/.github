@@ -13,8 +13,6 @@ The checkered background in each preview area indicates a transparent logo backg
 ::::::::{grid} 1 1 2 2
 :gutter: 3
 
-<!-- ── MQT Logo ─────────────────────────────────────────── -->
-
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
@@ -69,8 +67,6 @@ The checkered background in each preview area indicates a transparent logo backg
 ::::::
 
 :::::::
-
-<!-- ── MQSC Logo ───────────────────────────────────────── -->
 
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
@@ -127,8 +123,6 @@ The checkered background in each preview area indicates a transparent logo backg
 
 :::::::
 
-<!-- ── Q Mark ──────────────────────────────────────────── -->
-
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
@@ -183,8 +177,6 @@ The checkered background in each preview area indicates a transparent logo backg
 ::::::
 
 :::::::
-
-<!-- ── MQSS Logo ───────────────────────────────────────── -->
 
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
@@ -241,8 +233,6 @@ The checkered background in each preview area indicates a transparent logo backg
 
 :::::::
 
-<!-- ── TUM-CDA Logo────────────────────────────────────── -->
-
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
@@ -297,8 +287,6 @@ The checkered background in each preview area indicates a transparent logo backg
 ::::::
 
 :::::::
-
-<!-- ── MQT Banner ─────────────────────────────────────── -->
 
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
