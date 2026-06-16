@@ -13,8 +13,6 @@ The checkered background in each preview area indicates a transparent logo backg
 ::::::::{grid} 1 1 2 2
 :gutter: 3
 
-<!-- ── MQT Logo ─────────────────────────────────────────── -->
-
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
@@ -70,8 +68,6 @@ The checkered background in each preview area indicates a transparent logo backg
 
 :::::::
 
-<!-- ── MQSC Logo ───────────────────────────────────────── -->
-
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
@@ -98,6 +94,19 @@ The checkered background in each preview area indicates a transparent logo backg
     <i class="fa-solid fa-download"></i>&thinsp;PNG
   </a>
 </div>
+<div class="mqt-preview mqt-preview--light">
+  <img src="_static/logo-mqsc-all-black.svg" alt="MQSC Logo – all-black variant">
+</div>
+<div class="mqt-btn-row">
+  <a href="_static/logo-mqsc-all-black.svg" download="logo-mqsc-all-black.svg"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;SVG
+  </a>
+  <a href="_static/logo-mqsc-all-black.png" download="logo-mqsc-all-black.png"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;PNG
+  </a>
+</div>
 ```
 
 :::::
@@ -119,6 +128,19 @@ The checkered background in each preview area indicates a transparent logo backg
     <i class="fa-solid fa-download"></i>&thinsp;PNG
   </a>
 </div>
+<div class="mqt-preview mqt-preview--dark">
+  <img src="_static/logo-mqsc-all-white.svg" alt="MQSC Logo – all-white variant">
+</div>
+<div class="mqt-btn-row">
+  <a href="_static/logo-mqsc-all-white.svg" download="logo-mqsc-all-white.svg"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;SVG
+  </a>
+  <a href="_static/logo-mqsc-all-white.png" download="logo-mqsc-all-white.png"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;PNG
+  </a>
+</div>
 ```
 
 :::::
@@ -126,8 +148,6 @@ The checkered background in each preview area indicates a transparent logo backg
 ::::::
 
 :::::::
-
-<!-- ── Q Mark ──────────────────────────────────────────── -->
 
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
@@ -184,8 +204,6 @@ The checkered background in each preview area indicates a transparent logo backg
 
 :::::::
 
-<!-- ── MQSS Logo ───────────────────────────────────────── -->
-
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
@@ -241,8 +259,6 @@ The checkered background in each preview area indicates a transparent logo backg
 
 :::::::
 
-<!-- ── TUM-CDA Logo────────────────────────────────────── -->
-
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
@@ -297,8 +313,6 @@ The checkered background in each preview area indicates a transparent logo backg
 ::::::
 
 :::::::
-
-<!-- ── MQT Banner ─────────────────────────────────────── -->
 
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
