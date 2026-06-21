@@ -33,11 +33,11 @@ templates_path = ["_templates"]
 
 extensions = [
     "myst_nb",
+    "sphinx_copybutton",
+    "sphinx_design",
     "sphinx.ext.intersphinx",
     "sphinxcontrib.bibtex",
     "sphinxcontrib.inkscapeconverter",
-    "sphinx_design",
-    "sphinx_copybutton",
     "sphinxext.opengraph",
 ]
 
@@ -101,7 +101,6 @@ nb_mime_priority_overrides = [
     # builder name, mime type, priority
     ("latex", "image/svg+xml", 15),
 ]
-
 
 # -- Options for references --------------------------------------------------
 
@@ -178,6 +177,7 @@ latex_docclass = {
 }
 
 # -- Options for HTML output -------------------------------------------------
+
 html_theme = "furo"
 html_title = "The Munich Quantum Toolkit (MQT)"
 html_static_path = ["_static"]
