@@ -108,12 +108,12 @@ nb_mime_priority_overrides = [
 class CDAStyle(UnsrtStyle):
     """Custom style for including PDF links."""
 
-    def __init__(self, *args: Any, **kwargs: Any) -> None:  # noqa: ANN401
+    def __init__(self, *args: Any, **kwargs: Any) -> None:  # ruff:ignore[any-type]
         """Initialize CDAStyle."""
         super().__init__(*args, **kwargs)
         self.abbreviate_names = True
 
-    def format_url(self, _: Entry) -> HRef:  # noqa: PLR6301
+    def format_url(self, _: Entry) -> HRef:  # ruff:ignore[no-self-use]
         """Format URL field as a link to the PDF.
 
         Returns:
