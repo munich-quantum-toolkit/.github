@@ -8,19 +8,53 @@ mystnb:
 
 # Classical Simulation of Quantum Circuits
 
-Performing a quantum computation (commonly described as a quantum circuit) entails evolving an initial quantum state by applying a sequence of operations (also called gates) and measuring the resulting system.
-Eventually, the goal should obviously be to do that on a real device.
-However, there are several important reasons for simulating the corresponding computations on a classical machine, particularly in the early stages of the design:
-As long as no suitable devices are available (e.g., in terms of scale, feasible computation depth, or accuracy), classical simulations of quantum circuits still allow one to explore and test quantum applications, even if only on a limited scale.
-However, also with further progress in the capabilities of the hardware platforms, classical simulation will remain an essential part of the quantum computing design process, since it additionally allows access to _all_ amplitudes of a resulting quantum state in contrast to a real device that only probabilistically returns measurement results.
-Moreover, classical simulation provides means to study quantum error correction as well as a baseline to estimate the advantage of quantum computers over classical computers.
+Performing a quantum computation (commonly described as a quantum circuit)
+entails evolving an initial quantum state by applying a sequence of operations
+(also called gates) and measuring the resulting system. Eventually, the goal
+should obviously be to do that on a real device. However, there are several
+important reasons for simulating the corresponding computations on a classical
+machine, particularly in the early stages of the design: As long as no suitable
+devices are available (e.g., in terms of scale, feasible computation depth, or
+accuracy), classical simulations of quantum circuits still allow one to explore
+and test quantum applications, even if only on a limited scale. However, also
+with further progress in the capabilities of the hardware platforms, classical
+simulation will remain an essential part of the quantum computing design
+process, since it additionally allows access to _all_ amplitudes of a resulting
+quantum state in contrast to a real device that only probabilistically returns
+measurement results. Moreover, classical simulation provides means to study
+quantum error correction as well as a baseline to estimate the advantage of
+quantum computers over classical computers.
 
-The classical simulation of quantum circuits is commonly conducted by performing consecutive matrix-vector multiplication, which many simulators realize by storing a dense representation of the complete state vector in memory and evolving it correspondingly (see, e.g., {cite:p}`hanerPetabyteSimulation45Qubit2017,doiQuantumComputingSimulator2019,jonesQuESTHighPerformance2018,guerreschiIntelQuantumSimulator2020, wuFullstateQuantumCircuit2019`) or by relying on tensor network methods (see, e.g., {cite:p}`markovSimulatingQuantumComputation2008,villalongaFlexibleHighperformanceSimulator2019,brennanTensorNetworkCircuit2021,vincentJetFastQuantum2022`).
-This approach quickly becomes intractable due to the exponential growth of the quantum state with respect to the number of qubits---quickly rendering such simulations infeasible even on supercomputer clusters.
-Simulation methodologies based on decision diagrams {cite:p}`viamontesImprovingGatelevelSimulation2003,willeToolsQuantumComputing2022,willeDecisionDiagramsQuantum2023,willeVisualizingDecisionDiagrams2021` are a promising complementary approach that frequently allows reducing the required memory by exploiting redundancies in the simulated quantum state.
+The classical simulation of quantum circuits is commonly conducted by performing
+consecutive matrix-vector multiplication, which many simulators realize by
+storing a dense representation of the complete state vector in memory and
+evolving it correspondingly (see, e.g.,
+{cite:p}`hanerPetabyteSimulation45Qubit2017,doiQuantumComputingSimulator2019,jonesQuESTHighPerformance2018,guerreschiIntelQuantumSimulator2020, wuFullstateQuantumCircuit2019`) <!-- rumdl-disable-line MD013 -->
+or by relying on tensor network methods (see, e.g.,
+{cite:p}`markovSimulatingQuantumComputation2008,villalongaFlexibleHighperformanceSimulator2019,brennanTensorNetworkCircuit2021,vincentJetFastQuantum2022`).
+This approach quickly becomes intractable due to the exponential growth of the
+quantum state with respect to the number of qubits---quickly rendering such
+simulations infeasible even on supercomputer clusters. Simulation methodologies
+based on decision diagrams
+{cite:p}`viamontesImprovingGatelevelSimulation2003,willeToolsQuantumComputing2022,willeDecisionDiagramsQuantum2023,willeVisualizingDecisionDiagrams2021`
+are a promising complementary approach that frequently allows reducing the
+required memory by exploiting redundancies in the simulated quantum state.
 
-The _MQT_ offers the classical quantum circuit simulator _DDSIM_ that can be used to perform various quantum circuit simulation tasks based on using decision diagrams as a data structure.
-This includes strong and weak simulation {cite:p}`zulehnerAdvancedSimulationQuantum2019,zulehnerMatrixVectorVsMatrixMatrix2019,hillmichJustRealThing2020`, approximation techniques {cite:p}`hillmichAccurateNeededEfficient2020,hillmichApproximatingDecisionDiagrams2022`, noise-aware simulation {cite:p}`grurlConsideringDecoherenceErrors2020,grurlStochasticQuantumCircuit2021,grurlNoiseawareQuantumCircuit2023`, hybrid Schrödinger-Feynman techniques {cite:p}`burgholzerHybridSchrodingerFeynmanSimulation2021`, support for dynamic circuits, the computation of expectation values {cite:p}`sanderHamiltonianSimulationDecision2023`, the simulation of mixed-dimensional systems {cite:p}`matoMixeddimensionalQuantumCircuit2023`, and more {cite:p}`hillmichConcurrencyDDbasedQuantum2020,grurlArraysVsDecision2020,burgholzerExploitingArbitraryPaths2022,burgholzerSimulationPathsQuantum2022,burgholzerEfficientConstructionFunctional2021,hillmichReorderingDecisionDiagrams2022,jiangFlatDDHighPerformanceQuantum2024,sanderStrippingQuantumDecision2024`.
+The _MQT_ offers the classical quantum circuit simulator _DDSIM_ that can be
+used to perform various quantum circuit simulation tasks based on using decision
+diagrams as a data structure. This includes strong and weak simulation
+{cite:p}`zulehnerAdvancedSimulationQuantum2019,zulehnerMatrixVectorVsMatrixMatrix2019,hillmichJustRealThing2020`,
+approximation techniques
+{cite:p}`hillmichAccurateNeededEfficient2020,hillmichApproximatingDecisionDiagrams2022`,
+noise-aware simulation
+{cite:p}`grurlConsideringDecoherenceErrors2020,grurlStochasticQuantumCircuit2021,grurlNoiseawareQuantumCircuit2023`,
+hybrid Schrödinger-Feynman techniques
+{cite:p}`burgholzerHybridSchrodingerFeynmanSimulation2021`, support for dynamic
+circuits, the computation of expectation values
+{cite:p}`sanderHamiltonianSimulationDecision2023`, the simulation of
+mixed-dimensional systems {cite:p}`matoMixeddimensionalQuantumCircuit2023`, and
+more
+{cite:p}`hillmichConcurrencyDDbasedQuantum2020,grurlArraysVsDecision2020,burgholzerExploitingArbitraryPaths2022,burgholzerSimulationPathsQuantum2022,burgholzerEfficientConstructionFunctional2021,hillmichReorderingDecisionDiagrams2022,jiangFlatDDHighPerformanceQuantum2024,sanderStrippingQuantumDecision2024`.
 
 ```{raw} latex
 \begin{example}
@@ -31,7 +65,8 @@ This includes strong and weak simulation {cite:p}`zulehnerAdvancedSimulationQuan
 %config InlineBackend.figure_formats = ['svg']
 ```
 
-Consider the following listing that describes the quantum circuit for generating a four-qubit GHZ state (also shown in {numref}`fig-ghz-circuit`):
+Consider the following listing that describes the quantum circuit for generating
+a four-qubit GHZ state (also shown in {numref}`fig-ghz-circuit`):
 
 ```{code-cell} ipython3
 :tags: [remove-output]
@@ -59,7 +94,8 @@ mystnb:
 circ.draw(output="mpl", style="iqp")
 ```
 
-This circuit can be classically simulated using DDSIM as a backend for IBM Qiskit:
+This circuit can be classically simulated using DDSIM as a backend for IBM
+Qiskit:
 
 ```{code-cell} ipython3
 from mqt.ddsim import DDSIMProvider
@@ -94,7 +130,7 @@ result.get_counts()
 :::{grid-item-card} MQT DDSIM
 :text-align: center
 ```bash
-(venv) $ pip install mqt.ddsim
+uv pip install mqt.ddsim
 ```
 +++
 [{fab}`github` GitHub](https://github.com/cda-tum/mqt-ddsim) | [{fab}`python` PyPI](https://pypi.org/project/mqt.ddsim/) | {fa}`fa-thin fa-book` {doc}` Documentation <ddsim:index>`

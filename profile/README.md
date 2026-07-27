@@ -9,15 +9,29 @@
 
 # The Munich Quantum Toolkit (MQT)
 
-Quantum computers are becoming a reality and numerous quantum computing applications with a near-term perspective (e.g., for finance, chemistry, machine learning, and optimization) and with a long-term perspective (e.g., for cryptography or unstructured search) are currently being investigated.
-However, designing and realizing potential applications for these devices in a scalable fashion requires automated, efficient, and user-friendly software tools that cater to the needs of end users, engineers, and physicists at every level of the entire quantum software stack.
-Many of the problems to be tackled in that regard are similar to design problems from the classical realm for which sophisticated design automation tools have been developed in the previous decades.
+Quantum computers are becoming a reality and numerous quantum computing
+applications with a near-term perspective (e.g., for finance, chemistry, machine
+learning, and optimization) and with a long-term perspective (e.g., for
+cryptography or unstructured search) are currently being investigated. However,
+designing and realizing potential applications for these devices in a scalable
+fashion requires automated, efficient, and user-friendly software tools that
+cater to the needs of end users, engineers, and physicists at every level of the
+entire quantum software stack. Many of the problems to be tackled in that regard
+are similar to design problems from the classical realm for which sophisticated
+design automation tools have been developed in the previous decades.
 
-The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is a collection of software tools for quantum computing that explicitly utilizes this design automation expertise.
-Our overarching objective is to provide solutions for design tasks across the entire quantum software stack.
-This entails high-level support for end users in realizing their _applications_, efficient methods for the _classical simulation_, _compilation_, and _verification_ of quantum circuits, tools for _quantum error correction_, support for _physical design_, and more.
-These methods are supported by corresponding _data structures_ (such as decision diagrams or the ZX-calculus) and _core methods_ (such as SAT encodings/solvers).
-All of the developed tools are available as open-source implementations and are hosted on [github.com/munich-quantum-toolkit](https://github.com/munich-quantum-toolkit).
+The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is a collection
+of software tools for quantum computing that explicitly utilizes this design
+automation expertise. Our overarching objective is to provide solutions for
+design tasks across the entire quantum software stack. This entails high-level
+support for end users in realizing their _applications_, efficient methods for
+the _classical simulation_, _compilation_, and _verification_ of quantum
+circuits, tools for _quantum error correction_, support for _physical design_,
+and more. These methods are supported by corresponding _data structures_ (such
+as decision diagrams or the ZX-calculus) and _core methods_ (such as SAT
+encodings/solvers). All of the developed tools are available as open-source
+implementations and are hosted on
+[github.com/munich-quantum-toolkit](https://github.com/munich-quantum-toolkit).
 
 <p align="center">
   <a href="https://mqt.readthedocs.io">
@@ -27,8 +41,13 @@ All of the developed tools are available as open-source implementations and are 
 
 ## Contributors and Supporters
 
-The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is developed by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the [Technical University of Munich](https://www.tum.de/) and supported by [MQSC](https://mq.sc).
-Among others, it is part of the [Munich Quantum Software Stack (MQSS)](https://www.munich-quantum-valley.de/research/research-areas/mqss) ecosystem, which is being developed as part of the [Munich Quantum Valley (MQV)](https://www.munich-quantum-valley.de) initiative.
+The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is developed by
+the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the
+[Technical University of Munich](https://www.tum.de/) and supported by
+[MQSC](https://mq.sc). Among others, it is part of the
+[Munich Quantum Software Stack (MQSS)](https://www.munich-quantum-valley.de/research/research-areas/mqss)
+ecosystem, which is being developed as part of the
+[Munich Quantum Valley (MQV)](https://www.munich-quantum-valley.de) initiative.
 
 <p align="center">
   <picture>
@@ -39,17 +58,21 @@ Among others, it is part of the [Munich Quantum Software Stack (MQSS)](https://w
 
 Thank you to all the contributors who have helped make the MQT a reality!
 
-The MQT will remain free, open-source, and permissively licensed—now and in the future.
-We are firmly committed to keeping it open and actively maintained for the quantum computing community.
+The MQT will remain free, open-source, and permissively licensed—now and in the
+future. We are firmly committed to keeping it open and actively maintained for
+the quantum computing community.
 
 To support this endeavor, please consider:
 
-- Starring and sharing our repositories: https://github.com/munich-quantum-toolkit
-- Contributing code, documentation, tests, or examples via issues and pull requests
+- Starring and sharing our repositories:
+  <https://github.com/munich-quantum-toolkit>
+- Contributing code, documentation, tests, or examples via issues and pull
+  requests
 - Citing the MQT in your publications (see [Cite This](#cite-this))
-- Citing our research in your publications (see [References](https://mqt.readthedocs.io/en/latest/handbook/references.html))
+- Citing our research in your publications (see
+  [References](https://mqt.readthedocs.io/en/latest/handbook/references.html))
 - Using the MQT in research and teaching, and sharing feedback and use cases
-- Sponsoring us on GitHub: https://github.com/sponsors/munich-quantum-toolkit
+- Sponsoring us on GitHub: <https://github.com/sponsors/munich-quantum-toolkit>
 
 <p align="center">
   <a href="https://github.com/sponsors/munich-quantum-toolkit">
@@ -59,7 +82,8 @@ To support this endeavor, please consider:
 
 ## Cite This
 
-If you want to cite the Munich Quantum Toolkit, please use the following BibTeX entry:
+If you want to cite the Munich Quantum Toolkit, please use the following BibTeX
+entry:
 
 ```bibtex
 @inproceedings{mqt,
@@ -265,7 +289,12 @@ If you want to cite the Munich Quantum Toolkit, please use the following BibTeX 
 
 ## Acknowledgements
 
-The Munich Quantum Toolkit has been supported by the European Research Council (ERC) under the European Union's Horizon 2020 research and innovation program (grant agreement No. 101001318), the Bavarian State Ministry for Science and Arts through the Distinguished Professorship Program, as well as the Munich Quantum Valley, which is supported by the Bavarian state government with funds from the Hightech Agenda Bayern Plus.
+The Munich Quantum Toolkit has been supported by the European Research Council
+(ERC) under the European Union's Horizon 2020 research and innovation program
+(grant agreement No. 101001318), the Bavarian State Ministry for Science and
+Arts through the Distinguished Professorship Program, as well as the Munich
+Quantum Valley, which is supported by the Bavarian state government with funds
+from the Hightech Agenda Bayern Plus.
 
 <p align="center">
   <picture>

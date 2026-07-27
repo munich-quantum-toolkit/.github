@@ -1,18 +1,60 @@
 # Introduction
 
-Quantum computing has the potential to revolutionize many fields in the 21st century, such as cryptography {cite:p}`shorPolynomialtimeAlgorithmsPrime1997`, finance {cite:p}`eggerQuantumComputingFinance2020`, chemistry {cite:p}`mcardleQuantumComputationalChemistry2020`, machine learning {cite:p}`huangProvablyEfficientMachine2022`, and optimization {cite:p}`harwoodFormulatingSolvingRouting2021`. Over the past decade, numerous quantum computers from multiple providers based on different qubit technologies have been made publicly available.
-However, the best hardware is only as good as the software available to realize corresponding applications on it---a lesson learned from the past decades of research on designing and developing classical circuits and systems.
-Thanks to the software tools and methods for _Electronic Design Automation (EDA)_, we can create classical systems with a staggering amount of transistors and complex functionalities that we often take for granted.
-These methods allow designers to efficiently and automatically handle the intricacies of such systems and optimize their performance.
-Compared to that, most existing software solutions for quantum computing leave the decades of research on design automation methods underutilized.
+Quantum computing has the potential to revolutionize many fields in the 21st
+century, such as cryptography {cite:p}`shorPolynomialtimeAlgorithmsPrime1997`,
+finance {cite:p}`eggerQuantumComputingFinance2020`, chemistry
+{cite:p}`mcardleQuantumComputationalChemistry2020`, machine learning
+{cite:p}`huangProvablyEfficientMachine2022`, and optimization
+{cite:p}`harwoodFormulatingSolvingRouting2021`. Over the past decade, numerous
+quantum computers from multiple providers based on different qubit technologies
+have been made publicly available. However, the best hardware is only as good as
+the software available to realize corresponding applications on it---a lesson
+learned from the past decades of research on designing and developing classical
+circuits and systems. Thanks to the software tools and methods for
+_Electronic Design Automation (EDA)_, we can create classical systems with a
+staggering amount of transistors and complex functionalities that we often take
+for granted. These methods allow designers to efficiently and automatically
+handle the intricacies of such systems and optimize their performance. Compared
+to that, most existing software solutions for quantum computing leave the
+decades of research on design automation methods underutilized.
 
-The _Munich Quantum Toolkit (MQT)_, which is developed by the [Chair for Design Automation](https://www.cda.cit.tum.de/) at the [Technical University of Munich](https://www.tum.de/) and supported by [MQSC](https://mq.sc), aims to leverage this latent potential by providing a collection of state-of-the-art design automation methods and software tools for quantum computing {cite:p}`burgholzerDesignAutomationTools2023`.
-Our overarching objective is to provide solutions for design tasks across the entire quantum software stack.
-This entails high-level support for end users in realizing their _applications_ {cite:p}`quetschlichAutomatedFrameworkRealizing2023,quetschlichHybridClassicalQuantum2023,quetschlichPredictingGoodQuantum2023,poggelRecommendingSolutionPaths2023,quetschlichUtilizingResourceEstimation2024,quetschlichApplicationawareQuantumCircuit2024,quetschlichMQTPredictorAutomatic2024,volpeAutomaticFrameworkSolving2024,quetschlichEquivalenceCheckingClassical2024,rovaraFrameworkFormulatePathfinding2024`, efficient methods for the _classical simulation_ {cite:p}`zulehnerAdvancedSimulationQuantum2019,zulehnerMatrixVectorVsMatrixMatrix2019,hillmichJustRealThing2020,hillmichAccurateNeededEfficient2020,hillmichApproximatingDecisionDiagrams2022,hillmichReorderingDecisionDiagrams2022,grurlArraysVsDecision2020,grurlConsideringDecoherenceErrors2020,grurlStochasticQuantumCircuit2021,grurlNoiseawareQuantumCircuit2023,burgholzerHybridSchrodingerFeynmanSimulation2021,sanderHamiltonianSimulationDecision2023,matoMixeddimensionalQuantumCircuit2023,hillmichConcurrencyDDbasedQuantum2020,burgholzerExploitingArbitraryPaths2022,burgholzerSimulationPathsQuantum2022,burgholzerEfficientConstructionFunctional2021,jiangFlatDDHighPerformanceQuantum2024,sanderStrippingQuantumDecision2024`, _compilation_ {cite:p}`zulehnerEfficientMethodologyMapping2019,hillmichExploitingQuantumTeleportation2021,zulehnerCompilingSUQuantum2019,willeMappingQuantumCircuits2019,willeEfficientCorrectCompilation2020,burgholzerLimitingSearchSpace2022,adarshSyReCSynthesizerMQT2022,pehamDepthoptimalSynthesisClifford2023,schneiderSATEncodingOptimal2023,pehamOptimalSubarchitecturesQuantum2023,quetschlichCompilerOptimizationQuantum2023,quetschlichReducingCompilationTime2023,schoenbergerUsingBooleanSatisfiability2024,schoenbergerCyclebasedShuttlingTrappedIon2024,schoenbergerShuttlingScalableTrappedIon2024,schmidHybridCircuitMapping2024,schmidComputationalCapabilitiesCompiler2024,matoAdaptiveCompilationMultilevel2022,matoCompilationEntanglingGates2023,matoCompressionQubitCircuits2023,matoMixeddimensionalQuditState2024,grurlAutomaticImplementationEvaluation2023,willeMQTQMAPEfficient2023,stadeAbstractModelEfficient2024,stadeOptimalStatePreparation2025,stadeSupportingQIRThoughts2024,matoMQTQuditsSoftware2024`, and _verification_ {cite:p}`burgholzerAdvancedEquivalenceChecking2021,burgholzerImprovedDDbasedEquivalence2020,burgholzerPowerSimulationEquivalence2020,burgholzerRandomStimuliGeneration2021, burgholzerVerifyingResultsIBM2020,burgholzerHandlingNonunitariesQuantum2022,pehamEquivalenceCheckingParameterized2023,pehamEquivalenceCheckingQuantum2022,pehamEquivalenceCheckingParadigms2022,willeVerificationQuantumCircuits2022,burgholzerExploitingReversibleComputing2023,burgholzerCharacteristicsReversibleCircuits2022,staudacherMulticontrolledPhaseGate2024,sanderEquivalenceCheckingQuantum2024` of quantum circuits, tools for _quantum error correction_ {cite:p}`berentDecodingQuantumColor2024,berentSoftwareToolsDecoding2023,strikisQuantumLowdensityParitycheck2023,berentAnalogInformationDecoding2024,pehamAutomatedSynthesisFaultTolerant2024,schmidDeterministicFaultTolerantState2025`, support for _physical design_ {cite:p}`kunasaikaranFrameworkDesignRealization2024`, and more.
-In all these tools, we try to utilize _data structures_ (such as decision diagrams {cite:p}`willeToolsQuantumComputing2022,willeDecisionDiagramsQuantum2023,willeVisualizingDecisionDiagrams2021` or the ZX-calculus {cite:p}`vandeweteringZXcalculusWorkingQuantum2020,duncanGraphtheoreticSimplificationQuantum2020`) and _core methods_ (such as reasoning engines {cite:p}`berentSATEncodingQuantum2022`) to facilitate the efficient handling of quantum computations {cite:p}`willeBasisDesignTools2022`.
-The proposed solutions demonstrate how utilizing design automation expertise can lead to improved efficiency, scalability, and reliability.
-In particular, they illustrate the immense benefits of leveraging expertise in classical circuit and system design rather than starting from scratch.
-All tools developed as part of the MQT are made available as open-source packages on [github.com/munich-quantum-toolkit](https://github.com/munich-quantum-toolkit).
+The _Munich Quantum Toolkit (MQT)_, which is developed by the
+[Chair for Design Automation](https://www.cda.cit.tum.de/) at the
+[Technical University of Munich](https://www.tum.de/) and supported by
+[MQSC](https://mq.sc), aims to leverage this latent potential by providing a
+collection of state-of-the-art design automation methods and software tools for
+quantum computing {cite:p}`burgholzerDesignAutomationTools2023`. Our overarching
+objective is to provide solutions for design tasks across the entire quantum
+software stack. This entails high-level support for end users in realizing their
+_applications_
+{cite:p}`quetschlichAutomatedFrameworkRealizing2023,quetschlichHybridClassicalQuantum2023,quetschlichPredictingGoodQuantum2023,poggelRecommendingSolutionPaths2023,quetschlichUtilizingResourceEstimation2024,quetschlichApplicationawareQuantumCircuit2024,quetschlichMQTPredictorAutomatic2024,volpeAutomaticFrameworkSolving2024,quetschlichEquivalenceCheckingClassical2024,rovaraFrameworkFormulatePathfinding2024`,
+efficient methods for the _classical simulation_
+{cite:p}`zulehnerAdvancedSimulationQuantum2019,zulehnerMatrixVectorVsMatrixMatrix2019,hillmichJustRealThing2020,hillmichAccurateNeededEfficient2020,hillmichApproximatingDecisionDiagrams2022,hillmichReorderingDecisionDiagrams2022,grurlArraysVsDecision2020,grurlConsideringDecoherenceErrors2020,grurlStochasticQuantumCircuit2021,grurlNoiseawareQuantumCircuit2023,burgholzerHybridSchrodingerFeynmanSimulation2021,sanderHamiltonianSimulationDecision2023,matoMixeddimensionalQuantumCircuit2023,hillmichConcurrencyDDbasedQuantum2020,burgholzerExploitingArbitraryPaths2022,burgholzerSimulationPathsQuantum2022,burgholzerEfficientConstructionFunctional2021,jiangFlatDDHighPerformanceQuantum2024,sanderStrippingQuantumDecision2024`,
+_compilation_
+{cite:p}`zulehnerEfficientMethodologyMapping2019,hillmichExploitingQuantumTeleportation2021,zulehnerCompilingSUQuantum2019,willeMappingQuantumCircuits2019,willeEfficientCorrectCompilation2020,burgholzerLimitingSearchSpace2022,adarshSyReCSynthesizerMQT2022,pehamDepthoptimalSynthesisClifford2023,schneiderSATEncodingOptimal2023,pehamOptimalSubarchitecturesQuantum2023,quetschlichCompilerOptimizationQuantum2023,quetschlichReducingCompilationTime2023,schoenbergerUsingBooleanSatisfiability2024,schoenbergerCyclebasedShuttlingTrappedIon2024,schoenbergerShuttlingScalableTrappedIon2024,schmidHybridCircuitMapping2024,schmidComputationalCapabilitiesCompiler2024,matoAdaptiveCompilationMultilevel2022,matoCompilationEntanglingGates2023,matoCompressionQubitCircuits2023,matoMixeddimensionalQuditState2024,grurlAutomaticImplementationEvaluation2023,willeMQTQMAPEfficient2023,stadeAbstractModelEfficient2024,stadeOptimalStatePreparation2025,stadeSupportingQIRThoughts2024,matoMQTQuditsSoftware2024`,
+and _verification_
+{cite:p}`burgholzerAdvancedEquivalenceChecking2021,burgholzerImprovedDDbasedEquivalence2020,burgholzerPowerSimulationEquivalence2020,burgholzerRandomStimuliGeneration2021, burgholzerVerifyingResultsIBM2020,burgholzerHandlingNonunitariesQuantum2022,pehamEquivalenceCheckingParameterized2023,pehamEquivalenceCheckingQuantum2022,pehamEquivalenceCheckingParadigms2022,willeVerificationQuantumCircuits2022,burgholzerExploitingReversibleComputing2023,burgholzerCharacteristicsReversibleCircuits2022,staudacherMulticontrolledPhaseGate2024,sanderEquivalenceCheckingQuantum2024` <!-- rumdl-disable-line MD013 -->
+of quantum circuits, tools for _quantum error correction_
+{cite:p}`berentDecodingQuantumColor2024,berentSoftwareToolsDecoding2023,strikisQuantumLowdensityParitycheck2023,berentAnalogInformationDecoding2024,pehamAutomatedSynthesisFaultTolerant2024,schmidDeterministicFaultTolerantState2025`,
+support for _physical design_
+{cite:p}`kunasaikaranFrameworkDesignRealization2024`, and more. In all these
+tools, we try to utilize _data structures_ (such as decision diagrams
+{cite:p}`willeToolsQuantumComputing2022,willeDecisionDiagramsQuantum2023,willeVisualizingDecisionDiagrams2021`
+or the ZX-calculus
+{cite:p}`vandeweteringZXcalculusWorkingQuantum2020,duncanGraphtheoreticSimplificationQuantum2020`)
+and _core methods_ (such as reasoning engines
+{cite:p}`berentSATEncodingQuantum2022`) to facilitate the efficient handling of
+quantum computations {cite:p}`willeBasisDesignTools2022`. The proposed solutions
+demonstrate how utilizing design automation expertise can lead to improved
+efficiency, scalability, and reliability. In particular, they illustrate the
+immense benefits of leveraging expertise in classical circuit and system design
+rather than starting from scratch. All tools developed as part of the MQT are
+made available as open-source packages on
+[github.com/munich-quantum-toolkit](https://github.com/munich-quantum-toolkit).
 
-In the following, we briefly summarize some of the core methods and tools (covering classical simulation, compilation, and verification of quantum circuits as well as benchmarking).
-We particularly focus on how to use the tools, but additionally provide references and links that offer detailed descriptions of the underlying methods as well as summaries of corresponding case studies and evaluations demonstrating the benefits.
+In the following, we briefly summarize some of the core methods and tools
+(covering classical simulation, compilation, and verification of quantum
+circuits as well as benchmarking). We particularly focus on how to use the
+tools, but additionally provide references and links that offer detailed
+descriptions of the underlying methods as well as summaries of corresponding
+case studies and evaluations demonstrating the benefits.

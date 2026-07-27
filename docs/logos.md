@@ -1,11 +1,15 @@
 # Logos & Branding
 
-The MQT provides a set of official logos for use in presentations, publications, websites, and other materials.
-All logos are available in **light** and **dark** variants and in both **SVG** (vector, infinitely scalable) and **PNG** (high-resolution raster) formats.
+The MQT provides a set of official logos for use in presentations, publications,
+websites, and other materials. All logos are available in **light** and **dark**
+variants and in both **SVG** (vector, infinitely scalable) and **PNG**
+(high-resolution raster) formats.
 
 :::{tip}
-The {fa}`fa-solid fa-sun` **Light** / {fa}`fa-solid fa-moon` **Dark** tabs are **synchronised** across all cards — switching one switches them all.
-The checkered background in each preview area indicates a transparent logo background.
+The {fa}`fa-solid fa-sun` **Light** / {fa}`fa-solid fa-moon` **Dark** tabs are
+**synchronised** across all cards — switching one switches them all. The
+checkered background in each preview area indicates a transparent logo
+background.
 :::
 
 ---
@@ -16,8 +20,7 @@ The checkered background in each preview area indicates a transparent logo backg
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` MQT Logo
-^^^
+{fa}`fa-solid fa-image` MQT Logo ^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -71,8 +74,7 @@ The checkered background in each preview area indicates a transparent logo backg
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` MQSC Logo
-^^^
+{fa}`fa-solid fa-image` MQSC Logo ^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -152,8 +154,7 @@ The checkered background in each preview area indicates a transparent logo backg
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` Q Mark
-^^^
+{fa}`fa-solid fa-image` Q Mark ^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -207,8 +208,7 @@ The checkered background in each preview area indicates a transparent logo backg
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` MQSS Logo
-^^^
+{fa}`fa-solid fa-image` MQSS Logo ^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -262,8 +262,7 @@ The checkered background in each preview area indicates a transparent logo backg
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` TUM-CDA Logo
-^^^
+{fa}`fa-solid fa-image` TUM-CDA Logo ^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -318,8 +317,7 @@ The checkered background in each preview area indicates a transparent logo backg
 :class-header: sd-py-2 sd-font-weight-bold
 :columns: 12
 
-{fa}`fa-solid fa-panorama` MQT Banner
-^^^
+{fa}`fa-solid fa-panorama` MQT Banner ^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
