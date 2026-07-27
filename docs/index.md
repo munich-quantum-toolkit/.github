@@ -15,15 +15,29 @@
 \begin{abstract}
 ```
 
-Quantum computers are becoming a reality and numerous quantum computing applications with a near-term perspective (e.g., for finance, chemistry, machine learning, and optimization) and with a long-term perspective (e.g., for cryptography or unstructured search) are currently being investigated.
-However, designing and realizing potential applications for these devices in a scalable fashion requires automated, efficient, and user-friendly software tools that cater to the needs of end users, engineers, and physicists at every level of the entire quantum software stack.
-Many of the problems to be tackled in that regard are similar to design problems from the classical realm for which sophisticated design automation tools have been developed in the previous decades.
+Quantum computers are becoming a reality and numerous quantum computing
+applications with a near-term perspective (e.g., for finance, chemistry, machine
+learning, and optimization) and with a long-term perspective (e.g., for
+cryptography or unstructured search) are currently being investigated. However,
+designing and realizing potential applications for these devices in a scalable
+fashion requires automated, efficient, and user-friendly software tools that
+cater to the needs of end users, engineers, and physicists at every level of the
+entire quantum software stack. Many of the problems to be tackled in that regard
+are similar to design problems from the classical realm for which sophisticated
+design automation tools have been developed in the previous decades.
 
-The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is a collection of software tools for quantum computing that explicitly utilizes this design automation expertise.
-Our overarching objective is to provide solutions for design tasks across the entire quantum software stack.
-This entails high-level support for end users in realizing their _applications_, efficient methods for the _classical simulation_, _compilation_, and _verification_ of quantum circuits, tools for _quantum error correction_, support for _physical design_, and more.
-These methods are supported by corresponding _data structures_ (such as decision diagrams or the ZX-calculus) and _core methods_ (such as SAT encodings/solvers).
-All of the developed tools are available as open-source implementations and are hosted on [github.com/munich-quantum-toolkit](https://github.com/munich-quantum-toolkit).
+The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is a collection
+of software tools for quantum computing that explicitly utilizes this design
+automation expertise. Our overarching objective is to provide solutions for
+design tasks across the entire quantum software stack. This entails high-level
+support for end users in realizing their _applications_, efficient methods for
+the _classical simulation_, _compilation_, and _verification_ of quantum
+circuits, tools for _quantum error correction_, support for _physical design_,
+and more. These methods are supported by corresponding _data structures_ (such
+as decision diagrams or the ZX-calculus) and _core methods_ (such as SAT
+encodings/solvers). All of the developed tools are available as open-source
+implementations and are hosted on
+[github.com/munich-quantum-toolkit](https://github.com/munich-quantum-toolkit).
 
 ````{only} latex
 ```{note}
@@ -87,11 +101,11 @@ We are firmly committed to keeping it open and actively maintained for the quant
 
 To support this endeavor, please consider:
 
-- Starring and sharing our repositories: [https://github.com/munich-quantum-toolkit](https://github.com/munich-quantum-toolkit)
+- Starring and sharing our repositories: <https://github.com/munich-quantum-toolkit>
 - Contributing code, documentation, tests, or examples via issues and pull requests
 - Citing the MQT in your publications (see {doc}`References <handbook/references>`)
 - Using the MQT in research and teaching, and sharing feedback and use cases
-- Sponsoring us on GitHub: [https://github.com/sponsors/munich-quantum-toolkit](https://github.com/sponsors/munich-quantum-toolkit)
+- Sponsoring us on GitHub: <https://github.com/sponsors/munich-quantum-toolkit>
 
 <p align="center">
 <iframe src="https://github.com/sponsors/munich-quantum-toolkit/button" title="Sponsor munich-quantum-toolkit" height="32" width="114" style="border: 0; border-radius: 6px;"></iframe>

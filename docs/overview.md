@@ -1,6 +1,7 @@
 # Overview of Tools
 
-The following gives an overview of all repositories, ordered along the quantum software stack from high-level Applications to Physical Design.
+The following gives an overview of all repositories, ordered along the quantum
+software stack from high-level Applications to Physical Design.
 
 - [Application](#application)
 - [Simulation](#simulation)
@@ -20,11 +21,11 @@ The following gives an overview of all repositories, ordered along the quantum s
 A Quantum Circuit Benchmark Suite
 
 ```bash
-(.venv) $ pip install mqt.bench
+uv pip install mqt.bench
 ```
 
 +++
-[{fa}`fa-thin fa-desktop` Application](https://www.cda.cit.tum.de/mqtbench/) | [{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/bench) | [{fab}`python` PyPI](https://pypi.org/project/mqt.bench/) | {fa}`fa-thin fa-book` {doc}` Documentation <bench:index>`
+[{fa}`fa-thin fa-desktop` Application](https://www.cda.cit.tum.de/mqtbench/) | [{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/bench) | [{fab}`python` PyPI](https://pypi.org/project/mqt.bench/) | {fa}`fa-thin fa-book` {doc}` Documentation <bench:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT ProblemSolver
@@ -32,11 +33,11 @@ A Quantum Circuit Benchmark Suite
 A Tool for Solving Problems Using Quantum Computing
 
 ```bash
-(.venv) $ pip install mqt.problemsolver
+uv pip install mqt.problemsolver
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/problemsolver) | [{fab}`python` PyPI](https://pypi.org/project/mqt.problemsolver/) | {fa}`fa-thin fa-book` {doc}` Documentation <problemsolver:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/problemsolver) | [{fab}`python` PyPI](https://pypi.org/project/mqt.problemsolver/) | {fa}`fa-thin fa-book` {doc}` Documentation <problemsolver:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 ::::
@@ -50,23 +51,24 @@ A Tool for Solving Problems Using Quantum Computing
 A Tool for Classical Quantum Circuit Simulation based on Decision Diagrams
 
 ```bash
-(.venv) $ pip install mqt.ddsim
+uv pip install mqt.ddsim
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/ddsim) | [{fab}`python` PyPI](https://pypi.org/project/mqt.ddsim/) | {fa}`fa-thin fa-book` {doc}` Documentation <ddsim:index>` | [More ...](https://www.cda.cit.tum.de/research/quantum_simulation/)
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/ddsim) | [{fab}`python` PyPI](https://pypi.org/project/mqt.ddsim/) | {fa}`fa-thin fa-book` {doc}` Documentation <ddsim:index>` | [More ...](https://www.cda.cit.tum.de/research/quantum_simulation/) <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT YAQS
 :text-align: center
-A Tool for Simulating Open Quantum Systems, Noisy Quantum Circuits, and Realistic Quantum Hardware
+A Tool for Simulating Open Quantum Systems, Noisy Quantum Circuits, and
+Realistic Quantum Hardware
 
 ```bash
-(.venv) $ pip install mqt.yaqs
+uv pip install mqt.yaqs
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/yaqs) | [{fab}`python` PyPI](https://pypi.org/project/mqt.yaqs/) | {fa}`fa-thin fa-book` {doc}` Documentation <yaqs:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/yaqs) | [{fab}`python` PyPI](https://pypi.org/project/mqt.yaqs/) | {fa}`fa-thin fa-book` {doc}` Documentation <yaqs:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 ::::
@@ -80,11 +82,11 @@ A Tool for Simulating Open Quantum Systems, Noisy Quantum Circuits, and Realisti
 A Tool for Determining Good Quantum Circuit Compilation Options
 
 ```bash
-(.venv) $ pip install mqt.predictor
+uv pip install mqt.predictor
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/predictor) | [{fab}`python` PyPI](https://pypi.org/project/mqt.predictor/) | {fa}`fa-thin fa-book` {doc}` Documentation <predictor:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/predictor) | [{fab}`python` PyPI](https://pypi.org/project/mqt.predictor/) | {fa}`fa-thin fa-book` {doc}` Documentation <predictor:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT SyReC Synthesizer
@@ -92,11 +94,11 @@ A Tool for Determining Good Quantum Circuit Compilation Options
 A Tool for the Synthesis of Reversible Circuits/Quantum Computing Oracles
 
 ```bash
-(.venv) $ pip install mqt.syrec
+uv pip install mqt.syrec
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/syrec) | [{fab}`python` PyPI](https://pypi.org/project/mqt.syrec/) | {fa}`fa-thin fa-book` {doc}` Documentation <syrec:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/syrec) | [{fab}`python` PyPI](https://pypi.org/project/mqt.syrec/) | {fa}`fa-thin fa-book` {doc}` Documentation <syrec:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT QMAP
@@ -104,23 +106,24 @@ A Tool for the Synthesis of Reversible Circuits/Quantum Computing Oracles
 A Tool for Quantum Circuit Mapping
 
 ```bash
-(.venv) $ pip install mqt.qmap
+uv pip install mqt.qmap
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qmap) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qmap/) | {fa}`fa-thin fa-book` {doc}` Documentation <qmap:index>` | [More ...](https://www.cda.cit.tum.de/research/ibm_qx_mapping/)
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qmap) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qmap/) | {fa}`fa-thin fa-book` {doc}` Documentation <qmap:index>` | [More ...](https://www.cda.cit.tum.de/research/ibm_qx_mapping/) <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT NAViz
 :text-align: center
-An Application to Visualize Compilation Output for Neutral Atom Quantum Computers
+An Application to Visualize Compilation Output for Neutral Atom Quantum
+Computers
 
 ```bash
-(.venv) $ pip install mqt.naviz
+uv pip install mqt.naviz
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/naviz) | [{fab}`python` PyPI](https://pypi.org/project/mqt.naviz/) | {fa}`fa-thin fa-book` {doc}` Documentation <naviz:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/naviz) | [{fab}`python` PyPI](https://pypi.org/project/mqt.naviz/) | {fa}`fa-thin fa-book` {doc}` Documentation <naviz:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT IonShuttler
@@ -128,11 +131,11 @@ An Application to Visualize Compilation Output for Neutral Atom Quantum Computer
 A Tool for Generating Shuttling Schedules for QCCD Architectures
 
 ```bash
-(.venv) $ pip install mqt.ionshuttler
+uv pip install mqt.ionshuttler
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/ionshuttler) | [{fab}`python` PyPI](https://pypi.org/project/mqt.ionshuttler/) | {fa}`fa-thin fa-book` {doc}` Documentation <ionshuttler:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/ionshuttler) | [{fab}`python` PyPI](https://pypi.org/project/mqt.ionshuttler/) | {fa}`fa-thin fa-book` {doc}` Documentation <ionshuttler:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT Qudits
@@ -140,11 +143,11 @@ A Tool for Generating Shuttling Schedules for QCCD Architectures
 A Framework For Mixed-Dimensional Qudit Quantum Computing
 
 ```bash
-(.venv) $ pip install mqt.qudits
+uv pip install mqt.qudits
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qudits) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qudits/) | {fa}`fa-thin fa-book` {doc}` Documentation <qudits:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qudits) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qudits/) | {fa}`fa-thin fa-book` {doc}` Documentation <qudits:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 ::::
@@ -158,11 +161,11 @@ A Framework For Mixed-Dimensional Qudit Quantum Computing
 A Quantum Circuit Debugging Tool
 
 ```bash
-(.venv) $ pip install mqt.debugger
+uv pip install mqt.debugger
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/debugger) | [{fab}`python` PyPI](https://pypi.org/project/mqt.debugger/) | {fa}`fa-thin fa-book` {doc}` Documentation <debugger:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/debugger) | [{fab}`python` PyPI](https://pypi.org/project/mqt.debugger/) | {fa}`fa-thin fa-book` {doc}` Documentation <debugger:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT QCEC
@@ -170,11 +173,11 @@ A Quantum Circuit Debugging Tool
 A Tool for Quantum Circuit Equivalence Checking
 
 ```bash
-(.venv) $ pip install mqt.qcec
+uv pip install mqt.qcec
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qcec) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qcec/) | {fa}`fa-thin fa-book` {doc}` Documentation <qcec:index>` | [More ...](https://www.cda.cit.tum.de/research/quantum_verification/)
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qcec) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qcec/) | {fa}`fa-thin fa-book` {doc}` Documentation <qcec:index>` | [More ...](https://www.cda.cit.tum.de/research/quantum_verification/) <!-- rumdl-disable-line MD013 -->
 :::
 
 ::::
@@ -188,11 +191,11 @@ A Tool for Quantum Circuit Equivalence Checking
 A Tool for Quantum Error Correcting Codes
 
 ```bash
-(.venv) $ pip install mqt.qecc
+uv pip install mqt.qecc
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qecc) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qecc/) | {fa}`fa-thin fa-book` {doc}` Documentation <qecc:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qecc) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qecc/) | {fa}`fa-thin fa-book` {doc}` Documentation <qecc:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 ::::
@@ -203,8 +206,7 @@ A Tool for Quantum Error Correcting Codes
 
 :::{grid-item-card} MQT DDVis
 :text-align: center
-A Web-Application Visualizing Decision Diagrams for Quantum Computing
-+++
+A Web-Application Visualizing Decision Diagrams for Quantum Computing +++
 [{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/ddvis) | [{fa}`fa-thin fa-desktop` Application](https://www.cda.cit.tum.de/app/ddvis/) | [More ...](https://www.cda.cit.tum.de/research/quantum_dd/)
 :::
 
@@ -215,23 +217,24 @@ The Backbone of the Munich Quantum Toolkit.
 Quantum IR | DD Package | ZX Package
 
 ```bash
-(.venv) $ pip install mqt.core
+uv pip install mqt.core
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/core) | [{fab}`python` PyPI](https://pypi.org/project/mqt.core/) | {fa}`fa-thin fa-book` {doc}` Documentation <core:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/core) | [{fab}`python` PyPI](https://pypi.org/project/mqt.core/) | {fa}`fa-thin fa-book` {doc}` Documentation <core:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT QuSAT
 :text-align: center
-A Tool for Encoding Quantum Computing using Satisfiability Testing (SAT) Techniques
+A Tool for Encoding Quantum Computing using Satisfiability Testing (SAT)
+Techniques
 
 ```bash
-(.venv) $ pip install mqt.qusat
+uv pip install mqt.qusat
 ```
 
 +++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qusat) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qusat/) | {fa}`fa-thin fa-book` {doc}` Documentation <qusat:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qusat) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qusat/) | {fa}`fa-thin fa-book` {doc}` Documentation <qusat:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 ::::
