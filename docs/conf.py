@@ -35,6 +35,7 @@ extensions = [
     "myst_nb",
     "sphinx_copybutton",
     "sphinx_design",
+    "sphinx_llm.txt",
     "sphinx.ext.intersphinx",
     "sphinxcontrib.bibtex",
     "sphinxcontrib.inkscapeconverter",
