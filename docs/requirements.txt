@@ -17,7 +17,7 @@ qiskit[visualization]>=1.0.0
 sphinx>=8.1.3; python_version >= '3.10'
 sphinx>=8.2.3; python_version >= '3.11'
 sphinx-copybutton>=0.5.2
-sphinx-llm
+sphinx-llm>=0.4.1
 sphinx_design>=0.6.1
 sphinxcontrib-bibtex>=2.6.3
 sphinxcontrib-svg2pdfconverter>=1.2.3
