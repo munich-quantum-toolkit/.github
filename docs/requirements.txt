@@ -6,19 +6,19 @@
 #
 # Licensed under the MIT License
 
-furo>=2024.8.6
-matplotlib
-mqt-bench~=2.2.1
+# Documentation builds require Python 3.14
+furo>=2025.12.19
+matplotlib>=3.11.1
+mqt-bench~=2.2.3
 mqt-ddsim~=2.5.0
 mqt-qcec~=3.9.0
 mqt-qmap~=3.9.0
-myst-nb>=1.1.2
+myst-nb>=1.4.0
 qiskit[visualization]>=1.0.0
-sphinx>=8.1.3; python_version >= '3.10'
-sphinx>=8.2.3; python_version >= '3.11'
+sphinx>=9.0
 sphinx-copybutton>=0.5.2
-sphinx-llm>=0.4.1
-sphinx_design>=0.6.1
-sphinxcontrib-bibtex>=2.6.3
-sphinxcontrib-svg2pdfconverter>=1.2.3
-sphinxext-opengraph>=0.9.1
+sphinx-llm>=1.0.0
+sphinx-design>=0.7.0
+sphinxcontrib-bibtex>=2.7.0
+sphinxcontrib-svg2pdfconverter>=2.1.0
+sphinxext-opengraph>=0.13.0

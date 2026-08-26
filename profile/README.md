@@ -70,7 +70,7 @@ To support this endeavor, please consider:
   requests
 - Citing the MQT in your publications (see [Cite This](#cite-this))
 - Citing our research in your publications (see
-  [References](https://mqt.readthedocs.io/en/latest/handbook/references.html))
+  [References](https://mqt.readthedocs.io/en/stable/handbook/references.html))
 - Using the MQT in research and teaching, and sharing feedback and use cases
 - Sponsoring us on GitHub: <https://github.com/sponsors/munich-quantum-toolkit>
 
@@ -121,6 +121,7 @@ entry:
 | [`mqt-ddvis`]         |         ![gh.mqt.ddvis.release][] |         ![gh.mqt.ddvis.forks][] |         ![gh.mqt.ddvis.stars][] |
 | [`mqt-debugger`]      |      ![gh.mqt.debugger.release][] |      ![gh.mqt.debugger.forks][] |      ![gh.mqt.debugger.stars][] |
 | [`mqt-naviz`]         |         ![gh.mqt.naviz.release][] |         ![gh.mqt.naviz.forks][] |         ![gh.mqt.naviz.stars][] |
+| [`mqt-sqr`]           |           ![gh.mqt.sqr.release][] |           ![gh.mqt.sqr.forks][] |           ![gh.mqt.sqr.stars][] |
 
 [`mqt-ddsim`]: https://github.com/munich-quantum-toolkit/ddsim
 [`mqt-qcec`]: https://github.com/munich-quantum-toolkit/qcec
@@ -138,6 +139,7 @@ entry:
 [`mqt-yaqs`]: https://github.com/munich-quantum-toolkit/yaqs
 [`mqt-debugger`]: https://github.com/munich-quantum-toolkit/debugger
 [`mqt-naviz`]: https://github.com/munich-quantum-toolkit/naviz
+[`mqt-sqr`]: https://github.com/munich-quantum-toolkit/sqr
 [gh.mqt.ddsim.release]: https://img.shields.io/github/v/release/munich-quantum-toolkit/ddsim?label=%20&style=flat-square
 [gh.mqt.ddsim.forks]: https://img.shields.io/github/forks/munich-quantum-toolkit/ddsim?label=%20&style=flat-square
 [gh.mqt.ddsim.stars]: https://img.shields.io/github/stars/munich-quantum-toolkit/ddsim?label=%20&style=flat-square
@@ -186,6 +188,9 @@ entry:
 [gh.mqt.naviz.release]: https://img.shields.io/github/v/release/munich-quantum-toolkit/naviz?label=%20&style=flat-square
 [gh.mqt.naviz.forks]: https://img.shields.io/github/forks/munich-quantum-toolkit/naviz?label=%20&style=flat-square
 [gh.mqt.naviz.stars]: https://img.shields.io/github/stars/munich-quantum-toolkit/naviz?label=%20&style=flat-square
+[gh.mqt.sqr.release]: https://img.shields.io/github/v/release/munich-quantum-toolkit/sqr?label=%20&style=flat-square
+[gh.mqt.sqr.forks]: https://img.shields.io/github/forks/munich-quantum-toolkit/sqr?label=%20&style=flat-square
+[gh.mqt.sqr.stars]: https://img.shields.io/github/stars/munich-quantum-toolkit/sqr?label=%20&style=flat-square
 
 ## PyPI Downloads
 
@@ -206,6 +211,7 @@ entry:
 | [`mqt.naviz`][pypi.mqt.naviz.stats]                 |         ![pypi.mqt.naviz.version][] |         ![pypi.mqt.naviz.weekly][] |         ![pypi.mqt.naviz.monthly][] |                 [![pypi.mqt.naviz.total]](https://pepy.tech/project/mqt.naviz) |
 | [`mqt.yaqs`][pypi.mqt.yaqs.stats]                   |          ![pypi.mqt.yaqs.version][] |          ![pypi.mqt.yaqs.weekly][] |          ![pypi.mqt.yaqs.monthly][] |                   [![pypi.mqt.yaqs.total]](https://pepy.tech/project/mqt.yaqs) |
 | [`mqt.ionshuttler`][pypi.mqt.ionshuttler.stats]     |   ![pypi.mqt.ionshuttler.version][] |   ![pypi.mqt.ionshuttler.weekly][] |   ![pypi.mqt.ionshuttler.monthly][] |     [![pypi.mqt.ionshuttler.total]](https://pepy.tech/project/mqt.ionshuttler) |
+| [`mqt.sqr`][pypi.mqt.sqr.stats]                     |           ![pypi.mqt.sqr.version][] |           ![pypi.mqt.sqr.weekly][] |           ![pypi.mqt.sqr.monthly][] |                     [![pypi.mqt.sqr.total]](https://pepy.tech/project/mqt.sqr) |
 
 [pypi.mqt.ddsim.stats]: https://pypistats.org/packages/mqt-ddsim
 [pypi.mqt.ddsim.version]: https://img.shields.io/pypi/v/mqt.ddsim?label=%20&style=flat-square
@@ -282,6 +288,11 @@ entry:
 [pypi.mqt.naviz.weekly]: https://img.shields.io/pypi/dw/mqt.naviz?label=%20&style=flat-square
 [pypi.mqt.naviz.monthly]: https://img.shields.io/pypi/dm/mqt.naviz?label=%20&style=flat-square
 [pypi.mqt.naviz.total]: https://static.pepy.tech/personalized-badge/mqt.naviz?period=total&units=international_system&left_color=orange&right_color=orange&left_text=
+[pypi.mqt.sqr.stats]: https://pypistats.org/packages/mqt-sqr
+[pypi.mqt.sqr.version]: https://img.shields.io/pypi/v/mqt.sqr?label=%20&style=flat-square
+[pypi.mqt.sqr.weekly]: https://img.shields.io/pypi/dw/mqt.sqr?label=%20&style=flat-square
+[pypi.mqt.sqr.monthly]: https://img.shields.io/pypi/dm/mqt.sqr?label=%20&style=flat-square
+[pypi.mqt.sqr.total]: https://static.pepy.tech/personalized-badge/mqt-sqr?period=total&units=international_system&left_color=orange&right_color=orange&left_text=
 
 <!-- SPHINX-END -->
 

@@ -115,8 +115,7 @@ uv pip install mqt.qmap
 
 :::{grid-item-card} MQT NAViz
 :text-align: center
-An Application to Visualize Compilation Output for Neutral Atom Quantum
-Computers
+A Visualizer for Neutral Atom Quantum Computers
 
 ```bash
 uv pip install mqt.naviz
@@ -136,6 +135,18 @@ uv pip install mqt.ionshuttler
 
 +++
 [{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/ionshuttler) | [{fab}`python` PyPI](https://pypi.org/project/mqt.ionshuttler/) | {fa}`fa-thin fa-book` {doc}` Documentation <ionshuttler:index>` <!-- rumdl-disable-line MD013 -->
+:::
+
+:::{grid-item-card} MQT SQR
+:text-align: center
+A Tool for Spin Qubit Routing
+
+```bash
+uv pip install mqt.sqr
+```
+
++++
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/sqr) | [{fab}`python` PyPI](https://pypi.org/project/mqt.sqr/) | {fa}`fa-thin fa-book` {doc}` Documentation <sqr:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT Qudits
