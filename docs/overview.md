@@ -115,8 +115,7 @@ uv pip install mqt.qmap
 
 :::{grid-item-card} MQT NAViz
 :text-align: center
-An Application to Visualize Compilation Output for Neutral Atom Quantum
-Computers
+A Visualizer for Neutral Atom Quantum Computers
 
 ```bash
 uv pip install mqt.naviz
