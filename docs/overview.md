@@ -138,6 +138,18 @@ uv pip install mqt.ionshuttler
 [{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/ionshuttler) | [{fab}`python` PyPI](https://pypi.org/project/mqt.ionshuttler/) | {fa}`fa-thin fa-book` {doc}` Documentation <ionshuttler:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
+:::{grid-item-card} MQT SQR
+:text-align: center
+A Tool for Spin Qubit Routing
+
+```bash
+uv pip install mqt.sqr
+```
+
++++
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/sqr) | [{fab}`python` PyPI](https://pypi.org/project/mqt.sqr/) | {fa}`fa-thin fa-book` {doc}` Documentation <sqr:index>` <!-- rumdl-disable-line MD013 -->
+:::
+
 :::{grid-item-card} MQT Qudits
 :text-align: center
 A Framework For Mixed-Dimensional Qudit Quantum Computing

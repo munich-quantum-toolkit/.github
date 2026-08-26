@@ -82,6 +82,7 @@ intersphinx_mapping = {
     "naviz": ("https://mqt.readthedocs.io/projects/naviz/en/stable/", None),
     "ionshuttler": ("https://mqt.readthedocs.io/projects/ionshuttler/en/stable/", None),
     "problemsolver": ("https://mqt.readthedocs.io/projects/problemsolver/en/stable/", None),
+    "sqr": ("https://mqt.readthedocs.io/projects/sqr/en/latest/", None),
 }
 intersphinx_disabled_reftypes = ["*"]
 

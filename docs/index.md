@@ -152,4 +152,5 @@ MQT NAViz <https://mqt.readthedocs.io/projects/naviz/en/stable>
 MQT ProblemSolver <https://mqt.readthedocs.io/projects/problemsolver/en/stable>
 MQT IonShuttler <https://mqt.readthedocs.io/projects/ionshuttler/en/stable>
 MQT QuSAT <https://mqt.readthedocs.io/projects/qusat/en/stable>
+MQT SQR <https://mqt.readthedocs.io/projects/sqr/en/latest>
 ```
