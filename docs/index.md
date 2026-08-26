@@ -137,19 +137,19 @@ logos
 :hidden:
 :caption: Tool Documentation
 
-MQT Core <https://mqt.readthedocs.io/projects/core/en/latest>
-MQT DDSIM <https://mqt.readthedocs.io/projects/ddsim/en/latest>
-MQT QMAP <https://mqt.readthedocs.io/projects/qmap/en/latest>
-MQT QCEC <https://mqt.readthedocs.io/projects/qcec/en/latest>
-MQT QECC <https://mqt.readthedocs.io/projects/qecc/en/latest>
-MQT Bench <https://mqt.readthedocs.io/projects/bench/en/latest>
-MQT Predictor <https://mqt.readthedocs.io/projects/predictor/en/latest>
-MQT Qudits <https://mqt.readthedocs.io/projects/qudits/en/latest>
-MQT SyReC Synthesizer <https://mqt.readthedocs.io/projects/syrec/en/latest>
-MQT YAQS <https://mqt.readthedocs.io/projects/yaqs/en/latest>
-MQT Debugger <https://mqt.readthedocs.io/projects/debugger/en/latest>
-MQT NAViz <https://mqt.readthedocs.io/projects/naviz/en/latest>
-MQT ProblemSolver <https://mqt.readthedocs.io/projects/problemsolver/en/latest>
-MQT IonShuttler <https://mqt.readthedocs.io/projects/ionshuttler/en/latest>
-MQT QuSAT <https://mqt.readthedocs.io/projects/qusat/en/latest>
+MQT Core <https://mqt.readthedocs.io/projects/core/en/stable>
+MQT DDSIM <https://mqt.readthedocs.io/projects/ddsim/en/stable>
+MQT QMAP <https://mqt.readthedocs.io/projects/qmap/en/stable>
+MQT QCEC <https://mqt.readthedocs.io/projects/qcec/en/stable>
+MQT QECC <https://mqt.readthedocs.io/projects/qecc/en/stable>
+MQT Bench <https://mqt.readthedocs.io/projects/bench/en/stable>
+MQT Predictor <https://mqt.readthedocs.io/projects/predictor/en/stable>
+MQT Qudits <https://mqt.readthedocs.io/projects/qudits/en/stable>
+MQT SyReC Synthesizer <https://mqt.readthedocs.io/projects/syrec/en/stable>
+MQT YAQS <https://mqt.readthedocs.io/projects/yaqs/en/stable>
+MQT Debugger <https://mqt.readthedocs.io/projects/debugger/en/stable>
+MQT NAViz <https://mqt.readthedocs.io/projects/naviz/en/stable>
+MQT ProblemSolver <https://mqt.readthedocs.io/projects/problemsolver/en/stable>
+MQT IonShuttler <https://mqt.readthedocs.io/projects/ionshuttler/en/stable>
+MQT QuSAT <https://mqt.readthedocs.io/projects/qusat/en/stable>
 ```
