@@ -23,7 +23,7 @@ if TYPE_CHECKING:
 project = "mqt"
 author = "Chair for Design Automation, TUM & Munich Quantum Software Company GmbH"
 version = "1.2"
-release = "1.2.0"
+release = "1.3.0"
 language = "en"
 project_copyright = "2023 - 2026 Chair for Design Automation, TUM & 2025 - 2026 Munich Quantum Software Company GmbH"
 
