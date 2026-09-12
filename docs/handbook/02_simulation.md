@@ -113,14 +113,14 @@ result.get_counts()
 ```{raw} latex
 \begin{minipage}[t]{0.76\linewidth}
 \textbf{MQT DDSIM}\newline
-\emph{Code:} \href{https://github.com/cda-tum/mqt-ddsim}{cda-tum/mqt-ddsim}\newline
+\emph{Code:} \href{https://github.com/munich-quantum-toolkit/ddsim}{munich-quantum-toolkit/ddsim}\newline
 \emph{Python Package:} \href{https://pypi.org/p/mqt.ddsim}{pypi.org/p/mqt.ddsim}\newline
 \emph{Documentation:} \href{https://mqt.readthedocs.io/projects/ddsim}{mqt.rtfd.io/projects/ddsim}
 \end{minipage}%
 \hspace{1em}%
 \begin{minipage}[t]{0.15\linewidth}
 \raisebox{2mm -\dimexpr\depth}{%
-\qrcode[height=1.75cm]{https://github.com/cda-tum/mqt-ddsim}
+\qrcode[height=1.75cm]{https://github.com/munich-quantum-toolkit/ddsim}
 }
 \end{minipage}
 ```
@@ -133,7 +133,7 @@ result.get_counts()
 uv pip install mqt.ddsim
 ```
 +++
-[{fab}`github` GitHub](https://github.com/cda-tum/mqt-ddsim) | [{fab}`python` PyPI](https://pypi.org/project/mqt.ddsim/) | {fa}`fa-thin fa-book` {doc}` Documentation <ddsim:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/ddsim) | [{fab}`python` PyPI](https://pypi.org/project/mqt.ddsim/) | {fa}`fa-thin fa-book` {doc}` Documentation <ddsim:index>`
 :::
 ::::
 ````

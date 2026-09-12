@@ -69,14 +69,14 @@ given architecture.
 ```{raw} latex
 \begin{minipage}[t]{0.76\linewidth}
 \textbf{MQT Bench}\newline
-\emph{Code:} \href{https://github.com/cda-tum/mqt-bench}{cda-tum/mqt-bench}\newline
+\emph{Code:} \href{https://github.com/munich-quantum-toolkit/bench}{munich-quantum-toolkit/bench}\newline
 \emph{Python Package:} \href{https://pypi.org/p/mqt.bench}{pypi.org/p/mqt.bench}\newline
 \emph{Documentation:} \href{https://mqt.readthedocs.io/projects/bench}{mqt.rtfd.io/projects/bench}
 \end{minipage}%
 \hspace{1em}%
 \begin{minipage}[t]{0.15\linewidth}
 \raisebox{2mm -\dimexpr\depth}{%
-\qrcode[height=1.75cm]{https://github.com/cda-tum/mqt-bench}
+\qrcode[height=1.75cm]{https://github.com/munich-quantum-toolkit/bench}
 }
 \end{minipage}
 ```
@@ -89,7 +89,7 @@ given architecture.
 uv pip install mqt.bench
 ```
 +++
-[{fab}`github` GitHub](https://github.com/cda-tum/mqt-bench) | [{fab}`python` PyPI](https://pypi.org/project/mqt.bench/) | {fa}`fa-thin fa-book` {doc}` Documentation <bench:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/bench) | [{fab}`python` PyPI](https://pypi.org/project/mqt.bench/) | {fa}`fa-thin fa-book` {doc}` Documentation <bench:index>`
 :::
 ::::
 ````
