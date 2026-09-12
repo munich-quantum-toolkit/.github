@@ -102,14 +102,14 @@ print(result.equivalence)
 ```{raw} latex
 \begin{minipage}[t]{0.76\linewidth}
 \textbf{MQT QCEC}\newline
-\emph{Code:} \href{https://github.com/cda-tum/mqt-qcec}{cda-tum/mqt-qcec}\newline
+\emph{Code:} \href{https://github.com/munich-quantum-toolkit/qcec}{munich-quantum-toolkit/qcec}\newline
 \emph{Python Package:} \href{https://pypi.org/p/mqt.qcec}{pypi.org/p/mqt.qcec}\newline
 \emph{Documentation:} \href{https://mqt.readthedocs.io/projects/qcec}{mqt.rtfd.io/projects/qcec}
 \end{minipage}%
 \hspace{1em}%
 \begin{minipage}[t]{0.15\linewidth}
 \raisebox{2mm -\dimexpr\depth}{%
-\qrcode[height=1.75cm]{https://github.com/cda-tum/mqt-qcec}
+\qrcode[height=1.75cm]{https://github.com/munich-quantum-toolkit/qcec}
 }
 \end{minipage}
 ```
@@ -122,7 +122,7 @@ print(result.equivalence)
 uv pip install mqt.qcec
 ```
 +++
-[{fab}`github` GitHub](https://github.com/cda-tum/mqt-qcec) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qcec/) | {fa}`fa-thin fa-book` {doc}` Documentation <qcec:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qcec) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qcec/) | {fa}`fa-thin fa-book` {doc}` Documentation <qcec:index>`
 :::
 ::::
 ````

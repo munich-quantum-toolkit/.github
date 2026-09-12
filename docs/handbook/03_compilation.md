@@ -160,14 +160,14 @@ circ_mapped.draw(output='mpl', style='iqp')
 ```{raw} latex
 \begin{minipage}[t]{0.76\linewidth}
 \textbf{MQT QMAP}\newline
-\emph{Code:} \href{https://github.com/cda-tum/mqt-qmap}{cda-tum/mqt-qmap}\newline
+\emph{Code:} \href{https://github.com/munich-quantum-toolkit/qmap}{munich-quantum-toolkit/qmap}\newline
 \emph{Python Package:} \href{https://pypi.org/p/mqt.qmap}{pypi.org/p/mqt.qmap}\newline
 \emph{Documentation:} \href{https://mqt.readthedocs.io/projects/qmap}{mqt.rtfd.io/projects/qmap}
 \end{minipage}%
 \hspace{1em}%
 \begin{minipage}[t]{0.15\linewidth}
 \raisebox{2mm -\dimexpr\depth}{%
-\qrcode[height=1.75cm]{https://github.com/cda-tum/mqt-qmap}
+\qrcode[height=1.75cm]{https://github.com/munich-quantum-toolkit/qmap}
 }
 \end{minipage}
 ```
@@ -180,7 +180,7 @@ circ_mapped.draw(output='mpl', style='iqp')
 uv pip install mqt.qmap
 ```
 +++
-[{fab}`github` GitHub](https://github.com/cda-tum/mqt-qmap) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qmap/) | {fa}`fa-thin fa-book` {doc}` Documentation <qmap:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/qmap) | [{fab}`python` PyPI](https://pypi.org/project/mqt.qmap/) | {fa}`fa-thin fa-book` {doc}` Documentation <qmap:index>`
 :::
 ::::
 ````

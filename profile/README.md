@@ -1,3 +1,5 @@
+[![Documentation](https://img.shields.io/readthedocs/mqt?logo=readthedocs&style=flat-square)](https://mqt.readthedocs.io/en/stable/)
+
 <p align="center">
   <a href="https://mqt.readthedocs.io">
     <picture>

@@ -17,14 +17,14 @@ tools are actively maintained and well documented.
 ```{raw} latex
 \begin{minipage}[t]{0.76\linewidth}
 \textbf{MQT Core}\newline
-\emph{Code:} \href{https://github.com/cda-tum/mqt-core}{cda-tum/mqt-core}\newline
+\emph{Code:} \href{https://github.com/munich-quantum-toolkit/core}{munich-quantum-toolkit/core}\newline
 \emph{Python Package:} \href{https://pypi.org/p/mqt.core}{pypi.org/p/mqt.core}\newline
 \emph{Documentation:} \href{https://mqt.readthedocs.io/projects/core}{mqt.rtfd.io/projects/core}
 \end{minipage}%
 \hspace{1em}%
 \begin{minipage}[t]{0.15\linewidth}
 \raisebox{2mm -\dimexpr\depth}{%
-\qrcode[height=1.75cm]{https://github.com/cda-tum/mqt-core}
+\qrcode[height=1.75cm]{https://github.com/munich-quantum-toolkit/core}
 }
 \end{minipage}
 ```
@@ -37,7 +37,7 @@ tools are actively maintained and well documented.
 uv pip install mqt.core
 ```
 +++
-[{fab}`github` GitHub](https://github.com/cda-tum/mqt-core) | [{fab}`python` PyPI](https://pypi.org/project/mqt.core/) | {fa}`fa-thin fa-book` {doc}` Documentation <core:index>`
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/core) | [{fab}`python` PyPI](https://pypi.org/project/mqt.core/) | {fa}`fa-thin fa-book` {doc}` Documentation <core:index>`
 :::
 ::::
 ````
