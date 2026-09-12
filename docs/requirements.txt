@@ -9,10 +9,10 @@
 # Documentation builds require Python 3.14
 furo>=2025.12.19
 matplotlib>=3.11.1
-mqt-bench~=2.2.3
-mqt-ddsim~=2.5.0
-mqt-qcec~=3.9.0
-mqt-qmap~=3.9.0
+mqt-bench~=2.3.0
+mqt-ddsim~=2.6.0
+mqt-qcec~=3.10.0
+mqt-qmap~=3.10.0
 myst-nb>=1.4.0
 qiskit[visualization]>=1.0.0
 sphinx>=9.0
