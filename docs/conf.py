@@ -98,6 +98,7 @@ myst_heading_anchors = 3
 # -- Options for {MyST}NB ----------------------------------------------------
 
 nb_execution_mode = "cache"
+nb_execution_raise_on_error = True
 nb_mime_priority_overrides = [
     # builder name, mime type, priority
     ("latex", "image/svg+xml", 15),
