@@ -74,7 +74,7 @@ checking whether it still implements the functionality of the circuit shown in
 
 from qiskit import QuantumCircuit
 from qiskit.providers.fake_provider import GenericBackendV2
-from mqt.qmap.plugins.qiskit.sc import compile
+from mqt.qmap.plugins.qiskit.sc import compile_
 
 circ = QuantumCircuit(4)
 circ.h(3)
@@ -85,7 +85,7 @@ circ.measure_all()
 
 backend = GenericBackendV2(num_qubits=5, coupling_map=[[0, 1], [1, 0], [0, 2], [2, 0], [0, 3], [3, 0], [0, 4], [4, 0]])
 
-circ_mapped, _ = compile(circ, backend)
+circ_mapped, _ = compile_(circ, backend)
 ```
 
 ```{code-cell} ipython3

@@ -128,7 +128,7 @@ Then, mapping the circuit to that device merely requires the following lines of
 Python and results in the circuit shown in {numref}`fig-ghz-circuit-mapped`.
 
 ```{code-cell} ipython3
-from mqt.qmap.plugins.qiskit.sc import compile
+from mqt.qmap.plugins.qiskit.sc import compile_
 from qiskit.providers.fake_provider import GenericBackendV2
 
 backend = GenericBackendV2(
@@ -136,7 +136,7 @@ backend = GenericBackendV2(
     coupling_map=[[0, 1], [1, 0], [0, 2], [2, 0], [0, 3], [3, 0], [0, 4], [4, 0]]
 )
 
-circ_mapped, results = compile(circ, backend)
+circ_mapped, results = compile_(circ, backend)
 ```
 
 ```{code-cell} ipython3
