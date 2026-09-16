@@ -109,9 +109,10 @@ mystnb:
 ---
 %config InlineBackend.figure_formats = ['svg']
 
+import pygraphviz as pgv
+from IPython.display import SVG
 from qiskit import QuantumCircuit
 from qiskit.providers.fake_provider import GenericBackendV2
-from qiskit.visualization import plot_gate_map
 
 circ = QuantumCircuit(4)
 circ.h(3)
@@ -121,7 +122,12 @@ circ.cx(1, 0)
 circ.measure_all()
 
 backend = GenericBackendV2(num_qubits=5, coupling_map=[[0, 1], [1, 0], [0, 2], [2, 0], [0, 3], [3, 0], [0, 4], [4, 0]])
-plot_gate_map(backend)
+coupling_graph = pgv.AGraph(strict=True, directed=False)
+coupling_graph.add_nodes_from(range(backend.num_qubits))
+coupling_graph.add_edges_from(backend.coupling_map.get_edges())
+coupling_graph.node_attr.update(shape="circle", style="filled", color="#648fff", fillcolor="#648fff", fontcolor="white")
+coupling_graph.edge_attr.update(color="#648fff", penwidth="4")
+SVG(coupling_graph.draw(format="svg", prog="neato").decode())
 ```
 
 Then, mapping the circuit to that device merely requires the following lines of
