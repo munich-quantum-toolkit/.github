@@ -137,20 +137,20 @@ logos
 :hidden:
 :caption: Tool Documentation
 
-MQT Core <https://mqt.readthedocs.io/projects/core/en/stable>
-MQT DDSIM <https://mqt.readthedocs.io/projects/ddsim/en/stable>
-MQT QMAP <https://mqt.readthedocs.io/projects/qmap/en/stable>
-MQT QCEC <https://mqt.readthedocs.io/projects/qcec/en/stable>
-MQT QECC <https://mqt.readthedocs.io/projects/qecc/en/stable>
-MQT Bench <https://mqt.readthedocs.io/projects/bench/en/stable>
-MQT Predictor <https://mqt.readthedocs.io/projects/predictor/en/stable>
-MQT Qudits <https://mqt.readthedocs.io/projects/qudits/en/stable>
-MQT SyReC Synthesizer <https://mqt.readthedocs.io/projects/syrec/en/stable>
-MQT YAQS <https://mqt.readthedocs.io/projects/yaqs/en/stable>
-MQT Debugger <https://mqt.readthedocs.io/projects/debugger/en/stable>
-MQT NAViz <https://mqt.readthedocs.io/projects/naviz/en/stable>
-MQT ProblemSolver <https://mqt.readthedocs.io/projects/problemsolver/en/stable>
-MQT IonShuttler <https://mqt.readthedocs.io/projects/ionshuttler/en/stable>
-MQT QuSAT <https://mqt.readthedocs.io/projects/qusat/en/stable>
-MQT SQR <https://mqt.readthedocs.io/projects/sqr/en/latest>
+MQT Core <https://mqt.readthedocs.io/projects/core>
+MQT DDSIM <https://mqt.readthedocs.io/projects/ddsim>
+MQT QMAP <https://mqt.readthedocs.io/projects/qmap>
+MQT QCEC <https://mqt.readthedocs.io/projects/qcec>
+MQT QECC <https://mqt.readthedocs.io/projects/qecc>
+MQT Bench <https://mqt.readthedocs.io/projects/bench>
+MQT Predictor <https://mqt.readthedocs.io/projects/predictor>
+MQT Qudits <https://mqt.readthedocs.io/projects/qudits>
+MQT SyReC Synthesizer <https://mqt.readthedocs.io/projects/syrec>
+MQT YAQS <https://mqt.readthedocs.io/projects/yaqs>
+MQT Debugger <https://mqt.readthedocs.io/projects/debugger>
+MQT NAViz <https://mqt.readthedocs.io/projects/naviz>
+MQT ProblemSolver <https://mqt.readthedocs.io/projects/problemsolver>
+MQT IonShuttler <https://mqt.readthedocs.io/projects/ionshuttler>
+MQT QuSAT <https://mqt.readthedocs.io/projects/qusat>
+MQT SQR <https://mqt.readthedocs.io/projects/sqr>
 ```
