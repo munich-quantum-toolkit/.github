@@ -42,6 +42,15 @@ and reduced accuracy in the final result. Therefore, developing efficient
 compilation methods for quantum programs is essential to overcome the challenges
 of quantum computing and realize the potential of this technology.
 
+To support this compilation process, the _MQT_ provides the MQT Compiler
+Collection (`mqt-cc`) {cite:p}`MQTCompilerCollection2026` as part of MQT Core.
+Built on MLIR, it offers a common infrastructure for processing and optimizing
+quantum programs and compiling them for simulators or quantum devices. It
+accepts input such as OpenQASM programs and Qiskit circuits and is accessible
+through Python, command-line, and C++ interfaces. Its
+{doc}`documentation <core:compilation/index>` provides an overview of the
+available workflows.
+
 In the following, we mainly focus on the _quantum circuit mapping_ task. This is
 a crucial step in the compilation flow, as it directly affects the feasibility
 and performance of the quantum circuit on a given device. It involves finding a
