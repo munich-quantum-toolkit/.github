@@ -79,7 +79,7 @@ uv pip install mqt.yaqs
 
 :::{grid-item-card} MQT Core
 :text-align: center
-The Backbone of the Munich Quantum Toolkit and the Home of `mqt-cc`.
+The Home of `mqt-cc` and the Backbone of the Munich Quantum Toolkit.
 
 ```bash
 uv pip install mqt.core
