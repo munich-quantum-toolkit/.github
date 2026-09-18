@@ -77,6 +77,18 @@ uv pip install mqt.yaqs
 
 ::::{grid} 2
 
+:::{grid-item-card} MQT Core
+:text-align: center
+The Home of `mqt-cc` and the Backbone of the Munich Quantum Toolkit.
+
+```bash
+uv pip install mqt.core
+```
+
++++
+[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/core) | [{fab}`python` PyPI](https://pypi.org/project/mqt.core/) | {fa}`fa-thin fa-book` {doc}` Documentation <core:index>` <!-- rumdl-disable-line MD013 -->
+:::
+
 :::{grid-item-card} MQT Predictor
 :text-align: center
 A Tool for Determining Good Quantum Circuit Compilation Options
@@ -219,20 +231,6 @@ uv pip install mqt.qecc
 :text-align: center
 A Web-Application Visualizing Decision Diagrams for Quantum Computing +++
 [{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/ddvis) | [{fa}`fa-thin fa-desktop` Application](https://www.cda.cit.tum.de/app/ddvis/) | [More ...](https://www.cda.cit.tum.de/research/quantum_dd/)
-:::
-
-:::{grid-item-card} MQT Core
-:text-align: center
-The Backbone of the Munich Quantum Toolkit.
-
-Quantum IR | DD Package | ZX Package
-
-```bash
-uv pip install mqt.core
-```
-
-+++
-[{fab}`github` GitHub](https://github.com/munich-quantum-toolkit/core) | [{fab}`python` PyPI](https://pypi.org/project/mqt.core/) | {fa}`fa-thin fa-book` {doc}` Documentation <core:index>` <!-- rumdl-disable-line MD013 -->
 :::
 
 :::{grid-item-card} MQT QuSAT
