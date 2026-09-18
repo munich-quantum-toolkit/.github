@@ -13,6 +13,7 @@ build:
   apt_packages:
     - imagemagick
     - graphviz
+    - libgvplugin-neato-layout8
     - inkscape
 
 python:
