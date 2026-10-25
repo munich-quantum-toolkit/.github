@@ -9,7 +9,7 @@
   </a>
 </td>
 <td width="40%" align="right">
-  <img src="sc25_logo.png" width="100%" alt="SC25 Logo">
+  <img src="sc26_logo.png" width="100%" alt="SC26 Logo">
 </td>
 </tr>
 </table>
@@ -21,7 +21,7 @@ A Tutorial on High-Performance Software for Quantum Computing · SC26
 ## Introduction
 
 This branch contains the tutorial setup. Slides and notebooks will be added
-later. The SC25 conference logo above is retained as a placeholder.
+later.
 
 ## Setup
 
