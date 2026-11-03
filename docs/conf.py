@@ -207,6 +207,7 @@ html_theme_options = {
 }
 html_css_files = [
     "custom.css",
+    "home.css",
     "logos.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/fontawesome.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
