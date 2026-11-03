@@ -67,18 +67,9 @@ A live version of this document is available at [mqt.readthedocs.io](https://mqt
 </div>
 ```
 
-```{only} html
-For a comprehensive visual depiction of the MQT tools, we invite you to download our <a href="_static/flyers/mqt_flyer.pdf" title="Link to MQT flyer">MQT Flyer</a>.
+## Explore the MQT Handbook
 
-<div style="float: right; margin-top:0em; margin-bottom:3em;">
-    <a href="_static/flyers/mqt_flyer.pdf" title="Link to MQT flyer">
-        <figure style="display: inline-block;">
-            <img style="float: right;display: inline-block; max-height:12em; max-width:100%" src="_static/flyers/mqt_flyer.png" alt="MQT Overview Flyer"/>
-            <figcaption style="text-align: center;">MQT Overview Flyer</figcaption>
-        </figure>
-    </a>
-</div>
-```
+::::{container} mqt-handbook
 
 ```{toctree}
 :caption: The MQT Handbook
@@ -92,6 +83,15 @@ handbook/06_implementations
 handbook/07_conclusions
 handbook/references
 ```
+
+```{only} html
+<a class="mqt-flyer" href="_static/flyers/mqt_flyer.pdf">
+  <img src="_static/flyers/mqt_flyer.png" alt="MQT Overview Flyer">
+  <span>Download the MQT Flyer</span>
+</a>
+```
+
+::::
 
 ```{only} html
 ## Contributors and Supporters

@@ -39,6 +39,9 @@ implementations and are hosted on
   </a>
 </p>
 
+For a visual overview of the toolkit, download the
+[MQT Flyer](../docs/_static/flyers/mqt_flyer.pdf).
+
 ## The MQT Book
 
 <table>
