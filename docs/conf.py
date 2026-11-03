@@ -13,12 +13,15 @@ from __future__ import annotations
 from typing import TYPE_CHECKING, Any
 
 import pybtex.plugin
+from docutils import nodes
 from pybtex.style.formatting.unsrt import Style as UnsrtStyle
 from pybtex.style.template import field, href
+from sphinx_llm.markdown_builder import SphinxLlmMarkdownTranslator
 
 if TYPE_CHECKING:
     from pybtex.database import Entry
     from pybtex.richtext import HRef
+    from sphinx.application import Sphinx
 
 project = "mqt"
 author = "Chair for Design Automation, TUM & Munich Quantum Software Company GmbH"
@@ -102,6 +105,8 @@ nb_execution_raise_on_error = True
 nb_mime_priority_overrides = [
     # builder name, mime type, priority
     ("latex", "image/svg+xml", 15),
+    ("llms-markdown", "image/svg+xml", 15),
+    ("llms-markdown", "text/plain", 30),
 ]
 
 # -- Options for references --------------------------------------------------
@@ -207,3 +212,41 @@ html_css_files = [
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/solid.min.css",
     "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/brands.min.css",
 ]
+
+
+# Preserve text in nodes not yet supported by the llms.txt Markdown builder.
+class MQTMarkdownTranslator(SphinxLlmMarkdownTranslator):
+    """Handle the handbook's captions, citations, and design elements."""
+
+    def unknown_visit(self, node: nodes.Node) -> None:
+        """Keep text nodes and skip decorative icons.
+
+        Raises:
+            nodes.SkipNode: If the node is a decorative icon.
+        """
+        if node.__class__.__name__ in {"caption", "citation", "PassthroughTextElement"}:
+            return
+        if node.__class__.__name__ == "fontawesome":
+            raise nodes.SkipNode
+        super().unknown_visit(node)
+
+    def unknown_departure(self, node: nodes.Node) -> None:
+        """Finish the nodes whose contents are preserved."""
+        if node.__class__.__name__ not in {"caption", "citation", "PassthroughTextElement"}:
+            super().unknown_departure(node)
+
+    def visit_label(self, node: nodes.label) -> None:
+        """Write citation labels and leave footnote labels to the parent.
+
+        Raises:
+            nodes.SkipNode: After writing a citation label.
+        """
+        if isinstance(node.parent, nodes.citation):
+            self.add(f"[{node.astext()}] ")
+            raise nodes.SkipNode
+        super().visit_label(node)
+
+
+def setup(app: Sphinx) -> None:
+    """Register the Markdown translator used to generate llms.txt."""
+    app.set_translator("llms-markdown", MQTMarkdownTranslator, override=True)

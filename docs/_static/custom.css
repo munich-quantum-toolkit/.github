@@ -52,3 +52,30 @@ body:not([data-theme="light"]) {
 body:not([data-theme="light"]) .highlight .gp {
   color: #c65d09;
 }
+
+.mqt-book,
+.mqt-handbook {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 1.5rem;
+  margin: 1rem 0 2rem;
+}
+
+.mqt-book img,
+.mqt-flyer img {
+  width: 150px;
+  max-width: 100%;
+  height: auto;
+}
+
+.mqt-handbook .toctree-wrapper {
+  flex: 1 1 20rem;
+}
+
+.mqt-flyer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
