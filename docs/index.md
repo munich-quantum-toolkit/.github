@@ -52,6 +52,22 @@ A live version of this document is available at [mqt.readthedocs.io](https://mqt
 ```
 
 ```{only} html
+## The MQT Book
+
+<div class="mqt-book">
+  <img src="_static/mqt-book.jpg" alt="Cover of Design Automation Tools and Software for Quantum Computing">
+  <div>
+    <strong>Design Automation Tools and Software for Quantum Computing</strong><br>
+    <em>Inside the Munich Quantum Toolkit</em><br><br>
+    Lukas Burgholzer and Robert Wille<br>
+    Springer, 2026<br>
+    DOI: <a href="https://doi.org/10.1007/978-3-032-06770-8">10.1007/978-3-032-06770-8</a><br><br>
+    <a href="https://tidd.ly/4fx1Ndp">Discover the book</a> <em>(affiliate link)</em>
+  </div>
+</div>
+```
+
+```{only} html
 For a comprehensive visual depiction of the MQT tools, we invite you to download our <a href="_static/flyers/mqt_flyer.pdf" title="Link to MQT flyer">MQT Flyer</a>.
 
 <div style="float: right; margin-top:0em; margin-bottom:3em;">

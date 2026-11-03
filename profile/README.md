@@ -39,6 +39,22 @@ implementations and are hosted on
   </a>
 </p>
 
+## The MQT Book
+
+<table>
+<tr>
+<td><img src="../docs/_static/mqt-book.jpg" width="150" alt="Cover of Design Automation Tools and Software for Quantum Computing"></td>
+<td>
+<strong>Design Automation Tools and Software for Quantum Computing</strong><br>
+<em>Inside the Munich Quantum Toolkit</em><br><br>
+Lukas Burgholzer and Robert Wille<br>
+Springer, 2026<br>
+DOI: <a href="https://doi.org/10.1007/978-3-032-06770-8">10.1007/978-3-032-06770-8</a><br><br>
+<a href="https://tidd.ly/4fx1Ndp">Discover the book</a> <em>(affiliate link)</em>
+</td>
+</tr>
+</table>
+
 ## Contributors and Supporters
 
 The _[Munich Quantum Toolkit (MQT)](https://mqt.readthedocs.io)_ is developed by
