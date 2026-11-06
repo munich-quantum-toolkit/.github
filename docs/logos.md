@@ -20,7 +20,9 @@ background.
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` MQT Logo ^^^
+{fa}`fa-solid fa-image` MQT Logo
+
+^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -74,7 +76,9 @@ background.
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` MQSC Logo ^^^
+{fa}`fa-solid fa-image` MQSC Logo
+
+^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -154,7 +158,9 @@ background.
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` Q Mark ^^^
+{fa}`fa-solid fa-image` Q Mark
+
+^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -208,7 +214,9 @@ background.
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` MQSS Logo ^^^
+{fa}`fa-solid fa-image` MQSS Logo
+
+^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -262,7 +270,9 @@ background.
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
 
-{fa}`fa-solid fa-image` TUM-CDA Logo ^^^
+{fa}`fa-solid fa-image` TUM-CDA Logo
+
+^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -315,9 +325,67 @@ background.
 
 :::::::{grid-item-card}
 :class-header: sd-py-2 sd-font-weight-bold
+
+{fa}`fa-solid fa-image` QDMI Logo
+
+^^^
+
+::::::{tab-set}
+:sync-group: mqt-logo-variant
+
+:::::{tab-item} {fa}`fa-solid fa-sun` Light
+:sync: light
+
+```{raw} html
+<div class="mqt-preview mqt-preview--light">
+  <img src="_static/logo-qdmi-light.svg" alt="QDMI Logo – light variant">
+</div>
+<div class="mqt-btn-row">
+  <a href="_static/logo-qdmi-light.svg" download="logo-qdmi-light.svg"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;SVG
+  </a>
+  <a href="_static/logo-qdmi-light.png" download="logo-qdmi-light.png"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;PNG
+  </a>
+</div>
+```
+
+:::::
+
+:::::{tab-item} {fa}`fa-solid fa-moon` Dark
+:sync: dark
+
+```{raw} html
+<div class="mqt-preview mqt-preview--dark">
+  <img src="_static/logo-qdmi-dark.svg" alt="QDMI Logo – dark variant">
+</div>
+<div class="mqt-btn-row">
+  <a href="_static/logo-qdmi-dark.svg" download="logo-qdmi-dark.svg"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;SVG
+  </a>
+  <a href="_static/logo-qdmi-dark.png" download="logo-qdmi-dark.png"
+     class="sd-sphinx-override sd-btn sd-btn-sm sd-btn-outline-primary" role="button">
+    <i class="fa-solid fa-download"></i>&thinsp;PNG
+  </a>
+</div>
+```
+
+:::::
+
+::::::
+
+:::::::
+
+:::::::{grid-item-card}
+:class-header: sd-py-2 sd-font-weight-bold
 :columns: 12
 
-{fa}`fa-solid fa-panorama` MQT Banner ^^^
+{fa}`fa-solid fa-panorama` MQT Banner
+
+^^^
 
 ::::::{tab-set}
 :sync-group: mqt-logo-variant
@@ -367,3 +435,5 @@ background.
 ::::::
 
 :::::::
+
+::::::::
