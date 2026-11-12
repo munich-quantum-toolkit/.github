@@ -46,7 +46,7 @@ For a visual overview of the toolkit, download the
 
 <table>
 <tr>
-<td><img src="../docs/_static/mqt-book.jpg" width="150" alt="Cover of Design Automation Tools and Software for Quantum Computing"></td>
+<td><img src="https://raw.githubusercontent.com/munich-quantum-toolkit/.github/refs/heads/main/docs/_static/mqt-book.jpg" width="150" alt="Cover of Design Automation Tools and Software for Quantum Computing"></td>
 <td>
 <strong>Design Automation Tools and Software for Quantum Computing</strong><br>
 <em>Inside the Munich Quantum Toolkit</em><br><br>
