@@ -1,0 +1,8 @@
+{
+  "source": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nqubit a;\nqubit b;\nh a;\nh a;\nh a;\ncx a, b;",
+  "qc": "!q = !qc.qubit\nfunc.func @main()\n    attributes {mqt.entry_point} {\n  %a = qc.alloc : !q\n  %b = qc.alloc : !q\n  qc.h %a : !q\n  qc.h %a : !q\n  qc.h %a : !q\n  qc.ctrl(%a)\n    targets (%t = %b) {\n    qc.x %t : !q\n    qc.yield\n  } : {!q}, {!q}\n  qc.dealloc %a : !q\n  qc.dealloc %b : !q\n  return\n}",
+  "qco": "!q = !qco.qubit\nfunc.func @main()\n    attributes {mqt.entry_point} {\n  %a = qco.alloc : !q\n  %b = qco.alloc : !q\n  %a1 = qco.h %a : !q\n  %a2 = qco.h %a1 : !q\n  %a3 = qco.h %a2 : !q\n  %c, %d = qco.ctrl(%a3)\n    targets (%t = %b) {\n    %x = qco.x %t : !q\n    qco.yield %x : !q\n  } : ({!q}, {!q})\n  qco.sink %c : !q\n  qco.sink %d : !q\n  return\n}",
+  "optimized": "!q = !qco.qubit\nfunc.func @main()\n    attributes {mqt.entry_point} {\n  %a = qco.alloc : !q\n  %b = qco.alloc : !q\n  %a1 = qco.h %a : !q\n  %c, %d = qco.ctrl(%a1)\n    targets (%t = %b) {\n    %x = qco.x %t : !q\n    qco.yield %x : !q\n  } : ({!q}, {!q})\n  qco.sink %c : !q\n  qco.sink %d : !q\n  return\n}",
+  "formatting": "Function body from retained MQT Core 4.2 capture, shorter SSA names and a type alias; parsed and full matrices compared",
+  "source_capture_sha256": "2c319ac849056a22413ec2f80c1d7360c0d68b98699885759f4b0529d3eb299d"
+}

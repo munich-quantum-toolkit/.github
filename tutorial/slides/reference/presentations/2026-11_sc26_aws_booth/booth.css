@@ -1,0 +1,200 @@
+/* Copyright (c) 2026 Munich Quantum Software Company GmbH
+ * SPDX-License-Identifier: MIT */
+.slide-header .brand-pair { flex-direction: row-reverse; }
+.booth-title { max-width: 1610px; margin-top: 86px; }
+.booth-title h1 { font-size: 81px; line-height: 1.12; margin: 0 0 80px; }
+.booth-speakers { display: flex; gap: 42px; }
+.booth-speakers > div { display: flex; align-items: center; gap: 20px; padding: 24px; border: 2px solid #cbdced; border-radius: 18px; font-size: 30px; }
+.booth-speakers small { display: block; font-size: 23px; margin-top: 10px; }
+.booth-speakers img { width: 140px; height: 65px; object-fit: contain; }
+.booth-speakers .current { background: #eaf2fa; border-color: #2f70b8; font-weight: 700; }
+
+.opening-project { display: grid; grid-template-columns: 64px minmax(0, 1fr); grid-template-rows: 38px 28px 22px; gap: 4px 12px; align-items: center; }
+.opening-project > div { display: contents; }
+.opening-project-title { grid-column: 2; grid-row: 1; }
+.opening-project .opening-repo-line { grid-column: 2; grid-row: 2; }
+.opening-project p { grid-column: 1 / -1; grid-row: 3; margin: 0; }
+.opening-project-qr { grid-column: 1; grid-row: 1 / 3; width: 64px; height: 64px; }
+.opening-project-title { gap: 15px; height: 38px; }
+.opening-project-title b { font-size: 24px; white-space: nowrap; }
+.opening-project-title span { gap: 10px; }
+.opening-project-title img { width: 65px; height: 34px; }
+.opening-project-title img[alt="lrz-mark"] { width: 34px; }
+
+.opening-project .opening-repo-line a { font-size: 17px; }
+
+.opening-project .opening-repo-stat, .opening-project .opening-downloads { font-size: 17px; }
+
+.spec-details { flex-wrap: wrap; }
+.spec-details span { white-space: nowrap; }
+.sc-card-resource small { overflow-wrap: anywhere; }
+.sc-deep-dive:has(.aws-pcs-environment) { grid-template-columns: 1140px 580px; }
+.aws-pcs-environment { position: relative; padding: 0; height: 720px; }
+.aws-pcs-environment svg { width: 100%; height: 720px; }
+.aws-braket-boundary > rect:first-child { stroke: #8c4fff; stroke-width: 3; fill: #faf7ff; }
+.sc-deep-dive:has(.aws-pcs-environment) .sc-detail { height: 720px; }
+.sc-card-resource small { font-size: 17px; line-height: 1.35; }
+.sc-closing-stack { gap: 16px; }
+.sc-closing-stack img { max-width: 120px; height: 66px; }
+
+/* Keep product identities and resource anchors stable throughout the builds. */
+.opening-references { grid-template-columns: 540px 540px 628px; gap: 26px; bottom: -21px; height: 104px; align-items: end; }
+.opening-project[data-morph="opening-reference-orchestrator"] { grid-column: 1; grid-row: 1; }
+.opening-project[data-morph="opening-reference-core"] { grid-column: 2; grid-row: 1; }
+.opening-project[data-morph="opening-reference-qdmi"] { grid-column: 3; grid-row: 1; }
+.opening-project p { font-size: 14px; white-space: nowrap; }
+.opening-repo-stat { display: inline-flex; align-items: center; gap: 5px; }
+.opening-repo-stat > span { line-height: 1; }
+.opening-project .opening-repo-line { gap: 3px 10px; flex-wrap: nowrap; }
+
+.sc-detail { height: 674px; }
+.sc-card-copy { min-height: 0; }
+.sc-card-resource { flex-shrink: 0; min-height: 122px; }
+
+.compiler-workbench.with-output { grid-template-columns: 420px 660px minmax(0, 1fr); }
+.compiler-output .code-text { white-space: pre-wrap; overflow-wrap: anywhere; }
+.compiler-output pre { font-size: 17px; line-height: 1.25; letter-spacing: 0; }
+
+#slide h2 { font-size: 48px; line-height: 1.13; letter-spacing: -1.4px; top: -18px; max-width: none; }
+.compiler-workbench { grid-template-columns: 420px minmax(0, 1fr); grid-template-rows: 140px 500px; }
+/* Fixed specification rows keep device changes aligned while the topology fills the remaining space. */
+.compiler-workbench .spec-card { height: 500px; grid-template-rows: 40px 54px 30px minmax(0, 1fr) 54px; gap: 4px; }
+.spec-step { flex-direction: row; align-items: center; justify-content: space-between; }
+.spec-step .logo { width: 78px; height: 36px; }
+.spec-identity { display: flex; align-items: center; gap: 14px; }
+.spec-identity .logo { width: 80px; height: 38px; object-fit: contain; }
+.spec-identity .logo:last-child { margin-left: auto; width: 54px; height: 54px; }
+.spec-identity b { font-size: 24px; color: var(--blue); }
+.spec-facts { display: flex; align-items: center; gap: 20px; font-size: 24px; }
+.spec-facts span { white-space: nowrap; }
+.spec-card .target-map { padding: 2px 0; }
+.spec-repository { padding-top: 6px; }
+.spec-repository > img { width: 46px; height: 46px; }
+.spec-repository > span { font-size: 16px; }
+.booth-cloud { width: 100%; height: 100%; }
+
+.compiler-workbench.phase-5 .stage-place-and-route { width: 660px; }
+
+.compiler-workbench.phase-5 { grid-template-columns: 420px 660px minmax(0, 1fr); }
+.compiler-workbench.phase-5 .compiler-stages { grid-column: 2 / -1; }
+
+/* Audience-facing labels retain their size while the workflow panels resize. */
+.compile-tile b, .stage-heading, .spec-step { font-size: 24px; }
+.spec-details { font-size: 24px; gap: 4px 12px; align-content: center; }
+.sc-eyebrow, .sc-items span, .sc-resource p { font-size: 24px; }
+.sc-resource span { font-size: 21px; overflow-wrap: anywhere; }
+.booth-speakers small { font-size: 24px; }
+
+.code-title { font-size: 24px; }
+
+.opening-frame h2 small { font-size: 24px; }
+.equation-caption span { font-size: 24px; }
+.compiled-stage { grid-template-columns: minmax(0, 1fr) auto; grid-template-rows: 32px minmax(0, 1fr); }
+.compiled-stage h3, .spec-step > b { font-size: 24px; }
+.compiled-stage .program-metrics b, .compiled-stage .program-metrics span,
+.compiler-stages > .stage-place-and-route:not(:only-child) .program-metrics b { font-size: 24px; }
+.spec-details > span::before { display: none; }
+.sc-detail-foot, .sc-lifecycle b, .sc-workflow-status b,
+.sc-shell-summary + .sc-items span { font-size: 24px; }
+
+/* Align the footer icons with the visible lowercase text, not its line box. */
+.slide-footer .footer-identity a[href*="github.com"] svg { transform: translateY(2px); }
+
+.compiled-stage .program-metrics > div { justify-content: flex-start; gap: 8px; }
+.compiled-stage .program-metrics b { min-width: 29px; text-align: right; }
+
+/* Workflow layouts keep prepared programs fixed while execution gains its own space. */
+.app-panels.execution { height: 618px; }
+.app-panel h3 { font-size: 27px; }
+.app-panel .panel-kicker { font-size: 24px; white-space: normal; margin: 0 0 16px; }
+.app-panel .app-panel-body { height: 445px; }
+.app-badges { gap: 8px; padding: 0; }
+.app-badges .product-badge { padding: 8px; display: flex; align-items: center; justify-content: center; flex-shrink: 0; gap: 0; }
+.app-badges .product-badge span { font-size: 22px; line-height: 1.15; text-align: left; }
+.app-badges .product-badge:has(span:not(:empty)) { gap: 8px; }
+.app-badges .product-badge img { object-fit: contain; height: 60px; max-width: none; }
+.app-badges .product-badge img[alt="PENNYLANE"] { width: 170px !important; }
+.app-badges .product-badge img[alt="MQT"] { width: 150px !important; }
+.app-badges .product-badge img[alt="ORCHESTRATOR"] { width: 185px !important; height: 68px; }
+.app-badges .product-badge img[alt="QDMI"] { width: 85px !important; }
+.app-badges .product-badge img[alt="SLURM"] { width: 64px !important; }
+.app-badges .product-badge img[alt="BRAKET"], .app-badges .product-badge img[alt="PCS"] { width: 44px !important; }
+.app-panel .preparation-sketch:not(.compact) { height: 390px; }
+.compact-shadow-batch { height: 160px; }
+.compact-shadow-batch > svg { display: block; height: 150px; }
+.sample-selection { display: block; text-align: center; margin-top: 10px; font-size: 24px; color: #5b7088; }
+.app-panel .sample-stream { gap: 8px; margin-top: 4px; flex-wrap: nowrap; }
+.app-panel .sample-stream > div { flex: 1; min-width: 0; padding: 8px; }
+.app-panel .sample-stream small { font-size: 24px; }
+.app-panel .sample-stream strong { font-size: 26px; line-height: 1.1; margin-top: 6px; }
+.app-panel .sample-continuation { display: none; }
+.walker-field { width: 100%; }
+.walker-field > svg { display: block; width: 100%; height: 100px; }
+.app-panel .energy-chart, .app-panels.intro .energy-chart { height: 310px; }
+.app-panels.intro .walker-field > svg { height: 80px; }
+.app-panel .walker-comparison { flex-direction: row; gap: 24px; margin-bottom: 10px; }
+.app-panel .walker-comparison > div { flex: 1; min-width: 0; }
+.app-panel .walker-comparison b { display: flex; align-items: center; justify-content: center; gap: 10px; font-size: 24px; margin-bottom: 8px; white-space: nowrap; }
+.app-panel .walker-comparison .walker-field > svg { height: 140px; }
+.execution.focus-1 { grid-template-columns: 400px minmax(0, 1fr) 0px; gap: 22px; }
+.execution.focus-2 { grid-template-columns: 400px 520px minmax(0, 1fr); gap: 22px; }
+.execution.focus-1 > .app-panel:not(:nth-child(2)) h3,
+.execution.focus-2 > .app-panel:not(:nth-child(3)) h3 { font-size: 26px; white-space: normal; }
+.execution .preparation-sketch { height: 245px; }
+.execution .preparation-grid { width: 340px; max-width: 100%; padding: 0; margin: 18px auto 0; }
+.execution .preparation-grid > svg { display: block; width: 100%; height: 85px; max-height: none; }
+.execution .preparation-grid .batch-counts { font-size: 24px; justify-content: center; margin-top: 12px; }
+.execution .preparation-grid .batch-counts > span { display: flex; flex-direction: row; align-items: baseline; white-space: nowrap; gap: 7px; }
+.preparation-code { position: relative; grid-template-columns: .72fr 1.28fr; }
+.preparation-code .full-code { height: 315px; }
+.execution.focus-0 .preparation-grid { width: 100%; margin-top: 8px; }
+.execution.focus-0 .preparation-grid > svg { height: 130px; }
+.execution .quantum-batch { display: block; position: relative; height: 430px; }
+.execution .quantum-batch > [data-morph] { position: absolute; }
+.execution .quantum-sequence { left: 8px; right: 8px; top: 0; height: 255px; }
+.app-panels.execution > .app-panel .quantum-sequence .panel-kicker { text-align: center; white-space: nowrap; font-size: 24px; line-height: 30px; margin: 0 0 8px; }
+.program-total { white-space: nowrap; }
+.execution .quantum-sequence .sequence-svg { height: calc(100% - 40px); }
+.execution .quantum-batch .batch-grid { left: calc(50% - 170px); top: 263px; width: 340px; }
+.execution .quantum-batch .batch-grid > svg { display: block; width: 100%; height: 85px; max-height: none; }
+.execution .quantum-batch .batch-counts { font-size: 24px; gap: 12px; margin-top: 12px; }
+.execution .quantum-batch .batch-counts > span { display: flex; flex: 1; flex-direction: column; align-items: center; }
+.execution.focus-1 .quantum-sequence { left: 0; right: auto; width: 50%; height: 415px; }
+.execution.focus-1 .quantum-batch .batch-grid { left: 56%; top: 135px; width: 40%; }
+.execution.focus-1 .quantum-batch .batch-grid > svg { height: auto; }
+.execution.focus-2 > .app-panel:nth-child(3) .app-panel-body { display: block; }
+.execution .energy-chart { height: 270px; }
+.workflow-foot { flex-direction: row; align-items: center; gap: 18px; bottom: -28px; line-height: 1.2; }
+.workflow-foot > span, .workflow-foot > span:last-child { font-size: 22px; white-space: nowrap; }
+.execution-target { display: flex; align-items: center; justify-content: flex-end; gap: 10px; }
+.execution-target img { width: 88px; height: 52px; object-fit: contain; }
+.workflow-clock { bottom: 35px; }
+.clock-stages, .clock-stages b { font-size: 24px; }
+@media (prefers-reduced-motion: no-preference) {
+  .execution .walker-comparison circle[opacity] { transition: opacity 250ms ease; }
+}
+
+.execution.focus-2 .quantum-batch .sequence-svg { height: calc(100% - 40px); }
+.execution.focus-2 > .app-panel:nth-child(2) .batch-grid > svg { height: 85px; }
+.execution.focus-2 > .app-panel:nth-child(2) .batch-counts { font-size: 22px; gap: 12px; margin-top: 10px; }
+.execution.focus-2 .energy-chart { height: 220px; }
+
+.app-panel .sample-stream strong span { display: none; }
+
+.compiled-stage h3 { grid-column: 1; }
+.compiled-stage .program-metrics { grid-row: 1; grid-column: 2; flex-direction: row; gap: 14px; align-self: center; }
+.compiled-stage .circuit { grid-column: 1 / -1; }
+.compiler-stages > .stage-place-and-route:not(:only-child) .program-metrics { gap: 14px; }
+
+.app-panel .walker-comparison b::before { content: ""; width: 30px; border-top: 3px solid currentColor; }
+.app-panel .walker-comparison > div:nth-child(2) b::before { border-top-style: dashed; }
+.execution .batch-counts > span { color: var(--blue); }
+.execution .batch-counts > span.completed { color: #a96916; }
+.execution-target img[alt="BRAKET"] { width: 52px; }
+.execution-target img[alt="MQT"] { width: 110px; }
+.execution.focus-2 > .app-panel:nth-child(2) h3 { font-size: 27px; }
+
+.app-badges .product-badge:has(img[alt="ORCHESTRATOR"]) { min-width:205px; }
+
+.app-panels:not(.execution) .product-badge:has(img[alt="ORCHESTRATOR"]) { min-width:170px; }
+.app-panels:not(.execution) .product-badge img[alt="ORCHESTRATOR"] { width:150px !important; height:60px; }

@@ -8,6 +8,9 @@
 #     prek install
 #
 
+# Preserve the bundled third-party renderer and its upstream notices.
+exclude: ^tutorial/slides/(vendor/|reference/|assets/pr-.*\.svg$)
+
 ci:
   autoupdate_commit_msg: "⬆️🪝 update pre-commit hooks"
   autoupdate_schedule: quarterly

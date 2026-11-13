@@ -20,73 +20,34 @@ A Tutorial on High-Performance Software for Quantum Computing · SC26
 
 ## Introduction
 
-This branch contains the tutorial setup. Slides and notebooks will be added
-later.
+The HTML tutorial starts with the IQM presentation's software-stack overview,
+then moves through quantum circuits, MLIR-based compilation, QDMI and HPC
+integration. Two 90-minute sessions include 110 minutes of notebook work. The
+break follows the compiler primer, before the compilation notebook. The IQM and
+openQSE presentations guide the story, complemented by the QCE tutorial's
+compiler and QDMI material.
+
+Build the offline slides using the presentations repository’s locked authoring
+environment and open `slides/build/sc26-tutorial.html`. See
+[slide authoring and validation](slides/README.md) for navigation, preview,
+editing, and the local DDSIM examples.
+
+The [seven notebooks](notebooks/README.md) begin with a Qiskit circuit exercise,
+then reuse the QCE26 MLIR tutorial and the QDMI and jeff extensions from the MQT
+Core documentation. They use MQT Core 4.2.0 and include executed outputs from
+local simulation.
 
 ## Setup
 
-Run the following commands from the `tutorial/` directory. The dependency
-declarations are retained from SC25; the SC26 lockfile will be added with the
-notebooks. You can follow along using either `uv` (recommended) or traditional
-Python virtual environments.
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run
+these commands from the `tutorial/` directory:
 
-### Option 1: Using uv (Recommended)
-
-[uv](https://docs.astral.sh/uv/) is an extremely fast Python package and project
-manager written in Rust. It handles Python installation, virtual environment
-creation, and package management automatically.
-
-**Install uv:**
-
-On macOS/Linux:
-
-```bash
-curl -LsSf https://astral.sh/uv/install.sh | sh
+```sh
+cd notebooks
+uv run --no-project --python 3.15 --with-requirements requirements.txt jupyter lab
 ```
 
-On Windows:
-
-```bash
-powershell -c "irm https://astral.sh/uv/install.ps1 | iex"
-```
-
-**Start Jupyter Lab:**
-
-After installing `uv`, you can create the environment, install all dependencies,
-and launch Jupyter Lab with a single command:
-
-```bash
-uv run --with jupyter jupyter lab
-```
-
-This automatically creates a virtual environment, installs the project
-dependencies from `pyproject.toml`, and starts Jupyter Lab.
-
-### Option 2: Using Python Virtual Environments
-
-If you prefer using standard Python tools, you'll need Python 3.10-3.12
-installed.
-
-**Create and activate a virtual environment:**
-
-On macOS/Linux:
-
-```bash
-python -m venv .venv
-source .venv/bin/activate
-```
-
-On Windows:
-
-```bash
-python -m venv .venv
-.venv\Scripts\activate
-```
-
-**Install dependencies and start Jupyter Lab:**
-
-```bash
-pip install -e .
-pip install jupyter
-jupyter lab
-```
+This uses the QCE tutorial's standalone setup with Python 3.15. See the
+[notebook instructions](notebooks/README.md#run-the-notebooks) for the
+alternative using Python's `venv` and `pip`, and for reproducing the locked
+environment.

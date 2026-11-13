@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <link rel="icon" href="data:," />
+    <title>SC26 · Connecting the Quantum and HPC Communities</title>
+    <!-- STYLES -->
+  </head>
+  <body>
+    <main
+      id="deck"
+      class="iqm-talk openqse-demo"
+      tabindex="0"
+      aria-label="SC26 tutorial presentation"
+    >
+      <header class="slide-header">
+        <span id="section-label"></span>
+        <div class="brand-pair">
+          <img
+            id="iqm-logo"
+            class="header-tum"
+            alt="Technical University of Munich"
+          />
+          <img id="mqsc-logo" class="header-mqsc" alt="MQSC" />
+          <img id="mqv-logo" class="header-mqv" alt="Munich Quantum Valley" />
+        </div>
+      </header>
+      <article id="slide" aria-live="polite"></article>
+      <footer class="slide-footer">
+        <span>SC26 · Sunday, 15 November 2026</span>
+        <span id="slide-number"></span>
+      </footer>
+      <div id="build-progress" aria-hidden="true"></div>
+      <aside id="jump-indicator" hidden></aside>
+    </main>
+    <dialog id="overview" aria-label="Go to a slide">
+      <h2>Slide overview</h2>
+      <p>Arrow keys to choose · Enter to jump · Escape to return</p>
+      <div id="slide-grid"></div>
+    </dialog>
+    <div id="blackout" hidden></div>
+    <div id="print-deck"></div>
+    <!-- DATA -->
+    <!-- SCRIPT -->
+    <script>
+      document.querySelector("#mqv-logo").src = ASSETS["mqv-header-blue"];
+      addEventListener("beforeprint", () => {
+        const header = document.querySelector("#deck .brand-pair");
+        document
+          .querySelectorAll("#print-deck .brand-pair")
+          .forEach((logos) => {
+            logos.innerHTML = header.innerHTML;
+            logos
+              .querySelectorAll("[id]")
+              .forEach((logo) => logo.removeAttribute("id"));
+          });
+      });
+    </script>
+  </body>
+</html>

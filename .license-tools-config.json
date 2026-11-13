@@ -24,6 +24,9 @@
     "uv\\.lock",
     "py\\.typed",
     ".*build.*",
-    "(^|/)LICENSE$"
+    "(^|/)LICENSE$",
+    "tutorial/notebooks/.*\\.ipynb",
+    "tutorial/slides/.*\\.js",
+    "tutorial/slides/assets/.*\\.txt"
   ]
 }
