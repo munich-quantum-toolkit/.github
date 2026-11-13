@@ -1,0 +1,26 @@
+{
+  "bell": {
+    "language": "python",
+    "source": "from qiskit import QuantumCircuit\n\nqc = QuantumCircuit(2)\nqc.h(0)\nqc.cx(0, 1)\nqc.measure_all()"
+  },
+  "addition": {
+    "language": "mlir",
+    "source": "func.func @add() -> i32 {\n  %a = arith.constant 1 : i32\n  %b = arith.constant 2 : i32\n  %sum = arith.addi %a, %b : i32\n  return %sum : i32\n}"
+  },
+  "import-qasm": {
+    "language": "python",
+    "source": "qc = QCProgram.from_openqasm_str(source)"
+  },
+  "to-qco": {
+    "language": "python",
+    "source": "qco = qc.to_qco(copy=True)"
+  },
+  "simplify": {
+    "language": "python",
+    "source": "qco.run_pass_pipeline(\"simplify-quantum\")"
+  },
+  "execute": {
+    "language": "python",
+    "source": "from mqt.core.mlir import compile_program, submit_program\nfrom mqt.core.qdmi import open_device\n\ndevice = open_device(\"mqt.ddsim.default\")\ncompiled = compile_program(source, target=device)\njob = submit_program(compiled, target=device, num_shots=1024)\nassert job.wait()\ncounts = job.get_counts()"
+  }
+}

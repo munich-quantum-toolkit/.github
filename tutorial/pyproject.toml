@@ -1,15 +1,24 @@
+# Copyright (c) 2023 - 2026 Chair for Design Automation, TUM
+# Copyright (c) 2025 - 2026 Munich Quantum Software Company GmbH
+# All rights reserved.
+#
+# SPDX-License-Identifier: MIT
+#
+# Licensed under the MIT License
+
 [project]
 name = "sc26-mqt-tutorial"
 version = "1.0.0"
 description = "Hands-on tutorial at SC26"
 readme = "README.md"
-requires-python = ">=3.10"
+requires-python = ">=3.12"
 dependencies = [
-    "mqt-bench>=2.1.0",
-    "mqt-ddsim>=2.1.0",
-    "mqt-qcec>=3.3.0",
-    "mqt-qmap>=3.4.0",
-    "qiskit[visualization]>=1.2.4",
-    "matplotlib>=3.9.2",
-    "pylatexenc>=2.10",
+    "mqt-core==4.2.0",
+    "qiskit[visualization]==2.6.2",
+    "jupyterlab==4.6.6",
+    "mlir-pygments==1.0.0",
+    "openqasm-pygments==0.2.0",
 ]
+
+[tool.uv]
+package = false

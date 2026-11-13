@@ -1,0 +1,94 @@
+/* Copyright (c) 2026 Munich Quantum Software Company GmbH
+ * SPDX-License-Identifier: MIT */
+.brand-pair { display:flex; align-items:center; justify-content:flex-end; gap:32px; flex:none; width:440px; }
+.brand-pair img { width:248px; height:116px; object-fit:contain; }
+.brand-pair img:first-child { width:154px; height:88px; }
+.slide-header #section-label { max-width:1220px; font-size:23px; }
+.sc-title { position:relative; height:760px; padding-top:22px; }
+.sc-title h1 { font-size:72px; line-height:1.13; max-width:1180px; margin:0; letter-spacing:-2px; }
+.sc-title-sub { font-size:38px; line-height:1.3; margin:26px 0 38px; color:var(--blue); }
+.sc-authors { max-width:1170px; }
+.sc-authors h3 { font-size:38px; margin:0 0 18px; }
+.sc-authors h3 span { font-size:25px; color:var(--muted); margin-left:24px; font-weight:500; }
+.sc-authors p { font-size:27px; line-height:1.6; margin:0; }
+.sc-affiliations { display:flex; align-items:center; gap:34px; margin-top:32px; }
+.sc-affiliations img { width:130px; height:76px; object-fit:contain; }
+.sc-affiliations img:nth-child(2) { width:166px; }
+.sc-affiliations span { font-size:21px; color:var(--muted); line-height:1.45; }
+.sc-title-reference { position:absolute; right:0; top:30px; width:550px; border:2px solid var(--line); border-top:6px solid var(--blue); border-radius:22px; padding:28px; background:#fafcff; }
+.sc-title-device { display:flex; gap:26px; align-items:center; }
+.sc-title-device img { width:145px; height:100px; object-fit:contain; }
+.sc-title-device h3 { font-size:36px; margin:0 0 12px; }
+.sc-title-device span { font-size:25px; color:var(--muted); }
+.sc-powered { display:flex; align-items:center; justify-content:center; gap:18px; font-size:22px; color:var(--muted); padding:18px 0; }
+.sc-powered img { width:140px; height:58px; object-fit:contain; }
+.sc-title-reference .sc-resource { padding:18px 0; border:0; border-top:1px solid var(--line); border-radius:0; gap:20px; }
+.sc-title-reference .sc-resource img { width:140px; height:140px; }
+.sc-title-reference .sc-resource h3 { font-size:27px; }
+.sc-title-reference .sc-resource p { font-size:20px; line-height:1.4; }
+.sc-title-reference .sc-resource span { font-size:17px; overflow-wrap:anywhere; }
+.sc-deep-dive { display:grid; grid-template-columns:1080px 640px; gap:40px; margin-top:20px; }
+.sc-architecture { height:650px; display:flex; align-items:flex-start; }
+.sc-architecture svg { width:1080px; height:650px; }
+.sc-detail { display:flex; flex-direction:column; border:2px solid var(--line); border-top:6px solid var(--blue); border-radius:20px; padding:24px 28px; height:710px; background:#fafcff; }
+.sc-eyebrow { color:var(--blue); text-transform:uppercase; font-size:20px; font-weight:700; letter-spacing:1.4px; margin:0 0 12px; }
+.sc-detail h3 { font-size:32px; line-height:1.2; margin:0 0 22px; }
+.sc-items { list-style:none; padding:0; margin:0; }
+.sc-items li { padding:0 0 19px; }
+.sc-items b { display:block; font-size:26px; margin-bottom:6px; }
+.sc-items span { font-size:23px; line-height:1.35; display:block; color:var(--muted); }
+.sc-detail-foot { font-size:22px; line-height:1.4; color:var(--muted); margin:12px 0 16px; }
+.sc-detail-foot code { font-size:18px; }
+.sc-card-resource { display:flex; align-items:center; gap:16px; margin-top:auto; padding-top:14px; border-top:1px solid var(--line); text-decoration:none; }
+.sc-card-resource > img:first-child { width:88px; height:76px; object-fit:contain; }
+.sc-card-resource > img:last-child { width:104px; height:104px; margin-left:auto; }
+.sc-card-resource span { font-size:23px; line-height:1.3; color:var(--navy); }
+.sc-card-resource small { font-size:16px; color:var(--blue); }
+.sc-lifecycle { display:grid; grid-template-columns:1fr 1fr; gap:16px; margin:12px 0 22px; }
+.sc-lifecycle > div { padding:18px 12px; font-size:24px; display:flex; align-items:center; gap:15px; border:2px solid var(--line); border-radius:12px; }
+.sc-lifecycle b { font-size:21px; color:var(--blue); }
+.sc-lifecycle > div, .sc-workflow-status > div { background:color-mix(in srgb, #fff0d4 calc(var(--activity,0)*100%), white); }
+.sc-workflow-status { display:grid; grid-template-columns:repeat(3,1fr); gap:12px; margin:12px 0; }
+.sc-workflow-status > div { display:flex; align-items:center; gap:12px; padding:12px; border:2px solid var(--line); border-radius:12px; font-size:23px; }
+.sc-workflow-status b { color:var(--blue); font-size:21px; }
+.sc-shell + .sc-items { margin-top:20px; }
+.sc-shell { font-size:18px; line-height:1.5; white-space:pre; padding:16px; margin:0; background:var(--pale); border:1px solid var(--line); border-radius:12px; }
+.sc-shell-summary { font-size:17px; line-height:1.4; }
+.sc-shell-summary + .sc-items { margin-top:18px; }
+.sc-shell-summary + .sc-items li { padding-bottom:14px; }
+.sc-shell-summary + .sc-items b { font-size:24px; }
+.sc-shell-summary + .sc-items span { font-size:21px; }
+.sc-conclusion { display:grid; grid-template-columns:1000px 700px; gap:60px; margin-top:54px; }
+.sc-takeaway { display:flex; align-items:flex-start; gap:24px; margin-bottom:31px; }
+.sc-takeaway > b { border-radius:50%; width:60px; height:60px; display:grid; place-items:center; font-size:30px; background:var(--pale); color:var(--blue); flex:none; }
+.sc-takeaway h3 { font-size:31px; margin:0 0 9px; }
+.sc-takeaway p { font-size:27px; color:var(--muted); line-height:1.4; margin:0; }
+.sc-closing-stack { display:flex; align-items:center; justify-content:space-between; border-block:1px solid var(--line); padding:22px 0; margin-top:35px; font-size:25px; }
+.sc-closing-stack img { width:145px; height:75px; object-fit:contain; }
+.sc-closing-stack b { color:var(--blue); }
+.sc-closing-resources { display:flex; flex-direction:column; gap:24px; }
+.sc-resource { display:flex; gap:23px; align-items:center; color:var(--navy); text-decoration:none; border:1px solid var(--line); border-radius:18px; padding:20px; }
+.sc-resource img { width:125px; height:125px; }
+.sc-resource h3 { font-size:30px; margin:0 0 9px; }
+.sc-resource p { font-size:22px; color:var(--muted); margin:0 0 10px; }
+.sc-resource span { font-size:18px; color:var(--blue); }
+.compiler-output .code-continuation { margin-top:4px; }
+.compiler-output.output-qir-base pre { font-size:15px; line-height:1.2; }
+.sc-workflow-subtitle {font-size:29px;color:var(--blue);margin-top:20px;}
+.sc-workflow-intro {display:block;width:1760px;height:600px;margin-top:15px;}
+
+/* SC26's compact batch preparation and fixed-width counters. */
+.preparation-grid { margin-top: 15px; }
+.preparation-grid > svg { height: 100px; }
+.batch-count { display: inline-block; text-align: right; font-weight: inherit; font-variant-numeric: tabular-nums; }
+.batch-counts > span { white-space: nowrap; }
+.execution.focus-2 > .app-panel:nth-child(2) .batch-grid > svg { height: 135px; }
+.execution.focus-2 > .app-panel:nth-child(2) .batch-counts { font-size: 12px; gap: 6px; }
+.execution.focus-2 > .app-panel:nth-child(2) .batch-counts > span { display: flex; flex: 1; flex-direction: column; align-items: center; }
+
+.sc-qdmi-reference { margin-top:auto; border-top:1px solid var(--line); padding-top:20px; }
+.sc-credit-logos { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.sc-credit-logos img { width:110px; height:60px; object-fit:contain; }
+.sc-qdmi-reference p { font-size:23px; line-height:1.4; margin:14px 0; color:var(--muted); }
+.sc-qdmi-reference a { display:flex; align-items:center; gap:12px; color:var(--blue); text-decoration:none; font-size:21px; }
+.sc-qdmi-reference a img { width:27px; height:27px; }

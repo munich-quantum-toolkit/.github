@@ -1,0 +1,55 @@
+{
+  "kind": "Local, noiseless DDSIM simulation; compilation targets are illustrative models",
+  "versions": {
+    "mqt-core": "4.2.0",
+    "qiskit": "2.6.2",
+    "numpy": "2.5.4"
+  },
+  "seed": 17,
+  "source": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nqubit a;\nqubit b;\nh a;\nh a;\nh a;\ncx a, b;\n",
+  "qc": "module {\n  func.func @main() attributes {mqt.entry_point} {\n    %q = qc.alloc : !qc.qubit\n    %q_0 = qc.alloc : !qc.qubit\n    qc.h %q : !qc.qubit\n    qc.h %q : !qc.qubit\n    qc.h %q : !qc.qubit\n    qc.ctrl(%q) targets (%q_1 = %q_0) {\n      qc.x %q_1 : !qc.qubit\n      qc.yield\n    } : {!qc.qubit}, {!qc.qubit}\n    qc.dealloc %q : !qc.qubit\n    qc.dealloc %q_0 : !qc.qubit\n    return\n  }\n}\n",
+  "qco": "module {\n  func.func @main() attributes {mqt.entry_point} {\n    %q = qco.alloc : !qco.qubit\n    %q_0 = qco.alloc : !qco.qubit\n    %q_1 = qco.h %q : !qco.qubit\n    %q_2 = qco.h %q_1 : !qco.qubit\n    %q_3 = qco.h %q_2 : !qco.qubit\n    %controls_out, %targets_out = qco.ctrl(%q_3) targets (%q_4 = %q_0) {\n      %q_5 = qco.x %q_4 : !qco.qubit\n      qco.yield %q_5 : !qco.qubit\n    } : ({!qco.qubit}, {!qco.qubit})\n    qco.sink %controls_out : !qco.qubit\n    qco.sink %targets_out : !qco.qubit\n    return\n  }\n}\n",
+  "optimized": "module {\n  func.func @main() attributes {mqt.entry_point} {\n    %q = qco.alloc : !qco.qubit\n    %q_0 = qco.alloc : !qco.qubit\n    %q_1 = qco.h %q : !qco.qubit\n    %controls_out, %targets_out = qco.ctrl(%q_1) targets (%q_2 = %q_0) {\n      %q_3 = qco.x %q_2 : !qco.qubit\n      qco.yield %q_3 : !qco.qubit\n    } : ({!qco.qubit}, {!qco.qubit})\n    qco.sink %controls_out : !qco.qubit\n    qco.sink %targets_out : !qco.qubit\n    return\n  }\n}\n",
+  "before": 4,
+  "after": 2,
+  "matrix_max_error": 0.0,
+  "routing_source": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nqubit[3] q;\nbit[3] result;\nh q[0];\ncx q[0], q[1];\ncx q[1], q[2];\ncx q[0], q[2];\nresult = measure q;\n",
+  "targets": {
+    "Triangle": {
+      "source": "OPENQASM 3;\ninclude \"stdgates.inc\";\n\nbit[3] result;\n\nrz(-3.1415926535897931) $0;\nry(1.5707963267948966) $0;\ncx $0, $1;\ncx $1, $2;\ncx $0, $2;\nresult[0] = measure $0;\nresult[1] = measure $1;\nresult[2] = measure $2;\n",
+      "gates": {
+        "cx": 3,
+        "measure": 3,
+        "rz": 1,
+        "ry": 1
+      },
+      "counts": {
+        "000": 2015,
+        "011": 2081
+      }
+    },
+    "Line": {
+      "source": "OPENQASM 3;\ninclude \"stdgates.inc\";\n\nbit[3] result;\n\nrz(-3.1415926535897931) $0;\nry(1.5707963267948966) $0;\ncx $0, $1;\nrz(-1.5707963267948966) $2;\nry(1.5707963267948966) $2;\nrz(2.3561944901923448) $1;\nry(1.5707963267948966) $1;\nrz(1.5707963267948966) $1;\ncx $1, $2;\nry(1.5707963267948966) $2;\nrz(1.5707963267948966) $2;\nrz(1.5707963267948966) $1;\nry(1.5707963267948966) $1;\ncx $1, $2;\nrz(-0.75596941042390764) $2;\nry(-3.1415926535897931) $2;\nrz(-3.1121639006162525) $2;\ncx $0, $1;\nresult[1] = measure $2;\nresult[0] = measure $0;\nresult[2] = measure $1;\n",
+      "gates": {
+        "rz": 8,
+        "ry": 6,
+        "cx": 4,
+        "measure": 3
+      },
+      "counts": {
+        "000": 2015,
+        "011": 2081
+      }
+    }
+  },
+  "bell_source": "OPENQASM 3.0;\ninclude \"stdgates.inc\";\nqubit[2] q;\nh q[0];\ncx q[0], q[1];\nbit[2] result = measure q;\n",
+  "device": "MQT Core DDSIM QDMI Device",
+  "format": "QASM3",
+  "status": "DONE",
+  "counts": {
+    "00": 528,
+    "11": 496
+  },
+  "shots": 1024,
+  "payload_sha256": "1be5f2d43a3049108d3217fcd319310758d4241e81ee3a87aea93b3772f14b88"
+}

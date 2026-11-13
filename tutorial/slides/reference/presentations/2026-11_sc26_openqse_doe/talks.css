@@ -1,0 +1,132 @@
+/* Copyright (c) 2026 MQSC; SPDX-License-Identifier: MIT */
+h2 { font-size:52px; }
+.slide-header .brand-pair #iqm-logo { width:132px; height:90px; }
+.talk-title { padding:70px 25px 0; }
+.talk-title-rule { width:150px; height:7px; background:var(--blue); margin-bottom:35px; }
+.talk-title h1 { font-size:76px; line-height:1.13; margin:0 0 28px; }
+.talk-title > p { font-size:34px; color:var(--muted); }
+.talk-author { display:flex; gap:35px; align-items:center; margin:60px 0 40px; }
+.talk-author img { width:190px; height:90px; object-fit:contain; }
+.talk-author b { display:block; font-size:36px; margin-bottom:12px; }
+.talk-author span { font-size:28px; }
+.talk-resource { display:flex; gap:26px; align-items:center; text-decoration:none; color:var(--navy); }
+.talk-resource > img { width:125px; height:125px; }
+.talk-resource h3 { font-size:32px; margin:0 0 14px; }
+.talk-resource span { font-size:24px; color:var(--blue); overflow-wrap:anywhere; }
+.talk-title .talk-resource { position:absolute; bottom:55px; right:30px; width:660px; }
+.talk-card { border:2px solid #cbdced; border-radius:18px; padding:28px 32px; background:#f8fbfe; }
+.talk-card h3 { margin:0 0 18px; font-size:32px; color:var(--blue); }
+.talk-card p { font-size:28px; line-height:1.4; margin:0; }
+.talk-eyebrow { text-transform:uppercase; letter-spacing:1.3px; font-size:24px; color:var(--blue); }
+.talk-qualifier { font-size:24px; line-height:1.4; color:var(--muted); }
+.talk-diagram { margin-top:25px; }
+.talk-diagram > svg { width:100%; height:660px; }
+.talk-bottom { font-size:25px; color:var(--muted); margin:18px 0 0; }
+.source-row { display:flex; flex-wrap:wrap; gap:30px; margin-top:28px; }
+.talk-source { font-size:22px; color:var(--blue); }
+.focused-stack { height:100%; }
+.focused-stack .opening-references { bottom:-21px; }
+.focused-stack.focus-compiler [data-morph="stack-orchestrator"],
+.focused-stack.focus-compiler [data-morph="frontend-1"],
+.focused-stack.focus-compiler [data-morph="frontend-2"],
+.focused-stack.focus-compiler [data-morph="frontend-3"],
+.focused-stack.focus-compiler [data-morph^="frontend-runtime"],
+.focused-stack.focus-compiler [data-morph="frontend-program-1"],
+.focused-stack.focus-compiler [data-morph="frontend-program-2"],
+.focused-stack.focus-compiler [data-morph="frontend-program-3"],
+.focused-stack.focus-compiler [data-morph="opening-reference-orchestrator"] { opacity:.28!important; }
+.qri-overview { margin:10px auto 0; width:1560px; }
+.qri-client { border:2px solid #cbdced; padding:20px; text-align:center; font-size:30px; border-radius:14px; }
+.qri-stem { width:3px; height:25px; background:var(--blue); margin:auto; }
+.qri-contract { padding:18px 35px; background:#eaf2fa; border:3px solid var(--blue); border-radius:14px; display:flex; align-items:center; gap:50px; font-size:30px; }
+.qri-contract b { font-size:42px; }
+.qri-implementations { display:grid; grid-template-columns:1fr 1fr; gap:70px; padding:20px 0; }
+.qri-implementations section { padding:26px 30px; border:2px solid #cbdced; border-radius:16px; display:grid; grid-template-columns:230px 1fr; gap:15px 25px; align-items:center; }
+.qri-implementations img { width:220px; height:80px; object-fit:contain; }
+.qri-implementations h3 { margin:0; font-size:29px; line-height:1.3; }
+.qri-implementations p { grid-column:1 / -1; font-size:28px; line-height:1.5; margin:10px 0 0; }
+.qrmi-wordmark { font-size:58px; font-weight:700; letter-spacing:3px; color:var(--navy); }
+.compiler-heading { display:contents; }
+.compiler-heading .talk-resource { position:absolute; top:0; right:0; gap:12px; width:550px; }
+.compiler-heading .talk-resource > img { width:75px; height:75px; }
+.compiler-heading .talk-resource h3 { font-size:26px; margin:0 0 5px; }
+.compiler-heading .talk-resource span { font-size:21px; }
+.sc-deep-dive .sc-items { font-size:28px; }
+.sc-card-resource { font-size:26px; }
+.sc-card-resource small { font-size:22px; }
+.spec-facts { flex-direction:column; align-items:flex-start; justify-content:center; gap:4px; }
+.spec-facts span { white-space:normal; }
+.compiler-workbench .spec-card { grid-template-rows:40px 54px 62px minmax(0,1fr) 54px; }
+.opening-frame h2 small { display:none; }
+
+
+#deck.iqm-talk .preparation-code .complete-code { --code-font:18px!important; }
+#deck.iqm-talk .preparation-code .code-text { white-space:pre-wrap; overflow-wrap:anywhere; }
+
+#deck.iqm-talk .slide-header .brand-pair { flex-direction:row; }
+
+#deck.iqm-talk .slide-header #iqm-logo { width:154px; height:88px; }
+
+.reference-diagram > svg { height:700px; }
+#deck.openqse-demo .compile-tile.selected:last-child { background:none; border-color:var(--line); }
+#deck.openqse-demo .compile-tile.selected:last-child b { color:var(--navy); }
+
+/* QRI and interface summaries retain one readable hierarchy across both paths. */
+.qri-intro { display:grid; grid-template-columns:850px 1fr; gap:70px; margin-top:24px; }
+.qri-main-flow .talk-card { padding:24px 32px; }
+.qri-main-flow h3 { font-size:32px; margin:0 0 14px; }
+.qri-main-flow p, .qri-intro-copy > p { font-size:28px; line-height:1.4; margin:0 0 16px; }
+.qri-down { text-align:center; color:var(--blue); font-size:38px; height:48px; }
+.qri-capabilities { background:var(--pale); }
+.qri-capabilities > div { display:grid; grid-template-columns:1fr 1fr; gap:16px; }
+.qri-capabilities code { font-size:24px; }
+.qri-adapters { display:flex; justify-content:center; align-items:center; gap:40px; font-size:38px; }
+.qri-adapters img { width:200px; height:75px; object-fit:contain; }
+.qri-config { border:2px solid var(--line); border-radius:14px; margin-top:18px; padding:16px 24px; }
+.qri-config h3 { font-size:25px; color:var(--muted); margin:0 0 12px; }
+.qri-config pre { font-size:23px; line-height:1.25; color:var(--blue); margin:0; }
+.qri-provider-row { grid-column:1/-1; display:flex; flex-wrap:wrap; align-items:center; justify-content:space-around; gap:12px; padding-top:14px; border-top:1px solid var(--line); }
+.qri-provider-row > div { width:185px; height:78px; display:grid; place-items:center; font-size:23px; text-align:center; }
+.qri-provider-row img { width:145px; height:72px; }
+.qrmi-overview { margin-top:24px; }
+.qrmi-clients { display:grid; grid-template-columns:repeat(3,1fr); gap:25px; }
+.qrmi-clients .talk-card { padding:20px 24px; }
+.qrmi-clients h3 { font-size:30px; margin:0 0 12px; }
+.qrmi-clients p { font-size:25px; line-height:1.4; margin:0; }
+.qrmi-clients small { font-size:22px; color:var(--muted); }
+.qrmi-library { background:var(--pale); border:2px solid var(--blue); border-radius:18px; padding:22px; margin-top:22px; }
+.qrmi-library header { display:flex; align-items:center; gap:40px; font-size:27px; }
+.qrmi-library header b { font-size:38px; }
+.qrmi-bindings { display:flex; gap:20px; margin:14px 0; }
+.qrmi-bindings span { flex:1; text-align:center; background:white; border:1px solid var(--line); border-radius:8px; padding:7px; font-size:25px; }
+.qrmi-functions { display:flex; gap:20px; }
+.qrmi-functions div { flex:1; font-size:26px; text-align:center; padding:14px 5px; border-block:1px solid var(--line); }
+.qrmi-backends { display:grid; grid-template-columns:repeat(7,1fr); gap:14px; margin-top:18px; }
+.qrmi-backends > div { display:flex; flex-direction:column; align-items:center; gap:12px; background:white; padding:14px 8px; border-radius:10px; text-align:center; }
+.qrmi-backends img { width:140px; height:70px; object-fit:contain; }
+.qrmi-backends b { font-size:23px; line-height:1.2; }
+.qrmi-backends span { font-size:22px; color:var(--muted); margin-top:auto; }
+.qrmi-community { display:flex; align-items:center; gap:30px; font-size:24px; margin-top:24px; }
+.qrmi-overview .source-row { margin-top:24px; }
+.integration-overview { margin-top:18px; }
+.integration-chain { display:flex; align-items:center; gap:25px; }
+.integration-chain > div { flex:1; border:2px solid var(--line); border-radius:14px; padding:18px; display:flex; height:100px; align-items:center; justify-content:center; gap:12px; flex-direction:column; font-size:29px; }
+.integration-chain > span { color:var(--blue); font-size:38px; }
+.integration-chain img { width:150px; height:40px; object-fit:contain; }
+.integration-client-logo { display:flex; align-items:center; gap:16px; font-size:24px; }
+.integration-client-logo img { width:40px; }
+.integration-chain small { font-size:24px; color:var(--muted); }
+.integration-cluster { flex:2; height:128px; border:2px solid var(--blue); border-radius:14px; padding:10px 24px; display:flex; flex-direction:column; justify-content:space-between; gap:4px; }
+.integration-cluster header { font-size:23px; line-height:26px; color:var(--blue); }
+.integration-cluster > div { display:flex; align-items:center; justify-content:center; gap:60px; font-size:32px; }
+.integration-cluster small { text-align:center; font-size:23px; line-height:26px; }
+.integration-data { height:44px; display:flex; align-items:center; justify-content:flex-end; gap:35px; font-size:24px; color:var(--blue); margin:6px 0; }
+.integration-data img { width:110px; height:42px; object-fit:contain; }
+.integration-changes { display:grid; grid-template-columns:1fr 1fr; gap:14px 28px; }
+.integration-change { border:1px solid var(--line); border-left:4px solid var(--blue); border-radius:12px; padding:14px 24px; }
+.integration-change h3 { margin:0 0 10px; font-size:29px; display:flex; align-items:center; gap:18px; }
+.integration-change h3 b { color:var(--blue); font-size:23px; white-space:nowrap; }
+.integration-change p { margin:0; font-size:26px; line-height:1.3; }
+.integration-change > div { display:flex; flex-wrap:wrap; gap:10px 20px; margin-top:8px; }
+.integration-change .talk-source { font-size:21px; }
+.slide-header img[alt="OPENQSE"] { width:200px; height:90px; }
