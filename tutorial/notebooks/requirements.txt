@@ -10,8 +10,9 @@
 # Copyright (c) 2025 - 2026 Munich Quantum Software Company GmbH
 # SPDX-License-Identifier: MIT
 
-mqt-core==4.2.0
+mqt-core==4.2.1
 qiskit[visualization]==2.6.2
 jupyterlab==4.6.6
+jupyterlab-myst==2.7.0
 mlir-pygments==1.0.0
 openqasm-pygments==0.2.0

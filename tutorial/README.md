@@ -20,34 +20,45 @@ A Tutorial on High-Performance Software for Quantum Computing · SC26
 
 ## Introduction
 
-The HTML tutorial starts with the IQM presentation's software-stack overview,
-then moves through quantum circuits, MLIR-based compilation, QDMI and HPC
-integration. Two 90-minute sessions include 110 minutes of notebook work. The
-break follows the compiler primer, before the compilation notebook. The IQM and
-openQSE presentations guide the story, complemented by the QCE tutorial's
-compiler and QDMI material.
-
-Build the offline slides using the presentations repository’s locked authoring
-environment and open `slides/build/sc26-tutorial.html`. See
-[slide authoring and validation](slides/README.md) for navigation, preview,
-editing, and the local DDSIM examples.
-
-The [five notebooks](notebooks/README.md) begin with a Qiskit circuit exercise,
-then reuse the QCE26 MLIR tutorial and the QDMI extension from the MQT Core
-documentation. They use MQT Core 4.2.0 and include executed outputs from local
-simulation.
+Together, we will build quantum programs, compile them for different devices,
+and execute them through QDMI. Along the way, we will explore how quantum
+computing fits into HPC workflows. The exercises use Qiskit and MQT Core and run
+locally on simulators, so no quantum hardware account is needed.
 
 ## Setup
 
-Install [uv](https://docs.astral.sh/uv/getting-started/installation/), then run
-these commands from the `tutorial/` directory:
+Choose either option below from the `tutorial/` directory. Both start JupyterLab
+with Python 3.15 and the tutorial dependencies in an isolated environment. The
+first run downloads Python and dependencies as needed.
+
+### Option 1: Run uv directly
+
+Install [uv](https://docs.astral.sh/uv/getting-started/installation/) using a
+method of your choice, then run:
 
 ```sh
 cd notebooks
 uv run --no-project --python 3.15 --with-requirements requirements.txt jupyter lab
 ```
 
-This uses the QCE tutorial's standalone setup with Python 3.15. See the
-[notebook instructions](notebooks/README.md#run-the-notebooks) for the
-alternative using Python's `venv` and `pip`, and for reproducing the locked
-environment.
+### Option 2: Use a launcher
+
+On macOS or Linux:
+
+```sh
+bash notebooks/start.sh
+```
+
+On Windows, in PowerShell:
+
+```powershell
+powershell -NoProfile -ExecutionPolicy Bypass -File .\notebooks\start.ps1
+```
+
+The launchers install `uv` for your user if needed, then run the same command as
+Option 1.
+
+Once JupyterLab opens, start with
+[Build a circuit](notebooks/circuit_basics.ipynb). See the
+[notebook guide](notebooks/README.md) for the full sequence and an alternative
+setup using Python's `venv` and `pip`.

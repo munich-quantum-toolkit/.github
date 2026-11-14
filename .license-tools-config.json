@@ -9,7 +9,8 @@
   "title": false,
   "include": ["**/*"],
   "style_override_for_suffix": {
-    ".pyi": "DOCSTRING_STYLE"
+    ".pyi": "DOCSTRING_STYLE",
+    ".ps1": "POUND_STYLE"
   },
   "exclude": [
     "^\\.[^/]+",

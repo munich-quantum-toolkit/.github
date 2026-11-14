@@ -116,3 +116,17 @@ repos:
       - id: ruff-format
         types_or: [python, pyi, jupyter, markdown]
         priority: 7
+
+  ## Clean Jupyter notebooks with nb-clean
+  - repo: https://github.com/srstevenson/nb-clean
+    rev: v6.0.0
+    hooks:
+      - id: nb-clean
+        args:
+          - --remove-empty-cells
+          - --preserve-cell-metadata-field
+          - raw_mimetype
+          - --preserve-cell-metadata-field
+          - jupyter
+          - --
+        priority: 8

@@ -81,7 +81,7 @@ questions and useful experiments to covering every retained cell.
 
 ## Evidence and delivery
 
-Notebook execution is local simulation on Python 3.15.1 and MQT Core 4.2.0. The
+Notebook execution is local simulation on Python 3.15.1 and MQT Core 4.2.1. The
 compilation carousel and Slurm diagram are reference material, not a new
 hardware run or a cluster exercise. Preserve exact provenance in SOURCES.md. The
 compiler replay includes the source's CZ frame-order fix.

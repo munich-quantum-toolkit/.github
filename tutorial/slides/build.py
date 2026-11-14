@@ -145,9 +145,8 @@ def build():
     delivery_notebooks = output / "notebooks"
     delivery_notebooks.mkdir(exist_ok=True)
     for path in notebooks.iterdir():
-        if path.suffix in {".ipynb", ".md", ".txt"}:
+        if path.suffix in {".ipynb", ".md", ".ps1", ".sh", ".txt"}:
             shutil.copyfile(path, delivery_notebooks / path.name)
-    shutil.copytree(notebooks / "_static", delivery_notebooks / "_static", dirs_exist_ok=True)
     print(destination)
     return destination
 

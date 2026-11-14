@@ -5,5 +5,6 @@ mch = "mch"
 ket = "ket"
 linz = "linz"
 braket = "braket"
-# Pygments' generated Generic.EmphStrong CSS class in notebook outputs.
+# Pygments' generated CSS classes in notebook outputs.
 ges = "ges"
+nd = "nd"
