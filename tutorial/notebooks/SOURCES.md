@@ -4,8 +4,8 @@ The four compiler notebooks originate in
 `munich-quantum-toolkit/qce26-mlir-tutorial`, branch `update-mqt-core-4.1`,
 commit `98a1c40` (Update MQT Core to 4.1). The original checkout had local
 executed outputs and one experimental edit; it was read but not modified. This
-tutorial imports the committed foundation and keeps its example sequence,
-exercises, diagrams and independent-notebook structure.
+tutorial imports that foundation. The subsequent SC26 revisions below adapt the
+opening examples while retaining independent notebooks and local execution.
 
 Those four notebooks and the two documentation extensions were compared with
 `core/docs/tutorials/` at MQT Core `v4.2.0`. Those source files also match the
@@ -28,17 +28,17 @@ This notebook labels the actual automatic format and explicitly submits QIR Base
 for the second execution path. The changed code is intentional and avoids
 comparing two OpenQASM executions under different labels.
 
-The surrounding teaching prose follows the MQT Core 4.2 tutorial pages. The SC26
-additions are the three session timing paragraphs and their checkpoints, plus
-the QDMI format clarification above. QDMI reuse precedes optional state
-extraction so the live route can stop after the device/job workflow.
+The teaching prose originated in the MQT Core 4.2 tutorial pages. SC26 adds
+session timing, checkpoints, attendee prompts, the QDMI format clarification
+above, and the Qiskit revisions described below. QDMI reuse precedes optional
+state extraction so the live route can stop after the device/job workflow.
 
 All page references use full URLs under
 `https://mqt.readthedocs.io/projects/core/en/stable/`; original external links
-are retained. Descriptive link titles replace MyST roles. Dropdown answers use
-HTML `<details>` and `<summary>` elements with blank lines around their Markdown
-content. The two original SVG teaching diagrams remain local under `_static/`.
-The four original code-cell sequences are preserved.
+are retained. Descriptive link titles replace MyST roles. Attendee prompts use a
+MyST `admonition` titled **Your turn**, with the `tip` class. Answers use MyST
+`dropdown` directives, rendered by the pinned `jupyterlab-myst` extension. The
+two original SVG teaching diagrams remain local under `_static/`.
 
 For inspiration, the SC24 and SC25 notebooks on their `.github` tutorial
 branches were inspected. Their small Bell/GHZ starting points, target
@@ -47,11 +47,9 @@ the QCE foundation. Their separate MQT Bench/QMAP/QCEC dependencies and runtime
 comparisons are outside this compilation/QDMI session.
 
 `circuit_basics.ipynb` is a separate SC26 introduction. It uses Qiskit's
-`QuantumCircuit` and `Statevector` for circuit construction, exact
-probabilities, shots, bit order, and phase. It concludes with
-`QCProgram.from_qiskit` to connect to the existing QCE sequence. No QCE code
-cells were changed by this addition. Its GHZ exercise includes a collapsed
-solution and a conditional checker.
+`QuantumCircuit` and `Statevector` for circuit construction, exact probabilities
+and shots. Its GHZ exercise includes a collapsed solution and a conditional
+checker.
 
 Validation: the six compiler/execution notebooks are executed with local DDSIM
 in the tutorial's Python 3.15.1 / MQT Core 4.2.0 / Qiskit 2.6.2 environment.
@@ -60,8 +58,8 @@ a cluster, an external provider, or another operating system. The new Qiskit
 notebook was executed separately with the same versions, including its supplied
 GHZ solution.
 
-The standalone setup also passed in a clean Python 3.15.1 virtual environment
-created with `venv` and populated with
+Before the MyST revision, the standalone setup also passed in a clean Python
+3.15.1 virtual environment created with `venv` and populated with
 `python -m pip install -r requirements.txt`. `pip check`, all seven notebooks,
 and the supplied GHZ solution passed. JupyterLab 4.6.6 rendered and toggled all
 nine HTML answer dropdowns. All 29 documentation links, including section
@@ -72,12 +70,12 @@ installed globally.
 ## SC26 session route revision
 
 The separate QCE checkout and its committed `98a1c40` foundation were compared
-again with these notebooks. The four foundation notebooks retain their original
-code-cell sequences with the MQT Core 4.2 API changes listed above. The six
-owning Markdown tutorial sources in the local MQT Core checkout still match
-`v4.2.0`. The QCE PowerPoint's `canonicalize` cancellation example is superseded
-by `simplify-quantum` in the released documentation. The current QIR
-serialization and NumPy result APIs are retained here.
+again with these notebooks. At that stage, the four foundation notebooks
+retained their original code-cell sequences with the MQT Core 4.2 API changes
+listed above. The six owning Markdown tutorial sources in the local MQT Core
+checkout still match `v4.2.0`. The QCE PowerPoint's `canonicalize` cancellation
+example is superseded by `simplify-quantum` in the released documentation. The
+current QIR serialization and NumPy result APIs are retained here.
 
 The 40/40/30-minute route adds planning text and checkpoints to the four core
 notebooks. In `qdmi_execution`, compiled-artifact reuse now precedes optional
@@ -85,3 +83,30 @@ simulator-state extraction. Its short QDMI imports are combined on one line. The
 example programs and assertions are unchanged. Control flow, QIR and jeff remain
 optional follow-up notebooks. The introductory notebook can use saved simulation
 outputs while attendees focus on circuit construction and prediction.
+
+## Attendee prompts and Qiskit revision
+
+Daniel's notebook iteration introduces Qiskit circuits in compiler
+representations and the QIR opening, and shortens the first notebook to Bell
+construction, sampling, and the GHZ exercise. Compiler representations now
+imports the Qiskit circuit at every pipeline checkpoint, reuses the established
+variable names, and uses Qiskit for the optional Hadamard and HZH variants. Its
+main optimization check simulates the output state. The optional variants retain
+full-unitary checks. The introductory summary and DDSIM prompt replace the
+addressed editing comments.
+
+All seven notebooks use the same visible **Your turn** admonition for attendee
+tasks. Answers are MyST dropdowns. Relative documentation references remain
+absolute URLs. `jupyterlab-myst==2.7.0` is pinned in both setup paths and the
+lockfile. The five notebooks after compiler representations have no code or
+saved-output changes in this formatting revision.
+
+All seven notebooks and the supplied GHZ solution passed in an isolated Python
+3.15.1 environment with MQT Core 4.2.0 and Qiskit 2.6.2. Only local simulators
+were used. The first two notebooks' outputs were refreshed after successful
+execution, leaving the GHZ exercise unsolved.
+
+JupyterLab 4.6.6 with jupyterlab-myst 2.7.0 rendered all 63 attendee callouts
+and all seven answer dropdowns. Every dropdown opened and closed, with no raw
+directive text, broken teaching images, math errors, or browser page errors.
+This validates JupyterLab's renderer, not VS Code's separate notebook renderer.

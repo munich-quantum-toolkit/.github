@@ -20,6 +20,10 @@ uv run --no-project --python 3.15 --with-requirements requirements.txt jupyter l
 This follows the QCE tutorial's setup command and selects Python 3.15. Start
 each notebook with a fresh Python 3 kernel and run the cells from top to bottom.
 
+Both setup paths install `jupyterlab-myst` for the **Your turn** callouts and
+collapsible answers. Open the notebooks in JupyterLab to render these MyST
+blocks. Installing the extension does not change VS Code’s notebook renderer.
+
 ### Without uv
 
 Use an installed Python 3.15 interpreter to create a virtual environment in this
@@ -63,8 +67,8 @@ uv run --locked jupyter lab notebooks
 
 | Notebook                                                   | Topic                                                       | Use during the tutorial |
 | ---------------------------------------------------------- | ----------------------------------------------------------- | ----------------------- |
-| [Build a circuit](circuit_basics.ipynb)                    | Qiskit, Bell/GHZ circuits, probabilities, shots, phase      | Notebook session 1      |
-| [Compiler representations](compiler_representations.ipynb) | QC/QCO, simplification, matrix checks, ownership            | Notebook session 2      |
+| [Build a circuit](circuit_basics.ipynb)                    | Qiskit, Bell/GHZ circuits, probabilities and shots          | Notebook session 1      |
+| [Compiler representations](compiler_representations.ipynb) | QC/QCO, simplification, simulation and ownership            | Notebook session 2      |
 | [Control flow](control_flow.ipynb)                         | Registers, loops, feedback, static versus executed work     | Optional extension      |
 | [Hardware compilation](hardware_compilation.ipynb)         | Placement, routing, synthesis, target limits and QDMI       | Notebook session 2      |
 | [QIR execution](qir_execution.ipynb)                       | Base/Adaptive profiles, serialization and output records    | Optional extension      |
@@ -74,9 +78,8 @@ uv run --locked jupyter lab notebooks
 The live route uses **40 + 40 + 30 minutes** across two 90-minute sessions:
 
 1. **Session 1, Notebook 01 (40 min):** build Bell and GHZ circuits, predict
-   measurements and phase effects, and import the Bell circuit into MQT Core.
-   Simulation is optional. Saved outputs support discussion without rerunning
-   it.
+   measurements, and compare exact probabilities with sampled counts. Simulation
+   is optional. Saved outputs support discussion without rerunning it.
 2. **After the break, Notebook 02 (40 min):** spend 20 minutes on
    representations through its checkpoint, then 20 on hardware compilation
    through the logical result checks. Return to the slides before the optional
@@ -92,8 +95,9 @@ no hardware account, cloud service or separately installed MLIR SDK. The two
 topology targets are models; their programs execute only on DDSIM. The `jeff`
 process handoff uses MQT Core on both sides.
 
-The QCE notebooks keep their existing examples, exercises and sequence, with the
-MQT Core 4.2 API and documentation updates recorded in `SOURCES.md`.
+The QCE notebooks provide the compiler examples and exercises. The first two
+notebooks now share a Qiskit starting point. API, prose and rendering changes
+are recorded in `SOURCES.md`.
 
 ## Re-execute
 

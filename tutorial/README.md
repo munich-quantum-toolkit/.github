@@ -47,7 +47,8 @@ cd notebooks
 uv run --no-project --python 3.15 --with-requirements requirements.txt jupyter lab
 ```
 
-This uses the QCE tutorial's standalone setup with Python 3.15. See the
+This uses the QCE tutorial's standalone setup with Python 3.15 and installs MyST
+support for the attendee callouts and answer dropdowns in JupyterLab. See the
 [notebook instructions](notebooks/README.md#run-the-notebooks) for the
 alternative using Python's `venv` and `pip`, and for reproducing the locked
 environment.
