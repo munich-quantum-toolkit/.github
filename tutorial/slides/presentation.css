@@ -422,8 +422,21 @@
   justify-content: center;
   font-size: 28px;
 }
-.mqsf-copy .mqsf-math {
+/* Keep positioned KaTeX outside SVG foreignObject for Safari. */
+.mqsf-copy .qpe-nested {
+  position: relative;
+}
+.mqsf-copy .qpe-math-labels {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
   height: 100%;
+  aspect-ratio: 1140 / 342;
+  container-type: size;
+}
+.mqsf-copy .mqsf-math {
+  position: absolute;
   display: flex;
   align-items: center;
   justify-content: center;

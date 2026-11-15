@@ -537,7 +537,11 @@ function structuredCopy(id, html) {
         `${math`\theta\leftarrow0`} Initially · Next-Round Feedback`,
       ],
     ]);
-    root.querySelectorAll(".qpe-nested svg text").forEach((node) => {
+    const circuit = root.querySelector(".qpe-nested");
+    const mathLabels = document.createElement("div");
+    mathLabels.className = "qpe-math-labels";
+    circuit.append(mathLabels);
+    circuit.querySelectorAll("svg text").forEach((node) => {
       const value = node.textContent;
       const qubit = value.match(/^q\[(\d+)\]$/);
       const content = qubit ? math`q_${qubit[1]}` : labels.get(value);
@@ -552,7 +556,11 @@ function structuredCopy(id, html) {
           : value.length > 2
             ? 170
             : 64;
-      node.outerHTML = `<foreignObject x="${x - width / 2}" y="${y - size * 1.35}" width="${width}" height="${size * 2}"><div xmlns="http://www.w3.org/1999/xhtml" class="mqsf-math" style="font-size:${size}px;color:${node.getAttribute("fill") || C.navy}"><span>${content}</span></div></foreignObject>`;
+      mathLabels.insertAdjacentHTML(
+        "beforeend",
+        `<div class="mqsf-math" style="left:${100 * (x - width / 2) / 1140}%;top:${100 * (y - size * 1.35) / 342}%;width:${100 * width / 1140}%;height:${100 * size * 2 / 342}%;font-size:${100 * size / 342}cqh;color:${node.getAttribute("fill") || C.navy}"><span>${content}</span></div>`,
+      );
+      node.remove();
     });
     const sequence = root.querySelector(".adaptive-sequence svg");
     sequence.insertAdjacentHTML(

@@ -14,8 +14,7 @@ behavior, MLIR notation and Python calls used in the notebooks.
   slides, with a bookmark for each slide. Animations appear as settled states.
 - [Third-party notices](NOTICES.txt): keep these with redistributed copies.
 
-These exports were built from source revision
-`374350a` on the `tutorial-SC26` branch.
+These exports are built from the slide sources in this directory.
 
 ## Teaching route
 
