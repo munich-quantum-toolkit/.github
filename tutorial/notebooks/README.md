@@ -19,9 +19,11 @@ sections that follow are optional.
 
 ## Run the notebooks
 
-Choose either option below from `tutorial/notebooks/`. Both start JupyterLab
-with Python 3.15 and the tutorial dependencies in an isolated environment. The
-first run downloads Python and dependencies as needed.
+[Download the notebooks (.zip)](https://github.com/munich-quantum-toolkit/.github/raw/refs/heads/tutorial-SC26/tutorial/_static/sc26-notebooks.zip)
+and extract the archive. Open a terminal in the extracted `notebooks` folder,
+then choose either option below. Both start JupyterLab with Python 3.15 and the
+tutorial dependencies in an isolated environment. The first run downloads Python
+and dependencies as needed.
 
 ### Option 1: Run uv directly
 

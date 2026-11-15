@@ -27,9 +27,11 @@ locally on simulators, so no quantum hardware account is needed.
 
 ## Setup
 
-Choose either option below from the `tutorial/` directory. Both start JupyterLab
-with Python 3.15 and the tutorial dependencies in an isolated environment. The
-first run downloads Python and dependencies as needed.
+[Download the notebooks (.zip)](_static/sc26-notebooks.zip?raw=true) and extract
+the archive. Open a terminal in the extracted `notebooks` folder, then choose
+either option below. Both start JupyterLab with Python 3.15 and the tutorial
+dependencies in an isolated environment. The first run downloads Python and
+dependencies as needed.
 
 ### Option 1: Run uv directly
 
@@ -37,7 +39,6 @@ Install [uv](https://docs.astral.sh/uv/getting-started/installation/) using a
 method of your choice, then run:
 
 ```sh
-cd notebooks
 uv run --no-project --python 3.15 --with-requirements requirements.txt jupyter lab
 ```
 
@@ -46,13 +47,13 @@ uv run --no-project --python 3.15 --with-requirements requirements.txt jupyter l
 On macOS or Linux:
 
 ```sh
-bash notebooks/start.sh
+bash start.sh
 ```
 
 On Windows, in PowerShell:
 
 ```powershell
-powershell -NoProfile -ExecutionPolicy Bypass -File .\notebooks\start.ps1
+powershell -NoProfile -ExecutionPolicy Bypass -File .\start.ps1
 ```
 
 The launchers install `uv` for your user if needed, then run the same command as
