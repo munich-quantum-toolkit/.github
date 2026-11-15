@@ -6,6 +6,17 @@ workflow and Slurm example use the original reference renderers, styles and
 continuous animations. The added technical slides introduce the circuit
 behavior, MLIR notation and Python calls used in the notebooks.
 
+## Download
+
+- [Standalone HTML presentation](sc26-tutorial.html): download and open in a
+  browser; all presentation assets are embedded and work offline.
+- [PDF](sc26-tutorial.pdf): 73 pages covering all incremental states of the 24
+  slides, with a bookmark for each slide. Animations appear as settled states.
+- [Third-party notices](NOTICES.txt): keep these with redistributed copies.
+
+These exports were built from source revision
+`374350a` on the `tutorial-SC26` branch.
+
 ## Teaching route
 
 | Session | Slides | Topic                                                                     | Notebook time                             |
