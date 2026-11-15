@@ -7,9 +7,9 @@ Python and general technical competence without prior knowledge of the MQT APIs.
 Use the presentations repository's root guidance and three design guides. The
 material formerly in PR #4 is merged. Preserve the reference layouts and motion,
 the existing title, and relevant MQT logos in slide content. Only the header
-omits MQT. Avoid projected text links and URLs, except for the unchanged paper
-references on the MQSF copies. QR codes may be used when useful. Use explicit
-dark slides for all four notebook handoffs.
+omits MQT. Pair QR codes with the source presentation's visible resource links.
+Use the GitHub mark with organization/repository notation where appropriate. Use
+explicit dark slides for all four notebook handoffs.
 
 ## Two 90-minute sessions
 

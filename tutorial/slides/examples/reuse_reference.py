@@ -42,7 +42,7 @@ SCRIPTS = [
 ]
 MQSF_SCRIPT = "presentations/2026-10_mqsf_system_software_for_quantum/presentation.js"
 MQSF_ASSETS = "eq-grover-iterations qr-unrolling oxford quantinuum ubc xanadu unitary".split()
-ASSETS = "aws qr-afqmc-paper qr-afqmc qr-braket qr-core-repo qr-ibm qr-iqm qr-mqss qr-orchestrator qr-pasqal qr-qdmi-repo braket c ibm ionq iqm jeff llvm lrz-mark mlir mqsc mqss mqt mqv orchestrator pasqal pennylane qdmi qir qiskit slurm tum tum-mark principle-community principle-open principle-performance principle-practice principle-unlocked".split()
+ASSETS = "aws github qr-afqmc-paper qr-afqmc qr-braket qr-core-repo qr-ibm qr-iqm qr-mqss qr-orchestrator qr-pasqal qr-qdmi-repo braket c ibm ionq iqm jeff llvm lrz-mark mlir mqsc mqss mqt mqv orchestrator pasqal pennylane qdmi qir qiskit slurm tum tum-mark principle-community principle-open principle-performance principle-practice principle-unlocked".split()
 
 
 def embedded(html, name):

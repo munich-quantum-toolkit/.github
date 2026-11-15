@@ -44,10 +44,11 @@ using Pygments, openqasm-pygments and mlir-pygments from the locked environment.
 All code blocks use bundled Fira Code with programming ligatures, plus the
 source deck's gray background and line-number gutter. The compiler overview uses
 the same Inter typography, pale panels and blue connectors as the teaching
-slides. Projected text URLs are omitted except for the unchanged paper
-references on the MQSF copies. The header uses TUM, MQSC and MQV, with white
-artwork on notebook handoffs. MQT logos remain in the original slide content.
-Copied project, provider and paper QR codes remain visible.
+slides. GitHub links and icons retain their source presentation styling.
+Notebook handoffs include a white materials URL below the QR code. The header
+uses TUM, MQSC and MQV, with white artwork on notebook handoffs. MQT logos
+remain in the original slide content. Copied project, provider and paper QR
+codes remain visible.
 
 Controls are the original deck's: arrow keys, Space, Enter or Page Down/Page Up
 step through builds. Home/End jump to the ends. G or Escape opens the overview.
@@ -92,20 +93,21 @@ notes or notes shortcut are included.
 - `SOURCES.md`: attribution, source revisions and evidence limitations.
 
 `presentationCopy` applies the requested presentation edits when an IQM or
-openQSE reference scene is rendered: omit projected text URLs and download/star
-badges, and capitalize after separators. Content logos, QR artwork and source
-subtitles remain intact. The copied IQM and openQSE deck configurations and
-`talks.js` register the source slides directly. Local technical styles are
-scoped so they do not restyle copied diagrams. The MQSF copies bypass those text
-edits. Their original registrations and renderers are exported before the
-standalone MQSF navigation setup, then run through the tutorial shell. The
-chapter label is STRUCTURED PROGRAMS. `structuredCopy` applies the requested
-LaTeX typesetting to the Grover equation and iterative-QPE circuit and makes the
-runtime arrows consistently thin, with an arrowhead on the self-call. Source
-typography is restored where another deck's styles would override it, keeping
-the shared (80, 152) title anchor. Fifteen JavaScript/CSS files and the imported
-SVG assets are byte-for-byte copies, protected by the manifest and excluded from
-formatters.
+openQSE reference scene is rendered: preserve resource URLs, omit download/star
+badges, and capitalize after separators. The MQT Core and Orchestrator links use
+the opening slides' GitHub mark and shorter organization/repository notation.
+Content logos, QR artwork and source subtitles remain intact. The copied IQM and
+openQSE deck configurations and `talks.js` register the source slides directly.
+Local technical styles are scoped so they do not restyle copied diagrams. The
+MQSF copies bypass those text edits. Their original registrations and renderers
+are exported before the standalone MQSF navigation setup, then run through the
+tutorial shell. The chapter label is STRUCTURED PROGRAMS. `structuredCopy`
+applies the requested LaTeX typesetting to the Grover equation and iterative-QPE
+circuit and makes the runtime arrows consistently thin, with an arrowhead on the
+self-call. Source typography is restored where another deck's styles would
+override it, keeping the shared (80, 152) title anchor. Fifteen JavaScript/CSS
+files and the imported SVG assets are byte-for-byte copies, protected by the
+manifest and excluded from formatters.
 
 The build uses Python's standard library and the installed Pygments lexers. It
 does not import MQT Core or call a provider. Generated output is ignored by Git.

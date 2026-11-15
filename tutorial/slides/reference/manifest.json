@@ -84,7 +84,8 @@
     "quantinuum": "pr-quantinuum.svg",
     "ubc": "pr-ubc.svg",
     "xanadu": "pr-xanadu.svg",
-    "unitary": "pr-unitary.svg"
+    "unitary": "pr-unitary.svg",
+    "github": "pr-github.svg"
   },
   "asset_sha256": {
     "pr-aws.svg": "f0d62501ae7a977ccc41b02d9c5d573880b728305930c8e66680a3b714db2c3a",
@@ -131,6 +132,7 @@
     "pr-quantinuum.svg": "9722343337ca70de8ddeeb666ae7c7cb2706c6578131eede804b63416b893a82",
     "pr-ubc.svg": "c32f2b9e174b95acfc25fe22df70cfa4714179f711fedc5aa2128df3b85cca74",
     "pr-xanadu.svg": "f06f5aa1fe0eb9fd7145c89654a1a2eda7a54c9262306f1d66ccba53d5ceb93a",
-    "pr-unitary.svg": "929ec9547bb6c0675b5eb3ce7c77583d2c16bc8efb78c81eb48946d448e05e7d"
+    "pr-unitary.svg": "929ec9547bb6c0675b5eb3ce7c77583d2c16bc8efb78c81eb48946d448e05e7d",
+    "pr-github.svg": "98f67fba8260192e3237b42e9003140dc931cdfb49d4f37f4e8ac7356acb6b89"
   }
 }

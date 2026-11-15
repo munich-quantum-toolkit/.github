@@ -456,6 +456,7 @@ function presentationCopy(html) {
       .map(([, value]) => value),
   );
   root.querySelectorAll("a").forEach((link) => {
+    if (link.getAttribute("href")?.startsWith("https://github.com/")) return;
     const qr = [...link.querySelectorAll("img,image")].find((image) =>
       qrAssets.has(image.getAttribute("src") || image.getAttribute("href")),
     );
@@ -465,23 +466,29 @@ function presentationCopy(html) {
           ? document.createElementNS(link.namespaceURI, "g")
           : document.createElement("div");
       replacement.setAttribute("class", link.getAttribute("class") || "");
-      if (link.matches(".sc-card-resource, .talk-resource")) {
-        replacement.append(...link.childNodes);
-        const texts = document.createTreeWalker(
-          replacement,
-          NodeFilter.SHOW_TEXT,
-        );
-        while (texts.nextNode()) {
-          if (texts.currentNode.textContent.includes("github.com/"))
-            texts.currentNode.textContent = "";
-        }
-      } else replacement.append(qr);
+      replacement.append(qr);
       link.replaceWith(replacement);
     } else link.remove();
   });
   root
-    .querySelectorAll(".opening-repo-stat, .opening-downloads, .qr-block .url")
+    .querySelectorAll(".opening-repo-stat, .opening-downloads")
     .forEach((e) => e.remove());
+  root
+    .querySelectorAll(
+      ".compiler-heading .talk-resource span, .sc-card-resource small",
+    )
+    .forEach((label) => {
+      const url = label.lastChild;
+      if (
+        url?.nodeType !== Node.TEXT_NODE ||
+        !url.textContent.startsWith("github.com/")
+      )
+        return;
+      const row = document.createElement("span");
+      row.className = "repository-link";
+      row.innerHTML = `<img class="opening-github" src="${MQSF_ASSETS.github}" alt="GitHub">${url.textContent.slice(11)}`;
+      url.replaceWith(row);
+    });
   root.querySelectorAll("img,image").forEach((e) => {
     const src = e.getAttribute("src") || e.getAttribute("href");
     if (!src || src === "undefined" || src.startsWith("omit:")) e.remove();
@@ -637,7 +644,7 @@ window.MQSC_AWS_BOOTH = {
         title,
         0,
         () =>
-          `<section class="notebook-dark"><div class="notebook-main"><span class="notebook-index">${number}</span><div><h1>${title}</h1><div class="notebook-files">${files.map((f) => `<p>${f}.ipynb</p>`).join("")}</div></div></div><img class="notebook-qr" src="${ASSETS["qr-tutorial"]}" alt="QR code for tutorial materials"></section>`,
+          `<section class="notebook-dark"><div class="notebook-main"><span class="notebook-index">${number}</span><div><h1>${title}</h1><div class="notebook-files">${files.map((f) => `<p>${f}.ipynb</p>`).join("")}</div></div></div><img class="notebook-qr" src="${ASSETS["qr-tutorial"]}" alt="QR code for tutorial materials"><a class="notebook-link" href="https://github.com/munich-quantum-toolkit/.github/tree/tutorial-SC26/tutorial">github.com/munich-quantum-toolkit/.github/tree/tutorial-SC26/tutorial</a></section>`,
       );
     custom("welcome");
     for (const key of ["problem", "stack", "detail"]) copy(key, key, overview);

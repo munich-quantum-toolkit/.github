@@ -77,17 +77,19 @@ deck configuration, original slide registrations in `talks.js`, and full MQSF
 `presentation.js`, are copied without edits. Imported SVG assets retain their
 exact embedded source bytes. Original geometry, SVGs, continuous playbacks and
 interruptible transitions are retained. At render time, the IQM and openQSE
-copies omit projected text URLs and star/download badges, and apply
-capitalization and punctuation preferences. The MQSF copies bypass these text
-edits to preserve the requested source slides, including their paper references.
-The packager exports their original slide registrations before the standalone
-MQSF navigation setup. The tutorial shell calls the unchanged renderers and
-playback settings. The local `structuredCopy` adapter now typesets the Grover
-equation and iterative-QPE notation with bundled KaTeX. Automatic `\left` and
-`\right` delimiters enclose both floors and the arcsine argument. The runtime
-sequence uses 3 px arrow shafts, matching its original self-call, and filled
-arrowheads on all four messages. The 9 px heads use base-aligned markers, butt
-caps and shafts shortened by 9 px, including the LLVM JIT self-call, so no shaft
+copies retain the original resource URLs and omit star/download badges, while
+applying capitalization and punctuation preferences. The GitHub mark is copied
+unchanged from `brand/github.svg` at the same reference revision and included in
+the asset hash checks. The MQSF copies bypass these text edits to preserve the
+requested source slides, including their paper references. The packager exports
+their original slide registrations before the standalone MQSF navigation setup.
+The tutorial shell calls the unchanged renderers and playback settings. The
+local `structuredCopy` adapter now typesets the Grover equation and
+iterative-QPE notation with bundled KaTeX. Automatic `\left` and `\right`
+delimiters enclose both floors and the arcsine argument. The runtime sequence
+uses 3 px arrow shafts, matching its original self-call, and filled arrowheads
+on all four messages. The 9 px heads use base-aligned markers, butt caps and
+shafts shortened by 9 px, including the LLVM JIT self-call, so no shaft
 protrudes beyond its head. Math output is cached during animation. A scoped
 style restores the original MQSF heading and code-title typography where the
 other decks would override it. The black titles retain the common (80, 152)
@@ -152,10 +154,15 @@ three displayed IR programs parse and match the full matrix of the original
 OpenQASM. No claim is made that these authored slides are copies.
 
 The openQSE compilation header's “MQT Core” text and QR artwork are the original
-source card. The source card does not contain an additional MQT logo. Its text
-URL is omitted by the same projection adapter used elsewhere. Other source
-images remain present. The comparison against the source renderer checks this
-card along with every build of the full scene.
+source card. Its URL and the Slurm card's Orchestrator URL use the opening
+slides' GitHub mark and organization/repository notation. The Slurm link uses
+the opening reference row's 16 px type to keep the complete address on one line.
+Other source images remain present.
+
+Both AFQMC references match the IQM source. The left QR encodes
+`https://arxiv.org/abs/2506.22408`, displayed beside it. The right QR encodes
+`https://github.com/amazon-braket/amazon-braket-examples/tree/feature/quantum-monte-carlo/examples/hybrid_quantum_algorithms/Quantum_Monte_Carlo_Chemistry`.
+The source's shorter displayed repository address remains beside that QR.
 
 The Braket/QDMI material (slides 9, 16–17 and 36–39) supplies the distinction
 between resource scheduling, device capabilities and job execution. Historical
@@ -302,8 +309,8 @@ highlighting runtime or network request is needed to present.
 The sample code and conceptual excerpts are distinguished on the slides. The
 Slurm and provider diagrams illustrate deployments, not a newly validated SC26
 cluster setup. Full references remain in this source file. The unchanged MQSF
-paper references are the only projected text URLs. Captured examples remain tied
-to the versions above.
+paper references, restored GitHub resource rows and notebook materials links are
+the projected text URLs. Captured examples remain tied to the versions above.
 
 ## Revision validation
 

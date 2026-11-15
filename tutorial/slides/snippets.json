@@ -21,6 +21,6 @@
   },
   "execute": {
     "language": "python",
-    "source": "from mqt.core.mlir import compile_program, submit_program\nfrom mqt.core.qdmi import open_device\n\ndevice = open_device(\"mqt.ddsim.default\")\ncompiled = compile_program(source, target=device)\njob = submit_program(compiled, target=device, num_shots=1024)\nassert job.wait()\ncounts = job.get_counts()"
+    "source": "from mqt.core.mlir import compile_program, submit_program\nfrom mqt.core.qdmi import open_device\n\ndevice = open_device(\"mqt.ddsim.default\")\ncompiled = compile_program(source, target=device)\njob = submit_program(compiled, target=device, num_shots=1024)\njob.wait()\ncounts = job.get_counts()"
   }
 }

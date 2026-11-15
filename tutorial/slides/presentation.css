@@ -178,6 +178,26 @@
   height: 360px;
   filter: brightness(0) invert(1);
 }
+.notebook-link {
+  position: absolute;
+  /* Align with the QR modules, excluding the SVG's five-module quiet zone. */
+  right: calc(360px * 5 / 47);
+  top: calc(100% - 15px);
+  color: #fff;
+  font-size: 24px;
+  line-height: 29px;
+  text-decoration: none;
+}
+.repository-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  white-space: nowrap;
+}
+.sc-card-resource .repository-link {
+  font-size: 16px;
+  color: var(--blue);
+}
 .notebook-index {
   font-size: 148px;
   font-weight: 650;

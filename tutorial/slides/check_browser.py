@@ -86,7 +86,37 @@ def check(browser_path, output) -> None:
                 if slides[i]["id"].startswith("notebook-"):
                     assert page.locator("#deck").evaluate("e=>getComputedStyle(e).backgroundColor") == "rgb(20, 43, 69)"
                     assert page.locator(".notebook-qr").get_attribute("src") == page.evaluate('ASSETS["qr-tutorial"]')
-                assert page.locator('#deck a, #deck [role="link"]').count() == 0
+                    link = page.locator(".notebook-link")
+                    assert link.get_attribute("href") == (
+                        "https://github.com/munich-quantum-toolkit/.github/tree/tutorial-SC26/tutorial"
+                    )
+                    assert link.inner_text() == link.get_attribute("href").removeprefix("https://")
+                    assert link.evaluate("e=>getComputedStyle(e).color") == "rgb(255, 255, 255)"
+                    qr_box, link_box = page.locator(".notebook-qr").bounding_box(), link.bounding_box()
+                    qr_right = qr_box["x"] + qr_box["width"] * 42 / 47
+                    assert abs(link_box["x"] + link_box["width"] - qr_right) < 0.1
+                    assert link_box["y"] > qr_box["y"] + qr_box["height"] * 42 / 47
+                    assert link.evaluate("e=>getComputedStyle(e).fontSize") == "24px"
+                assert page.locator(".opening-paper").count() == 0
+                if slides[i]["id"] == "detail" and b >= 2:
+                    assert page.locator('a[href="https://github.com/iqm-finland/QDMI-on-IQM"]').count() > 0
+                    assert page.locator("#slide image").evaluate_all(
+                        "els=>els.some(e=>e.getAttribute('href')===MQSF_ASSETS.github)"
+                    ), "Restore the source GitHub logo with its repository link"
+                if slides[i]["id"] in ("native-demo", "slurm-playground"):
+                    link = page.locator(".repository-link")
+                    assert link.inner_text() == (
+                        "munich-quantum-toolkit/core"
+                        if slides[i]["id"] == "native-demo"
+                        else "munich-quantum-software/orchestrator"
+                    )
+                    assert link.locator("img").get_attribute("src") == page.evaluate("MQSF_ASSETS.github")
+                if slides[i]["id"] == "hybrid-algorithm":
+                    assert page.locator(".application-paper-reference .url").inner_text() == "arxiv.org/abs/2506.22408"
+                    assert (
+                        page.locator(".application-reference .url").inner_text()
+                        == "amazon-braket/amazon-braket-examples"
+                    )
                 assert page.evaluate(r"""() => {
                     const ids=[...document.querySelectorAll('#slide [id]')].map(e=>e.id);
                     return new Set(ids).size === ids.length && [...document.querySelectorAll('#slide [marker-end]')].every(e=>{
@@ -109,10 +139,6 @@ def check(browser_path, output) -> None:
                 if slides[i]["id"] == "break":
                     box = page.locator(".chapter-separator h1").bounding_box()
                     assert (box["x"] + box["width"] / 2, box["y"] + box["height"] / 2) == (960, 540)
-                projected_text = page.locator("#deck").inner_text()
-                assert not any(
-                    marker in projected_text for marker in ("http:", "https:", "www.", "github.com", "readthedocs")
-                )
                 found = page.evaluate("""() => {
                     const box=document.querySelector('#slide').getBoundingClientRect();
                     // The original scenes use the gap below the article for credits and panels.
@@ -166,6 +192,8 @@ def check(browser_path, output) -> None:
                     assert arrows.evaluate_all('els=>els.every(e=>e.getAttribute("stroke-width")==="3")')
                 if slides[i]["id"] == "execute":
                     assert page.locator(".code-block h3").count() == 0
+                    assert "assert job.wait()" not in page.locator("pre").inner_text()
+                    assert "job.wait()" in page.locator("pre").inner_text()
                     assert page.locator(".execution-output [data-outcome]").evaluate_all("""els =>
                         els.every(el => Number(el.dataset.count) === SAMPLING.counts[el.dataset.outcome] &&
                             Math.abs(Number(el.getAttribute('height')) / 300 - Number(el.dataset.count) / SAMPLING.shots.length) < 1e-12) &&
