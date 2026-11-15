@@ -22,9 +22,8 @@ behavior, MLIR notation and Python calls used in the notebooks.
 
 Each session is 90 minutes. Notebooks get 110 of the 180 teaching minutes, about
 61%, excluding the break. The notebook checkpoints define the live route.
-`control_flow.ipynb`, `qir_execution.ipynb`, `jeff_exchange.ipynb`, and the
-sections after each checkpoint remain extensions. See [brief.md](brief.md) for
-minute-by-minute pacing.
+`control_flow.ipynb` and the sections after each checkpoint remain extensions.
+See [brief.md](brief.md) for minute-by-minute pacing.
 
 ## Build and present
 
@@ -127,9 +126,10 @@ motion, asset loading and projected links. It also checks the sampling replay's
 counts and real histogram scale, and the unchanged QCO panel carried into the
 optimization slide. Screenshots are retained for visual review.
 
-The seven notebooks were executed on Python 3.15.1 with MQT Core 4.2.0. Their
-locked environment is in the parent tutorial project. The revised notebook route
-was re-executed locally, including the GHZ solution. Unchanged notebooks need
-not be rerun for subsequent slide-only edits. The displayed compiler carousel
-replays the reference capture, whose exact stack and limits are recorded in
-SOURCES.md. No cluster deployment, cloud task or hardware execution is claimed.
+The original seven-notebook set was executed on Python 3.15.1 with MQT Core
+4.2.0. Their locked environment is in the parent tutorial project. The revised
+notebook route was re-executed locally, including the GHZ solution. Unchanged
+notebooks need not be rerun for subsequent slide-only edits. The displayed
+compiler carousel replays the reference capture, whose exact stack and limits
+are recorded in SOURCES.md. No cluster deployment, cloud task or hardware
+execution is claimed.

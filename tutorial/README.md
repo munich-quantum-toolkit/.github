@@ -32,10 +32,10 @@ environment and open `slides/build/sc26-tutorial.html`. See
 [slide authoring and validation](slides/README.md) for navigation, preview,
 editing, and the local DDSIM examples.
 
-The [seven notebooks](notebooks/README.md) begin with a Qiskit circuit exercise,
-then reuse the QCE26 MLIR tutorial and the QDMI and jeff extensions from the MQT
-Core documentation. They use MQT Core 4.2.0 and include executed outputs from
-local simulation.
+The [five notebooks](notebooks/README.md) begin with a Qiskit circuit exercise,
+then reuse the QCE26 MLIR tutorial and the QDMI extension from the MQT Core
+documentation. They use MQT Core 4.2.0 and include executed outputs from local
+simulation.
 
 ## Setup
 

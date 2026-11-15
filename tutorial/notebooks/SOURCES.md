@@ -1,5 +1,9 @@
 # Notebook foundation and documentation comparison
 
+The current tutorial contains five notebooks. QIR execution and jeff exchange
+were removed in a separate commit and can be restored from Git history. The
+comparison and validation records below describe the earlier seven-notebook set.
+
 The four compiler notebooks originate in
 `munich-quantum-toolkit/qce26-mlir-tutorial`, branch `update-mqt-core-4.1`,
 commit `98a1c40` (Update MQT Core to 4.1). The original checkout had local

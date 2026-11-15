@@ -1,10 +1,9 @@
 # SC26 notebooks
 
 These notebooks reuse the QCE26 MLIR tutorial for MQT Core 4.2.0. A new Qiskit
-circuit introduction comes first. The four original QCE notebooks remain the
-foundation, followed by two tutorials from MQT Core's documentation. Each
-notebook runs independently, using Qiskit's statevector simulator or local
-DDSIM.
+circuit introduction comes first. The compiler examples come from QCE, and the
+QDMI notebook comes from MQT Core's documentation. Each notebook runs
+independently, using Qiskit's statevector simulator or local DDSIM.
 
 ## Run the notebooks
 
@@ -67,9 +66,7 @@ uv run --locked jupyter lab notebooks
 | [Compiler representations](compiler_representations.ipynb) | QC/QCO, simplification, matrix checks, ownership            | Notebook session 2      |
 | [Control flow](control_flow.ipynb)                         | Registers, loops, feedback, static versus executed work     | Optional extension      |
 | [Hardware compilation](hardware_compilation.ipynb)         | Placement, routing, synthesis, target limits and QDMI       | Notebook session 3      |
-| [QIR execution](qir_execution.ipynb)                       | Base/Adaptive profiles, serialization and output records    | Optional extension      |
 | [QDMI execution](qdmi_execution.ipynb)                     | Capabilities, jobs, shots, counts, state and artifact reuse | Notebook session 4      |
-| [jeff exchange](jeff_exchange.ipynb)                       | Binary exchange, phase, loops and an independent consumer   | Extension / follow-up   |
 
 The live route uses **30 + 20 + 25 + 35 minutes** across two 90-minute sessions:
 
@@ -86,12 +83,11 @@ The live route uses **30 + 20 + 25 + 35 minutes** across two 90-minute sessions:
    compile, submit, compare counts and shots, and reuse the compiled artifact.
    Stop at the checkpoint before simulator-state and program-format extensions.
 
-All seven notebooks include executed outputs as a fallback. The first notebook
+All five notebooks include executed outputs as a fallback. The first notebook
 leaves its GHZ exercise cell for attendees to complete and supplies a collapsed
 solution. Its checker runs once a circuit is provided. The default examples need
 no hardware account, cloud service or separately installed MLIR SDK. The two
-topology targets are models; their programs execute only on DDSIM. The `jeff`
-process handoff uses MQT Core on both sides.
+topology targets are models; their programs execute only on DDSIM.
 
 The QCE notebooks keep their existing examples, exercises and sequence, with the
 MQT Core 4.2 API and documentation updates recorded in `SOURCES.md`.
